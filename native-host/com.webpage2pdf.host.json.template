@@ -1,0 +1,7 @@
+{
+  "name": "com.webpage2pdf.host",
+  "description": "webpage2pdf native host for custom save path",
+  "path": "REPLACE_WITH_ABSOLUTE_PATH_TO_host.bat",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://__REPLACE_WITH_EXTENSION_ID__/"]
+}

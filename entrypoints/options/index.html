@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>webpage2pdf — Настройки</title>
+  <style>
+    :root { --bg:#0f0f12; --card:#1a1a1f; --fg:#e8e8ec; --muted:#9aa0a6; --accent:#7c5cf0; --border:#2a2a33; --input:#23232a; }
+    *{box-sizing:border-box;margin:0}
+    body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto;background:var(--bg);color:var(--fg);padding:24px;max-width:560px;margin:0 auto}
+    h1{font-size:18px;font-weight:700;margin-bottom:6px}
+    .sub{color:var(--muted);font-size:13px;margin-bottom:20px;line-height:1.5}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px}
+    .card h2{font-size:13px;font-weight:700;margin-bottom:10px;letter-spacing:.02em;text-transform:uppercase;color:var(--muted)}
+    label{display:flex;gap:10px;align-items:flex-start;padding:8px 0;cursor:pointer;font-size:13px;line-height:1.4}
+    label input[type="radio"], label input[type="checkbox"]{margin-top:3px;accent-color:var(--accent)}
+    .field{margin-top:10px}
+    .field label{flex-direction:column;gap:6px}
+    input[type="text"]{width:100%;background:var(--input);border:1px solid var(--border);color:var(--fg);border-radius:8px;padding:9px 10px;font-size:13px}
+    input[type="text"]:disabled{opacity:.5}
+    .hint{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.4}
+    .row{display:flex;gap:10px;margin-top:16px}
+    button{background:var(--accent);color:#fff;border:0;border-radius:10px;padding:10px 16px;font-weight:600;cursor:pointer;font-size:13px}
+    button.secondary{background:transparent;border:1px solid var(--border);color:var(--fg)}
+    #status{font-size:12px;color:#22c55e;margin-left:10px;align-self:center;display:none}
+    #status.show{display:block}
+    code{background:#23232a;padding:1px 5px;border-radius:4px;font-size:11px}
+    .warn{background:#3a2a0a;border:1px solid #6b4a0a;color:#facc15;border-radius:8px;padding:8px 10px;font-size:12px;margin-top:10px;display:none}
+    .warn.show{display:block}
+  </style>
+</head>
+<body>
+  <h1>⚙️ webpage2pdf — Настройки</h1>
+  <p class="sub">Бумага и куда сохранять PDF. Синхронизируется через Chrome Sync если включён.</p>
+
+  <div class="card">
+    <h2>Формат бумаги</h2>
+    <label><input type="radio" name="paper" value="a4" /> <span><b>A4</b> — 210×297 мм (8.27×11.69″)</span></label>
+    <label><input type="radio" name="paper" value="letter" /> <span><b>Letter (USA)</b> — 8.5×11″ (216×279 мм)</span></label>
+    <p class="hint">Масштаб <code>(paperWidth-0.8)*96/1920</code> чтобы 1920px влез в печатную область. Применяется сразу.</p>
+  </div>
+
+  <div class="card">
+    <h2>Куда сохранять</h2>
+    <label><input type="radio" name="saveMode" value="ask" /> <span><b>Спрашивать каждый раз</b> — диалог «Сохранить как…» (<code>saveAs:true</code>)</span></label>
+    <label><input type="radio" name="saveMode" value="downloads" /> <span><b>Авто в Загрузки</b> — без спроса в <code>Downloads/</code></span></label>
+    <div class="field" id="downloadsField">
+      <label>
+        <span>Подпапка в Загрузках (необязательно)</span>
+        <input id="customDir" type="text" placeholder="например: webpage2pdf  или  Work/PDFs" />
+      </label>
+      <p class="hint">Например <code>webpage2pdf</code> → <code>Downloads/webpage2pdf/файл.pdf</code>. Оставь пустым — в корень Загрузок.</p>
+    </div>
+
+    <label><input type="radio" name="saveMode" value="custom" /> <span><b>Кастомный путь</b> — любая папка на диске (требует Native Host)</span></label>
+    <div class="field" id="customField">
+      <label>
+        <span>Абсолютный путь к папке</span>
+        <input id="customPath" type="text" placeholder="например: D:\MyPdfs  или  \\server\share\pdfs" />
+      </label>
+      <p class="hint">Chrome не умеет писать за пределы Загрузок напрямую. Для этого ставится маленький хост <code>native-host/</code> (.exe + реестр). Без хоста — упадёт в Загрузки с предупреждением. Инструкция: <code>native-host/README.md</code> и <code>install_host.bat</code>.</p>
+      <div id="hostWarn" class="warn">⚠️ Native Host не установлен — пока будет сохранять в Загрузки. Запусти <code>native-host/install_host.bat</code> от имени пользователя и перезапусти Chrome.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Имя файла</h2>
+    <p class="hint">Теперь: <code>&lt;url-base&gt;-&lt;дата&gt;.pdf</code> — например <code>biznespark.by-2026-09-01.pdf</code>, <code>krokit.org-courses-product-2026-09-01.pdf</code>. Запрещённые символы <code>&lt;&gt;:"/\|?*</code> заменяются на <code>_</code>.</p>
+  </div>
+
+  <div class="row">
+    <button id="save">Сохранить</button>
+    <button id="reset" class="secondary">Сброс</button>
+    <span id="status">✓ Сохранено</span>
+  </div>
+
+  <p class="hint" style="margin-top:16px">Подвал: URL источника на каждой странице (<code>displayHeaderFooter:true</code>, <code>word-break:break-all</code>, <code>marginBottom 0.6in</code>). Пагинация отключена.</p>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "webpage2pdf",
+  "version": "0.4.1",
+  "description": "Save any webpage as a real PDF with selectable text — desktop layout, not mobile. Fixes Chrome's 740px print collapse.",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "prepare": "wxt prepare",
+    "compile": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.43.1",
+    "typescript": "^5.5.0",
+    "wxt": "^0.21.4"
+  }
+}
