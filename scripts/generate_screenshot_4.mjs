@@ -9,7 +9,7 @@ async function generateScreenshots() {
   });
 
   const page = await browser.newPage();
-  await page.setViewport({ width: 1280, height: 800, deviceScaleFactor: 2 });
+  await page.setViewport({ width: 1280, height: 800, deviceScaleFactor: 1 });
 
   // ─────────────────────────────────────────────────────────────
   // 4. Screenshot 4: Selectable Vector Text & PDF Viewer Proof

@@ -7,9 +7,8 @@ async function generateScreenshots() {
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
-
   const page = await browser.newPage();
-  await page.setViewport({ width: 1280, height: 800, deviceScaleFactor: 2 });
+  await page.setViewport({ width: 1280, height: 800, deviceScaleFactor: 1 });
 
   // ─────────────────────────────────────────────────────────────
   // 1. Screenshot 1: Hero - Popup over Desktop Webpage
