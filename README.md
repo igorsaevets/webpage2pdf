@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/webpage2pdf/cegjlapelggifcbenhbbannadlajccbn">
-    <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Pending%20Review-orange?logo=googlechrome&logoColor=white" alt="Chrome Web Store">
+    <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Published%20v0.4.1-brightgreen?logo=googlechrome&logoColor=white" alt="Chrome Web Store">
   </a>
   <img src="https://img.shields.io/badge/Manifest-V3-blue?logo=googlechrome&logoColor=white" alt="Manifest V3">
   <img src="https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript&logoColor=white" alt="TypeScript">
@@ -142,7 +142,7 @@ Before taking the snapshot, `webpage2pdf` runs an automated pre-flight script di
 ## 🚀 Installation
 
 ### Method 1: Chrome Web Store (Recommended)
-> *Status: Currently in **Pending Review** by Google.*
+> *Status: **Published & Live** (v0.4.1)*
 * [Install from Chrome Web Store](https://chromewebstore.google.com/detail/webpage2pdf/cegjlapelggifcbenhbbannadlajccbn)
 
 ### Method 2: Manual Installation (Developer Mode / Releases)
