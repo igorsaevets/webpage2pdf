@@ -6,3 +6,9 @@ dist
 .DS_Store
 ai-second-opinion
 answers
+.memory
+GEMINI.md
+brief-*.md
+test_*.py
+debug_launch.py
+inspect_cws.py

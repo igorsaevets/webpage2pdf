@@ -10,7 +10,26 @@
     "prepare": "wxt prepare",
     "compile": "tsc --noEmit"
   },
+  "license": "MIT",
+  "author": "Igor Saevets <igorsaevets@gmail.com>",
+  "homepage": "https://github.com/igorsaevets/webpage2pdf",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igorsaevets/webpage2pdf.git"
+  },
+  "keywords": [
+    "chrome-extension",
+    "pdf",
+    "print-to-pdf",
+    "webpage-to-pdf",
+    "devtools-protocol",
+    "cdp",
+    "manifest-v3",
+    "wxt",
+    "typescript"
+  ],
   "devDependencies": {
+    "@types/chrome": "^0.2.9",
     "puppeteer": "^24.43.1",
     "typescript": "^5.5.0",
     "wxt": "^0.21.4"

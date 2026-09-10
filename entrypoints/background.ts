@@ -146,7 +146,7 @@ export default defineBackground(() => {
     }
   }
 
-  async function cdpTry(d: chrome.debugger.Debuggee, method: string, params?: object): Promise<void> {
+  async function cdpTry(d: chrome.debugger.Debuggee, method: string, params?: Record<string, unknown>): Promise<void> {
     try { await chrome.debugger.sendCommand(d, method, params); } catch (e) { console.warn('[webpage2pdf] ' + method, e); }
   }
 
@@ -371,7 +371,7 @@ export default defineBackground(() => {
       const alignedStart = tailStart - (tailStart % 4);
       const tailRaw = atob(base64.slice(Math.max(0, alignedStart)));
       const countMatch = tailRaw.match(/\/Count\s+(\d+)/);
-      if (countMatch) pageCount = parseInt(countMatch[1], 10);
+      if (countMatch && countMatch[1]) pageCount = parseInt(countMatch[1], 10);
     } catch {}
 
     return { ok: true, sizeBytes, pageCount };
