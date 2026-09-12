@@ -139,5 +139,20 @@
   },
   "toastError": {
     "message": "Ошибка сохранения PDF: $1"
+  },
+  "errDevToolsOpen": {
+    "message": "Панель разработчика (F12) уже открыта на этой вкладке. Закройте DevTools и повторите попытку."
+  },
+  "errRestrictedPage": {
+    "message": "Нельзя сохранять системные страницы (chrome://, Web Store). Откройте любой обычный сайт."
+  },
+  "errTabClosed": {
+    "message": "Вкладка была закрыта до завершения создания PDF."
+  },
+  "errUserCancelled": {
+    "message": "Генерация PDF отменена (плашка отладки закрыта)."
+  },
+  "errGeneric": {
+    "message": "Не удалось создать PDF: $1"
   }
 }

@@ -1,3 +1,5 @@
+import { isRestrictedUrl, parseFriendlyError } from '../../utils/errors';
+
 const btn = document.getElementById('btn') as HTMLButtonElement;
 const logEl = document.getElementById('log') as HTMLDivElement;
 const settingsLink = document.getElementById('settingsLink') as HTMLAnchorElement | null;
@@ -21,6 +23,18 @@ document.querySelectorAll('[data-i18n]').forEach(el => {
   }
 });
 
+async function checkCurrentTab() {
+  try {
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+    if (tab?.url && isRestrictedUrl(tab.url)) {
+      showLog('⚠️ ' + (chrome.i18n.getMessage('errRestrictedPage') || 'Cannot capture internal browser pages (chrome://, Web Store). Try on any standard website.'));
+      btn.disabled = true;
+      btn.style.opacity = '0.5';
+    }
+  } catch {}
+}
+checkCurrentTab();
+
 btn.addEventListener('click', async () => {
   btn.disabled = true;
   btn.textContent = chrome.i18n.getMessage('statusGenerating') || 'Generating…';
@@ -28,6 +42,9 @@ btn.addEventListener('click', async () => {
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     if (!tab?.id) throw new Error(chrome.i18n.getMessage('logActiveTab') || 'No active tab');
+    if (isRestrictedUrl(tab.url)) {
+      throw new Error(chrome.i18n.getMessage('errRestrictedPage') || 'Cannot capture internal browser pages (chrome://, Web Store). Try on any standard website.');
+    }
     showLog(`Tab ${tab.id} — ${(tab.url||'').slice(0,70)} …`);
     const res: any = await chrome.runtime.sendMessage({ type: 'GENERATE_PDF', tabId: tab.id, url: tab.url });
     if (!res?.ok) throw new Error(res?.error ?? 'unknown error');
@@ -37,8 +54,8 @@ btn.addEventListener('click', async () => {
     btn.textContent = chrome.i18n.getMessage('statusSaved') || 'Saved ✓';
     refreshHint();
   } catch (e:any) {
-    const msg = String(e?.message ?? e);
-    showLog('✗ Error: ' + msg + '\nInspect: chrome://extensions → Inspect service worker → Console');
+    const msg = parseFriendlyError(e);
+    showLog('✗ ' + msg);
     btn.textContent = chrome.i18n.getMessage('statusError') || 'Error — retry';
     console.error(e);
   } finally {

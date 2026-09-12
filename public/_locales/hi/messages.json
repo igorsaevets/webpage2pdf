@@ -139,5 +139,20 @@
   },
   "toastError": {
     "message": "PDF सहेजने में विफल: $1"
+  },
+  "errDevToolsOpen": {
+    "message": "DevTools (F12) is already open. Please close DevTools and try again."
+  },
+  "errRestrictedPage": {
+    "message": "Cannot capture internal browser pages (chrome://, Web Store). Try on any standard website."
+  },
+  "errTabClosed": {
+    "message": "The tab was closed before the PDF could be created."
+  },
+  "errUserCancelled": {
+    "message": "PDF generation was cancelled (debugging bar closed)."
+  },
+  "errGeneric": {
+    "message": "Failed to generate PDF: $1"
   }
 }

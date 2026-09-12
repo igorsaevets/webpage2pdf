@@ -1,5 +1,7 @@
+import { isRestrictedUrl, parseFriendlyError } from '../utils/errors';
+
 export default defineBackground(() => {
-  console.log('[webpage2pdf] background loaded — v5 (contextMenus)');
+  console.log('[webpage2pdf] background loaded — v6 (friendly errors)');
 
   const CONTEXT_MENU_ID = 'webpage2pdf-save-page';
   const busyTabs = new Set<number>();
@@ -108,6 +110,13 @@ export default defineBackground(() => {
   setupContextMenu();
 
   async function handleContextMenuSave(tabId: number, url: string) {
+    if (isRestrictedUrl(url)) {
+      setBadge('ERR', '#ef4444', 4000);
+      const friendly = parseFriendlyError(new Error('cannot access a chrome:// URL'));
+      await showToast(tabId, `⚠️ ${friendly}`, 'error');
+      return;
+    }
+
     if (busyTabs.has(tabId)) {
       await showToast(tabId, '⚠️ PDF generation already in progress…', 'info');
       return;
@@ -125,8 +134,8 @@ export default defineBackground(() => {
       await showToast(tabId, `✓ ${savedMsg}${fileLabel}`, 'success');
     } catch (e: any) {
       setBadge('ERR', '#ef4444', 4000);
-      const errText = String(e?.message ?? e);
-      await showToast(tabId, `✗ Error: ${errText}`, 'error');
+      const friendly = parseFriendlyError(e);
+      await showToast(tabId, `✗ ${friendly}`, 'error');
     } finally {
       busyTabs.delete(tabId);
     }
@@ -159,7 +168,7 @@ export default defineBackground(() => {
       if (tabId) {
         generatePdf(tabId, url ?? '')
           .then((res) => sendResponse({ ok: true, ...res }))
-          .catch((e) => sendResponse({ ok: false, error: String((e as any)?.message ?? e) }));
+          .catch((e) => sendResponse({ ok: false, error: parseFriendlyError(e) }));
         return true;
       }
     }
@@ -579,6 +588,9 @@ export default defineBackground(() => {
 
   // ── Core: generatePdf (v4 — live tab, preload, verify) ───────────
   async function generatePdf(sourceTabId: number, sourceUrl: string) {
+    if (isRestrictedUrl(sourceUrl)) {
+      throw new Error('cannot attach to this target: restricted URL');
+    }
     const settings = await getSettings();
     const isTranslated = await detectTranslated(sourceTabId);
     if (isTranslated) console.log('[webpage2pdf] translated page — live tab preserves translation');

@@ -139,5 +139,20 @@
   },
   "toastError": {
     "message": "PDF 保存失败: $1"
+  },
+  "errDevToolsOpen": {
+    "message": "当前标签页已打开开发者工具 (F12)。请关闭开发者工具后重试。"
+  },
+  "errRestrictedPage": {
+    "message": "无法捕获浏览器内部页面 (chrome://、应用商店)。请在普通网页上尝试。"
+  },
+  "errTabClosed": {
+    "message": "标签页在生成完成前已关闭。"
+  },
+  "errUserCancelled": {
+    "message": "PDF 生成已取消 (调试栏被关闭)。"
+  },
+  "errGeneric": {
+    "message": "PDF 生成失败: $1"
   }
 }

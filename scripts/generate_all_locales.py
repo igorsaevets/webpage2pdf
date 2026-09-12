@@ -1223,6 +1223,11 @@ en_base['commandSavePdf'] = 'Save current page as Desktop PDF'
 en_base['toastGenerating'] = 'Generating desktop PDF (1920px)…'
 en_base['toastSaved'] = 'PDF saved successfully ✓'
 en_base['toastError'] = 'Failed to save PDF: $1'
+en_base['errDevToolsOpen'] = 'DevTools (F12) is already open. Please close DevTools and try again.'
+en_base['errRestrictedPage'] = 'Cannot capture internal browser pages (chrome://, Web Store). Try on any standard website.'
+en_base['errTabClosed'] = 'The tab was closed before the PDF could be created.'
+en_base['errUserCancelled'] = 'PDF generation was cancelled (debugging bar closed).'
+en_base['errGeneric'] = 'Failed to generate PDF: $1'
 
 for code, (name, desc, act_title, opt_link, dl_link) in SECONDARY_LANGUAGES.items():
     loc = dict(en_base)
@@ -1247,14 +1252,24 @@ TOP_CUSTOM = {
         'commandSavePdf': 'Сохранить текущую страницу в десктопный PDF',
         'toastGenerating': 'Генерация десктопного PDF (1920px)…',
         'toastSaved': 'PDF успешно сохранен ✓',
-        'toastError': 'Ошибка сохранения PDF: $1'
+        'toastError': 'Ошибка сохранения PDF: $1',
+        'errDevToolsOpen': 'Панель разработчика (F12) уже открыта на этой вкладке. Закройте DevTools и повторите попытку.',
+        'errRestrictedPage': 'Нельзя сохранять системные страницы (chrome://, Web Store). Откройте любой обычный сайт.',
+        'errTabClosed': 'Вкладка была закрыта до завершения создания PDF.',
+        'errUserCancelled': 'Генерация PDF отменена (плашка отладки закрыта).',
+        'errGeneric': 'Не удалось создать PDF: $1'
     },
     'zh_CN': {
         'contextMenuSave': '保存网页为桌面版 PDF',
         'commandSavePdf': '将当前网页保存为桌面版 PDF',
         'toastGenerating': '正在生成桌面版 PDF (1920px)…',
         'toastSaved': 'PDF 保存成功 ✓',
-        'toastError': 'PDF 保存失败: $1'
+        'toastError': 'PDF 保存失败: $1',
+        'errDevToolsOpen': '当前标签页已打开开发者工具 (F12)。请关闭开发者工具后重试。',
+        'errRestrictedPage': '无法捕获浏览器内部页面 (chrome://、应用商店)。请在普通网页上尝试。',
+        'errTabClosed': '标签页在生成完成前已关闭。',
+        'errUserCancelled': 'PDF 生成已取消 (调试栏被关闭)。',
+        'errGeneric': 'PDF 生成失败: $1'
     },
     'zh_TW': {
         'contextMenuSave': '儲存網頁為桌面版 PDF',
@@ -1423,6 +1438,16 @@ for code, msgs in LOCALES.items():
         msgs['toastSaved'] = 'PDF saved successfully ✓'
     if 'toastError' not in msgs:
         msgs['toastError'] = 'Failed to save PDF: $1'
+    if 'errDevToolsOpen' not in msgs:
+        msgs['errDevToolsOpen'] = 'DevTools (F12) is already open. Please close DevTools and try again.'
+    if 'errRestrictedPage' not in msgs:
+        msgs['errRestrictedPage'] = 'Cannot capture internal browser pages (chrome://, Web Store). Try on any standard website.'
+    if 'errTabClosed' not in msgs:
+        msgs['errTabClosed'] = 'The tab was closed before the PDF could be created.'
+    if 'errUserCancelled' not in msgs:
+        msgs['errUserCancelled'] = 'PDF generation was cancelled (debugging bar closed).'
+    if 'errGeneric' not in msgs:
+        msgs['errGeneric'] = 'Failed to generate PDF: $1'
 
 print(f"Total locales registered: {len(LOCALES)}")
 
