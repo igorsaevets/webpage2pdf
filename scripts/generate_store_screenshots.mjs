@@ -144,8 +144,9 @@ async function generateScreenshots() {
       .tag.bad { background: #450a0a; color: #f87171; border: 1px solid #991b1b; }
       .tag.good { background: #064e3b; color: #34d399; border: 1px solid #065f46; }
 
-      .screenshot-wrap { flex: 1; border-radius: 8px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); position: relative; display: flex; align-items: flex-start; background: #0b0f19; }
-      .screenshot-wrap img { width: 100%; height: auto; display: block; object-fit: contain; object-position: top center; }
+      .screenshot-wrap { flex: 1; border-radius: 8px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); position: relative; display: flex; align-items: flex-start; justify-content: center; background: #0b0f19; }
+      .bad .screenshot-wrap img { width: 100%; height: auto; display: block; object-fit: contain; object-position: top center; }
+      .good .screenshot-wrap img { width: 145%; max-width: none; height: auto; display: block; }
       
       .overlay-warning { position: absolute; bottom: 16px; left: 16px; right: 16px; background: rgba(153, 27, 27, 0.9); color: white; padding: 12px; border-radius: 8px; font-size: 12px; font-weight: 600; text-align: center; border: 1px solid #ef4444; backdrop-filter: blur(4px); }
       .overlay-success { position: absolute; bottom: 16px; left: 16px; right: 16px; background: rgba(6, 78, 59, 0.9); color: white; padding: 12px; border-radius: 8px; font-size: 12px; font-weight: 600; text-align: center; border: 1px solid #10b981; backdrop-filter: blur(4px); }
