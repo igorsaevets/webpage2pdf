@@ -3,10 +3,32 @@ import fs from 'fs';
 import path from 'path';
 
 async function generateScreenshots() {
+  const TARGET_URL = 'https://ironmemo.com/';
   const browser = await puppeteer.launch({
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
+
+  console.log(`Fetching real site screens for ${TARGET_URL}...`);
+  const fetchPage = await browser.newPage();
+  
+  // Capture Desktop (webpage2pdf)
+  await fetchPage.setViewport({ width: 1920, height: 1080, deviceScaleFactor: 1 });
+  await fetchPage.goto(TARGET_URL, { waitUntil: 'networkidle2' });
+  // Ensure lazy images load for a better screenshot
+  await fetchPage.evaluate(() => window.scrollTo(0, 1000));
+  await new Promise(r => setTimeout(r, 500));
+  await fetchPage.evaluate(() => window.scrollTo(0, 0));
+  const desktopBuffer = await fetchPage.screenshot();
+  const desktopB64 = desktopBuffer.toString('base64');
+
+  // Capture Mobile (Native Chrome Print)
+  await fetchPage.setViewport({ width: 740, height: 1080, deviceScaleFactor: 1 });
+  await fetchPage.goto(TARGET_URL, { waitUntil: 'networkidle2' });
+  const mobileBuffer = await fetchPage.screenshot();
+  const mobileB64 = mobileBuffer.toString('base64');
+  await fetchPage.close();
+
   const page = await browser.newPage();
   await page.setViewport({ width: 1280, height: 800, deviceScaleFactor: 1 });
 
@@ -31,18 +53,8 @@ async function generateScreenshots() {
       .url-bar { background: #0b0f19; border: 1px solid #283548; border-radius: 6px; height: 26px; flex: 1; display: flex; align-items: center; padding: 0 12px; font-size: 12px; color: #9ca3af; }
       
       /* Webpage Content */
-      .page-content { padding: 32px 48px; display: grid; grid-template-columns: 240px 1fr; gap: 32px; height: 758px; background: #0f172a; }
-      .sidebar { background: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #334155; }
-      .side-item { height: 14px; background: #334155; border-radius: 4px; margin-bottom: 14px; }
-      .side-item.w70 { width: 70%; } .side-item.w50 { width: 50%; } .side-item.w85 { width: 85%; }
-      
-      .main { display: flex; flex-direction: column; gap: 24px; }
-      .hero-card { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; border-radius: 12px; padding: 24px; }
-      .title-line { height: 28px; width: 55%; background: #60a5fa; border-radius: 6px; margin-bottom: 12px; }
-      .desc-line { height: 12px; width: 90%; background: #475569; border-radius: 4px; margin-bottom: 8px; }
-      
-      .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-      .col-card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 18px; height: 160px; }
+      .page-content { height: 758px; background: #0f172a; overflow: hidden; }
+      .real-screenshot { width: 100%; height: 100%; object-fit: cover; object-position: top center; filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)); opacity: 0.9; }
       
       /* Extension Popup Mock */
       .popup-wrapper { position: absolute; top: 50px; right: 48px; width: 340px; background: #0f0f12; border: 1px solid #2a2a33; border-radius: 14px; padding: 18px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.85), 0 0 0 1px rgba(124, 92, 240, 0.4); z-index: 100; }
@@ -55,7 +67,7 @@ async function generateScreenshots() {
       .pop-link { color: #a78bfa; text-decoration: none; }
       
       /* Callout Banner */
-      .badge-banner { position: absolute; bottom: 32px; left: 48px; background: rgba(15, 23, 42, 0.9); border: 1px solid #3b82f6; backdrop-filter: blur(8px); border-radius: 12px; padding: 14px 24px; display: flex; align-items: center; gap: 16px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5); }
+      .badge-banner { position: absolute; bottom: 32px; left: 48px; background: rgba(15, 23, 42, 0.95); border: 1px solid #3b82f6; backdrop-filter: blur(8px); border-radius: 12px; padding: 16px 24px; display: flex; align-items: center; gap: 16px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5); z-index: 100; }
       .badge-icon { width: 36px; height: 36px; background: #3b82f6; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
       .badge-text h3 { font-size: 15px; font-weight: 700; color: #ffffff; }
       .badge-text p { font-size: 12px; color: #93c5fd; margin-top: 2px; }
@@ -64,29 +76,11 @@ async function generateScreenshots() {
   <body>
     <div class="browser-bar">
       <div class="dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
-      <div class="url-bar">🔒 https://analytics.company.internal/quarterly-performance</div>
+      <div class="url-bar">🔒 ${TARGET_URL}</div>
     </div>
     
     <div class="page-content">
-      <div class="sidebar">
-        <div class="side-item w70" style="background:#3b82f6; height:18px;"></div>
-        <div class="side-item w50"></div>
-        <div class="side-item w85"></div>
-        <div class="side-item w70"></div>
-        <div class="side-item w50"></div>
-      </div>
-      <div class="main">
-        <div class="hero-card">
-          <div class="title-line"></div>
-          <div class="desc-line"></div>
-          <div class="desc-line" style="width:75%;"></div>
-        </div>
-        <div class="grid3">
-          <div class="col-card"><div class="side-item w50" style="background:#8b5cf6;"></div><div class="side-item w85"></div><div class="side-item w70"></div></div>
-          <div class="col-card"><div class="side-item w50" style="background:#ec4899;"></div><div class="side-item w85"></div><div class="side-item w70"></div></div>
-          <div class="col-card"><div class="side-item w50" style="background:#10b981;"></div><div class="side-item w85"></div><div class="side-item w70"></div></div>
-        </div>
-      </div>
+      <img src="data:image/png;base64,${desktopB64}" class="real-screenshot" />
     </div>
 
     <div class="popup-wrapper">
@@ -131,7 +125,7 @@ async function generateScreenshots() {
       .header h1 { font-size: 28px; font-weight: 800; color: #ffffff; letter-spacing: -0.02em; }
       .header p { font-size: 15px; color: #94a3b8; margin-top: 6px; }
 
-      .compare-container { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; }
+      .compare-container { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; min-height: 0; }
       
       .pane { background: #111827; border-radius: 16px; border: 1px solid #1f2937; padding: 24px; display: flex; flex-direction: column; position: relative; overflow: hidden; }
       .pane.bad { border-color: rgba(239, 68, 68, 0.4); box-shadow: 0 10px 30px -10px rgba(239, 68, 68, 0.15); }
@@ -143,22 +137,11 @@ async function generateScreenshots() {
       .tag.bad { background: #450a0a; color: #f87171; border: 1px solid #991b1b; }
       .tag.good { background: #064e3b; color: #34d399; border: 1px solid #065f46; }
 
-      /* Mockup Bad Viewport (740px mobile collapse) */
-      .mock-page { background: #ffffff; color: #111827; border-radius: 8px; flex: 1; padding: 20px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); display: flex; flex-direction: column; gap: 14px; overflow: hidden; }
+      .screenshot-wrap { flex: 1; border-radius: 8px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); position: relative; display: flex; }
+      .screenshot-wrap img { width: 100%; object-fit: cover; object-position: top center; }
       
-      /* Bad collapsed elements */
-      .collapsed-menu { height: 24px; background: #e5e7eb; border-radius: 4px; display: flex; align-items: center; justify-content: flex-end; padding: 0 8px; }
-      .hamburger { width: 14px; height: 10px; border-top: 2px solid #6b7280; border-bottom: 2px solid #6b7280; position: relative; }
-      .hamburger::after { content: ''; position: absolute; top: 2px; width: 14px; height: 2px; background: #6b7280; }
-      .collapsed-col { background: #fee2e2; border: 1px dashed #ef4444; border-radius: 6px; padding: 12px; font-size: 11px; color: #991b1b; text-align: center; }
-      .blank-image { height: 60px; background: #f3f4f6; border: 1px solid #d1d5db; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #9ca3af; font-style: italic; }
-
-      /* Good Desktop Viewport (1920px) */
-      .desktop-nav { height: 24px; background: #ede9fe; border-radius: 4px; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; font-size: 10px; font-weight: 600; color: #6d28d9; }
-      .desktop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; flex: 1; }
-      .desktop-col { background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 6px; padding: 10px; font-size: 10px; color: #065f46; display: flex; flex-direction: column; gap: 6px; }
-      .rich-img { height: 48px; background: #c7d2fe; border-radius: 4px; }
-      .footer-url { font-size: 9px; color: #6b7280; border-top: 1px solid #e5e7eb; padding-top: 6px; margin-top: auto; font-family: monospace; }
+      .overlay-warning { position: absolute; bottom: 16px; left: 16px; right: 16px; background: rgba(153, 27, 27, 0.9); color: white; padding: 12px; border-radius: 8px; font-size: 12px; font-weight: 600; text-align: center; border: 1px solid #ef4444; }
+      .overlay-success { position: absolute; bottom: 16px; left: 16px; right: 16px; background: rgba(6, 78, 59, 0.9); color: white; padding: 12px; border-radius: 8px; font-size: 12px; font-weight: 600; text-align: center; border: 1px solid #10b981; }
     </style>
   </head>
   <body>
@@ -173,30 +156,20 @@ async function generateScreenshots() {
           <div class="pane-title">❌ Chrome "Save as PDF"</div>
           <span class="tag bad">~740px Mobile Breakpoint</span>
         </div>
-        <div class="mock-page">
-          <div class="collapsed-menu"><div class="hamburger"></div></div>
-          <div class="collapsed-col">⚠️ 3-Column Grid Collapsed into Single Vertical Column</div>
-          <div class="blank-image">❌ Lazy Image Missing (Blank Rectangle)</div>
-          <div class="collapsed-col" style="background:#fef2f2; border-color:#fca5a5;">⚠️ Text Stretches Over 25+ Redundant Pages</div>
+        <div class="screenshot-wrap">
+          <img src="data:image/png;base64,${mobileB64}">
+          <div class="overlay-warning">⚠️ Collapsed into a narrow single column layout</div>
         </div>
       </div>
 
       <div class="pane good">
         <div class="pane-header">
           <div class="pane-title">✅ webpage2pdf</div>
-          <span class="tag good">1920px Desktop Vector Engine</span>
+          <span class="tag good">1920px Desktop Engine</span>
         </div>
-        <div class="mock-page">
-          <div class="desktop-nav">
-            <span>LOGO</span>
-            <span>Dashboard • Analytics • Reports • Settings</span>
-          </div>
-          <div class="desktop-grid">
-            <div class="desktop-col"><div class="rich-img"></div><span>Column 1 (Data)</span></div>
-            <div class="desktop-col"><div class="rich-img" style="background:#fbcfe8;"></div><span>Column 2 (Charts)</span></div>
-            <div class="desktop-col"><div class="rich-img" style="background:#fed7aa;"></div><span>Column 3 (KPIs)</span></div>
-          </div>
-          <div class="footer-url">🔗 https://company.internal/report-2026-q3 (Page 1 of 2) • Real Selectable Vector Text</div>
+        <div class="screenshot-wrap">
+          <img src="data:image/png;base64,${desktopB64}">
+          <div class="overlay-success">✅ Preserves original desktop multi-column structure</div>
         </div>
       </div>
     </div>
@@ -214,7 +187,6 @@ async function generateScreenshots() {
   const optionsPath = path.resolve('entrypoints/options/index.html');
   const optionsHtml = fs.readFileSync(optionsPath, 'utf-8');
   
-  // Wrap options HTML in a container styled for 1280x800
   const html3 = `
   <!DOCTYPE html>
   <html>
@@ -237,7 +209,7 @@ async function generateScreenshots() {
   console.log('Saved screenshot-3-options-1280x800.png');
 
   await browser.close();
-  console.log('All screenshots generated successfully!');
+  console.log('All store screenshots generated successfully with real site data!');
 }
 
 generateScreenshots().catch(console.error);
