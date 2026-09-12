@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "webpage2pdf — डेस्कटॉप PDF"
+  },
+  "extDesc": {
+    "message": "किसी भी वेबपेज को वास्तविक PDF के रूप में सहेजें (टेक्स्ट चयन के साथ) - डेस्कटॉप लेआउट। एक क्लिक में A4/Letter।"
+  },
+  "popupSub": {
+    "message": "इस पेज को टेक्स्ट चयन के साथ डेस्कटॉप-लेआउट PDF के रूप में सहेजें।"
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ PDF के रूप में सहेजें (डेस्कटॉप)"
+  },
+  "hintFullHD": {
+    "message": "✓ 1920px फुल HD व्यूपोर्ट इम्यूलेशन"
+  },
+  "hintVector": {
+    "message": "✓ वास्तविक वेक्टर टेक्स्ट लेयर (खोजने योग्य)"
+  },
+  "optionsLink": {
+    "message": "⚙️ विकल्प (A4 / Letter)"
+  },
+  "downloadsLink": {
+    "message": "📁 डाउनलोड"
+  },
+  "popupHint": {
+    "message": "पीला 'इस ब्राउज़र को डीबग किया जा रहा है' बार सामान्य है — PDF पूरा होने तक इसे छोड़ दें।"
+  },
+  "optTitle": {
+    "message": "webpage2pdf — सेटिंग्स"
+  },
+  "optPaper": {
+    "message": "कागज का आकार"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (USA)"
+  },
+  "optSaveMode": {
+    "message": "मोड सहेजें"
+  },
+  "optAsk": {
+    "message": "हर बार पूछें कि कहाँ सहेजना है"
+  },
+  "optDownloads": {
+    "message": "डाउनलोड में स्वतः सहेजें (सबफ़ोल्डर)"
+  },
+  "optCustom": {
+    "message": "कस्टम फ़ोल्डर (मूल होस्ट आवश्यक)"
+  },
+  "optFolderInput": {
+    "message": "सबफ़ोल्डर नाम (उदा. PDFs)"
+  },
+  "optCustomInput": {
+    "message": "पूर्ण पथ (उदा. D:\\MyPdfs)"
+  },
+  "statusGenerating": {
+    "message": "उत्पन्न हो रहा है…"
+  },
+  "statusSaved": {
+    "message": "सहेजा गया ✓"
+  },
+  "statusError": {
+    "message": "त्रुटि — पुनः प्रयास करें"
+  },
+  "logAttaching": {
+    "message": "डिबगर संलग्न कर रहा है, डेस्कटॉप 1920px लागू कर रहा है, PDF रेंडर कर रहा है…"
+  },
+  "logActiveTab": {
+    "message": "कोई सक्रिय टैब नहीं"
+  },
+  "logSavedNative": {
+    "message": "⚠️ नेटिव होस्ट स्थापित नहीं है — डाउनलोड में सहेजा गया।"
+  },
+  "hintPaper": {
+    "message": "कागज: $1"
+  },
+  "hintAsk": {
+    "message": "पूछें कि कहाँ सहेजना है"
+  },
+  "hintAuto": {
+    "message": "स्वतः: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "कस्टम: $1"
+  }
+}

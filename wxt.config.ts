@@ -2,8 +2,9 @@ import { defineConfig } from 'wxt';
 
 export default defineConfig({
   manifest: {
-    name: 'webpage2pdf — desktop PDF with text layer',
-    description: 'Save any webpage as a real PDF with selectable text — desktop layout, not mobile. One click → A4/Letter.',
+    name: '__MSG_extName__',
+    description: '__MSG_extDesc__',
+    default_locale: 'en',
     version: '0.4.1',
     // Minimum-permission: nativeMessaging only if user chose custom folder
     permissions: ['debugger', 'activeTab', 'downloads', 'scripting', 'storage'],

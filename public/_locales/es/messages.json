@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "webpage2pdf — PDF de Escritorio"
+  },
+  "extDesc": {
+    "message": "Guarda cualquier página web como un PDF real con texto seleccionable — diseño de escritorio, no móvil. Un clic A4/Letter."
+  },
+  "popupSub": {
+    "message": "Guarde esta página como un PDF con diseño de escritorio y texto seleccionable."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Guardar como PDF (escritorio)"
+  },
+  "hintFullHD": {
+    "message": "✓ Emulación de vista 1920px Full HD"
+  },
+  "hintVector": {
+    "message": "✓ Capa de texto vectorial real (Buscable)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Opciones (A4 / Letter)"
+  },
+  "downloadsLink": {
+    "message": "📁 Descargas"
+  },
+  "popupHint": {
+    "message": "La barra amarilla de “depurando este navegador” es normal — no la cierre hasta que el PDF termine."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Ajustes"
+  },
+  "optPaper": {
+    "message": "Tamaño de papel"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (EE.UU.)"
+  },
+  "optSaveMode": {
+    "message": "Modo de guardado"
+  },
+  "optAsk": {
+    "message": "Preguntar dónde guardar (siempre)"
+  },
+  "optDownloads": {
+    "message": "Guardado automático en Descargas (Subcarpeta)"
+  },
+  "optCustom": {
+    "message": "Carpeta personalizada (requiere Native Host)"
+  },
+  "optFolderInput": {
+    "message": "Nombre de la subcarpeta (ej. PDFs)"
+  },
+  "optCustomInput": {
+    "message": "Ruta absoluta (ej. D:\\MyPdfs)"
+  },
+  "statusGenerating": {
+    "message": "Generando…"
+  },
+  "statusSaved": {
+    "message": "¡Guardado! ✓"
+  },
+  "statusError": {
+    "message": "Error — reintentar"
+  },
+  "logAttaching": {
+    "message": "Adjuntando depurador, forzando escritorio de 1920px, renderizando PDF…"
+  },
+  "logActiveTab": {
+    "message": "Sin pestaña activa"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host no instalado — guardado en Descargas."
+  },
+  "hintPaper": {
+    "message": "Papel: $1"
+  },
+  "hintAsk": {
+    "message": "Preguntar dónde guardar"
+  },
+  "hintAuto": {
+    "message": "Auto: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Pers.: $1"
+  }
+}

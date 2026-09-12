@@ -30,51 +30,47 @@
   </style>
 </head>
 <body>
-  <h1>⚙️ webpage2pdf — Настройки</h1>
-  <p class="sub">Бумага и куда сохранять PDF. Синхронизируется через Chrome Sync если включён.</p>
+  <h1 data-i18n="optTitle">⚙️ webpage2pdf — Настройки</h1>
+  <p class="sub" data-i18n="optSub">Бумага и куда сохранять PDF. Синхронизируется через Chrome Sync если включён.</p>
 
   <div class="card">
-    <h2>Формат бумаги</h2>
-    <label><input type="radio" name="paper" value="a4" /> <span><b>A4</b> — 210×297 мм (8.27×11.69″)</span></label>
-    <label><input type="radio" name="paper" value="letter" /> <span><b>Letter (USA)</b> — 8.5×11″ (216×279 мм)</span></label>
-    <p class="hint">Масштаб <code>(paperWidth-0.8)*96/1920</code> чтобы 1920px влез в печатную область. Применяется сразу.</p>
+    <h2 data-i18n="optPaper">Формат бумаги</h2>
+    <label><input type="radio" name="paper" value="a4" /> <span><b data-i18n="optA4">A4 (ISO)</b> — 210×297 mm</span></label>
+    <label><input type="radio" name="paper" value="letter" /> <span><b data-i18n="optLetter">Letter (USA)</b> — 8.5×11″</span></label>
+    <p class="hint">Scale: (paperWidth-0.8)*96/1920 to fit exactly.</p>
   </div>
 
   <div class="card">
-    <h2>Куда сохранять</h2>
-    <label><input type="radio" name="saveMode" value="ask" /> <span><b>Спрашивать каждый раз</b> — диалог «Сохранить как…» (<code>saveAs:true</code>)</span></label>
-    <label><input type="radio" name="saveMode" value="downloads" /> <span><b>Авто в Загрузки</b> — без спроса в <code>Downloads/</code></span></label>
+    <h2 data-i18n="optSaveMode">Куда сохранять</h2>
+    <label><input type="radio" name="saveMode" value="ask" /> <span data-i18n="optAsk"><b>Спрашивать каждый раз</b></span></label>
+    <label><input type="radio" name="saveMode" value="downloads" /> <span data-i18n="optDownloads"><b>Авто в Загрузки</b></span></label>
     <div class="field" id="downloadsField">
       <label>
-        <span>Подпапка в Загрузках (необязательно)</span>
-        <input id="customDir" type="text" placeholder="например: webpage2pdf  или  Work/PDFs" />
+        <span data-i18n="optFolderInput">Подпапка в Загрузках (необязательно)</span>
+        <input id="customDir" type="text" placeholder="webpage2pdf" />
       </label>
-      <p class="hint">Например <code>webpage2pdf</code> → <code>Downloads/webpage2pdf/файл.pdf</code>. Оставь пустым — в корень Загрузок.</p>
     </div>
 
-    <label><input type="radio" name="saveMode" value="custom" /> <span><b>Кастомный путь</b> — любая папка на диске (требует Native Host)</span></label>
+    <label><input type="radio" name="saveMode" value="custom" /> <span data-i18n="optCustom"><b>Кастомный путь</b> — любая папка на диске (требует Native Host)</span></label>
     <div class="field" id="customField">
       <label>
-        <span>Абсолютный путь к папке</span>
-        <input id="customPath" type="text" placeholder="например: D:\MyPdfs  или  \\server\share\pdfs" />
+        <span data-i18n="optCustomInput">Абсолютный путь к папке</span>
+        <input id="customPath" type="text" placeholder="D:\MyPdfs" />
       </label>
-      <p class="hint">Chrome не умеет писать за пределы Загрузок напрямую. Для этого ставится маленький хост <code>native-host/</code> (.exe + реестр). Без хоста — упадёт в Загрузки с предупреждением. Инструкция: <code>native-host/README.md</code> и <code>install_host.bat</code>.</p>
-      <div id="hostWarn" class="warn">⚠️ Native Host не установлен — пока будет сохранять в Загрузки. Запусти <code>native-host/install_host.bat</code> от имени пользователя и перезапусти Chrome.</div>
+      <div id="hostWarn" class="warn">⚠️ Native Host missing / save fallback to Downloads.</div>
     </div>
   </div>
 
   <div class="card">
-    <h2>Имя файла</h2>
-    <p class="hint">Теперь: <code>&lt;url-base&gt;-&lt;дата&gt;.pdf</code> — например <code>biznespark.by-2026-09-01.pdf</code>, <code>krokit.org-courses-product-2026-09-01.pdf</code>. Запрещённые символы <code>&lt;&gt;:"/\|?*</code> заменяются на <code>_</code>.</p>
+    <h2 data-i18n="optFilename">Имя файла</h2>
+    <p class="hint">domain-yyyy-mm-dd.pdf</p>
   </div>
 
   <div class="row">
-    <button id="save">Сохранить</button>
-    <button id="reset" class="secondary">Сброс</button>
-    <span id="status">✓ Сохранено</span>
+    <button id="save" data-i18n="btnSave">Сохранить</button>
+    <button id="reset" class="secondary" data-i18n="btnReset">Сброс</button>
+    <span id="status" data-i18n="optSaved">✓ Сохранено</span>
   </div>
-
-  <p class="hint" style="margin-top:16px">Подвал: URL источника на каждой странице (<code>displayHeaderFooter:true</code>, <code>word-break:break-all</code>, <code>marginBottom 0.6in</code>). Пагинация отключена.</p>
 
   <script type="module" src="./main.ts"></script>
 </body>

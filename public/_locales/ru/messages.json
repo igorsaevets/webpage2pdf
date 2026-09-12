@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "webpage2pdf — Десктопный PDF"
+  },
+  "extDesc": {
+    "message": "Сохраняйте веб-страницы в PDF с текстовым слоем — десктопная верстка, не мобильная. В один клик A4/Letter."
+  },
+  "popupSub": {
+    "message": "Сохранить эту страницу как десктопный PDF с текстом."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Сохранить в PDF (desktop)"
+  },
+  "hintFullHD": {
+    "message": "✓ Эмуляция 1920px (Desktop Full HD)"
+  },
+  "hintVector": {
+    "message": "✓ Векторный текст (поиск, копирование)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Настройки (A4 / Letter)"
+  },
+  "downloadsLink": {
+    "message": "📁 Загрузки"
+  },
+  "popupHint": {
+    "message": "Желтая плашка «идет отладка» — это нормально. Не закрывайте её, пока генерируется PDF."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Настройки"
+  },
+  "optPaper": {
+    "message": "Размер бумаги"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (США)"
+  },
+  "optSaveMode": {
+    "message": "Режим сохранения"
+  },
+  "optAsk": {
+    "message": "Спрашивать куда сохранять"
+  },
+  "optDownloads": {
+    "message": "Авто-сохранение в Загрузки (Подпапка)"
+  },
+  "optCustom": {
+    "message": "Кастомный путь (нужен Native Host)"
+  },
+  "optFolderInput": {
+    "message": "Подпапка (например, PDFs)"
+  },
+  "optCustomInput": {
+    "message": "Абсолютный путь (например, D:\\MyPdfs)"
+  },
+  "statusGenerating": {
+    "message": "Генерация…"
+  },
+  "statusSaved": {
+    "message": "Сохранено ✓"
+  },
+  "statusError": {
+    "message": "Ошибка — повторить"
+  },
+  "logAttaching": {
+    "message": "Подключение дебаггера, эмуляция 1920px, рендер PDF…"
+  },
+  "logActiveTab": {
+    "message": "Нет активной вкладки"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host не установлен — сохранено в Загрузки."
+  },
+  "hintPaper": {
+    "message": "Бумага: $1"
+  },
+  "hintAsk": {
+    "message": "Спрашивать куда сохранять"
+  },
+  "hintAuto": {
+    "message": "Авто: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Кастом: $1"
+  }
+}

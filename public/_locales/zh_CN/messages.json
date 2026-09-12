@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "webpage2pdf — 桌面版 PDF"
+  },
+  "extDesc": {
+    "message": "将网页保存为带可选文本的真实 PDF —— 桌面布局而非移动端。一键 A4/Letter。"
+  },
+  "popupSub": {
+    "message": "将此页面保存为带可选文本的桌面布局 PDF。"
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ 存为 PDF (桌面版)"
+  },
+  "hintFullHD": {
+    "message": "✓ 1920px 全高清视口模拟"
+  },
+  "hintVector": {
+    "message": "✓ 真实的矢量文本层 (可搜索)"
+  },
+  "optionsLink": {
+    "message": "⚙️ 选项 (A4 / Letter)"
+  },
+  "downloadsLink": {
+    "message": "📁 下载内容"
+  },
+  "popupHint": {
+    "message": "黄色的“正在调试此浏览器”提示条是正常的——请在 PDF 完成前保留它。"
+  },
+  "optTitle": {
+    "message": "webpage2pdf — 设置"
+  },
+  "optPaper": {
+    "message": "纸张大小"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (USA)"
+  },
+  "optSaveMode": {
+    "message": "保存模式"
+  },
+  "optAsk": {
+    "message": "每次询问保存位置"
+  },
+  "optDownloads": {
+    "message": "自动保存到下载 (子文件夹)"
+  },
+  "optCustom": {
+    "message": "自定义文件夹 (需要原生主机)"
+  },
+  "optFolderInput": {
+    "message": "子文件夹名称 (例: PDFs)"
+  },
+  "optCustomInput": {
+    "message": "绝对路径 (例: D:\\MyPdfs)"
+  },
+  "statusGenerating": {
+    "message": "生成中…"
+  },
+  "statusSaved": {
+    "message": "已保存 ✓"
+  },
+  "statusError": {
+    "message": "错误 — 重试"
+  },
+  "logAttaching": {
+    "message": "连接调试器，强制 1920px 桌面，渲染 PDF…"
+  },
+  "logActiveTab": {
+    "message": "无活动标签页"
+  },
+  "logSavedNative": {
+    "message": "⚠️ 未安装 Native Host — 已保存到下载文件夹。"
+  },
+  "hintPaper": {
+    "message": "纸张: $1"
+  },
+  "hintAsk": {
+    "message": "询问保存位置"
+  },
+  "hintAuto": {
+    "message": "自动: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "自定义: $1"
+  }
+}

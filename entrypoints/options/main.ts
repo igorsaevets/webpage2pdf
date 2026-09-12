@@ -11,6 +11,15 @@ const hostWarn = document.getElementById('hostWarn') as HTMLDivElement;
 const downloadsField = document.getElementById('downloadsField') as HTMLDivElement;
 const customField = document.getElementById('customField') as HTMLDivElement;
 
+// Localize HTML
+document.querySelectorAll('[data-i18n]').forEach(el => {
+  const key = el.getAttribute('data-i18n');
+  if (key) {
+    const msg = chrome.i18n.getMessage(key);
+    if (msg) el.innerHTML = msg; 
+  }
+});
+
 function updateVisibility() {
   const mode = (Array.from(saveModeInputs).find(i=>i.checked)?.value) ?? 'ask';
   downloadsField.style.opacity = mode === 'downloads' ? '1' : '0.45';
@@ -51,7 +60,7 @@ async function save() {
   // migrate: ensure old key removed
   await chrome.storage.sync.set(c);
   statusEl.classList.add('show');
-  statusEl.textContent = '✓ Сохранено';
+  statusEl.textContent = chrome.i18n.getMessage('optSaved') || '✓ Сохранено';
   setTimeout(()=> statusEl.classList.remove('show'), 1800);
 }
 
@@ -60,7 +69,7 @@ resetBtn.addEventListener('click', async () => {
   await chrome.storage.sync.set({ ...DEFAULTS });
   await load();
   statusEl.classList.add('show');
-  statusEl.textContent = '↺ Сброшено';
+  statusEl.textContent = '↺ ' + (chrome.i18n.getMessage('btnReset') || 'Сброшено');
   setTimeout(()=> statusEl.classList.remove('show'), 1800);
 });
 
