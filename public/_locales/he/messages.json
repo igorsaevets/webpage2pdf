@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "⚡ שמור כ-PDF (שולחן עבודה)"
   },
+  "commandSavePdf": {
+    "message": "שמור כ-PDF (שולחן עבודה)"
+  },
   "toastGenerating": {
     "message": "Generating desktop PDF (1920px)…"
   },

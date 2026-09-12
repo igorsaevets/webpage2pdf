@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "⚡ Saglabāt kā PDF (dators)"
   },
+  "commandSavePdf": {
+    "message": "Saglabāt kā PDF (dators)"
+  },
   "toastGenerating": {
     "message": "Generating desktop PDF (1920px)…"
   },

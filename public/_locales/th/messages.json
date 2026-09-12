@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "บันทึกหน้านี้เป็น PDF (เดสก์ท็อป)"
   },
+  "commandSavePdf": {
+    "message": "บันทึกหน้าปัจจุบันเป็น PDF เดสก์ท็อป"
+  },
   "toastGenerating": {
     "message": "กำลังสร้าง PDF เดสก์ท็อป (1920px)…"
   },

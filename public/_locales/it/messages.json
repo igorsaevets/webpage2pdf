@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "Salva pagina come PDF (desktop)"
   },
+  "commandSavePdf": {
+    "message": "Salva pagina corrente come PDF desktop"
+  },
   "toastGenerating": {
     "message": "Generazione PDF desktop (1920px)…"
   },

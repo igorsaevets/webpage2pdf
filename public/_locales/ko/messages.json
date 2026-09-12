@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "페이지를 데스크톱 PDF로 저장"
   },
+  "commandSavePdf": {
+    "message": "현재 페이지를 데스크톱 PDF로 저장"
+  },
   "toastGenerating": {
     "message": "데스크톱 PDF 생성 중 (1920px)…"
   },

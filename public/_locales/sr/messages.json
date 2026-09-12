@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "⚡ Сачувај као PDF (десктоп)"
   },
+  "commandSavePdf": {
+    "message": "Сачувај као PDF (десктоп)"
+  },
   "toastGenerating": {
     "message": "Generating desktop PDF (1920px)…"
   },

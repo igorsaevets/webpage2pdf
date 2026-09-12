@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "⚡ Shrani kot PDF (namizje)"
   },
+  "commandSavePdf": {
+    "message": "Shrani kot PDF (namizje)"
+  },
   "toastGenerating": {
     "message": "Generating desktop PDF (1920px)…"
   },

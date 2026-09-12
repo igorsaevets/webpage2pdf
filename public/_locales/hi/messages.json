@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "पेज को PDF के रूप में सहेजें (डेस्कटॉप)"
   },
+  "commandSavePdf": {
+    "message": "वर्तमान पेज को डेस्कटॉप PDF के रूप में सहेजें"
+  },
   "toastGenerating": {
     "message": "डेस्कटॉप PDF बनाया जा रहा है (1920px)…"
   },

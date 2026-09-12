@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "⚡ PDF म्हणून जतन करा (डेस्कटॉप)"
   },
+  "commandSavePdf": {
+    "message": "PDF म्हणून जतन करा (डेस्कटॉप)"
+  },
   "toastGenerating": {
     "message": "Generating desktop PDF (1920px)…"
   },

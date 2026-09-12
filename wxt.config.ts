@@ -29,5 +29,14 @@ export default defineConfig({
       page: 'options.html',
       open_in_tab: false,
     },
+    commands: {
+      'save-page-pdf': {
+        suggested_key: {
+          default: 'Alt+Shift+P',
+          mac: 'Alt+Shift+P',
+        },
+        description: '__MSG_commandSavePdf__',
+      },
+    },
   },
 });

@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "Lưu trang thành PDF (máy tính)"
   },
+  "commandSavePdf": {
+    "message": "Lưu trang hiện tại thành PDF máy tính"
+  },
   "toastGenerating": {
     "message": "Đang tạo PDF máy tính (1920px)…"
   },

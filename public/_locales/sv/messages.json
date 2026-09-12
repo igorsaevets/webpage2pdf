@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "⚡ Spara som PDF (desktop)"
   },
+  "commandSavePdf": {
+    "message": "Spara som PDF (desktop)"
+  },
   "toastGenerating": {
     "message": "Generating desktop PDF (1920px)…"
   },

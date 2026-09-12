@@ -1219,6 +1219,7 @@ SECONDARY_LANGUAGES = {
 # Fill remaining languages using the base template + localized core strings
 en_base = LOCALES['en']
 en_base['contextMenuSave'] = 'Save page as PDF (desktop)'
+en_base['commandSavePdf'] = 'Save current page as Desktop PDF'
 en_base['toastGenerating'] = 'Generating desktop PDF (1920px)…'
 en_base['toastSaved'] = 'PDF saved successfully ✓'
 en_base['toastError'] = 'Failed to save PDF: $1'
@@ -1229,6 +1230,7 @@ for code, (name, desc, act_title, opt_link, dl_link) in SECONDARY_LANGUAGES.item
     loc['extDesc'] = desc
     loc['actionTitle'] = act_title
     loc['contextMenuSave'] = f"⚡ {act_title}"
+    loc['commandSavePdf'] = act_title
     loc['btnSaveDesktop'] = f"⚡ {act_title}"
     loc['optionsLink'] = f"⚙️ {opt_link}"
     loc['downloadsLink'] = f"📁 {dl_link}"
@@ -1242,138 +1244,161 @@ for code, (name, desc, act_title, opt_link, dl_link) in SECONDARY_LANGUAGES.item
 TOP_CUSTOM = {
     'ru': {
         'contextMenuSave': 'Сохранить страницу в PDF (desktop)',
+        'commandSavePdf': 'Сохранить текущую страницу в десктопный PDF',
         'toastGenerating': 'Генерация десктопного PDF (1920px)…',
         'toastSaved': 'PDF успешно сохранен ✓',
         'toastError': 'Ошибка сохранения PDF: $1'
     },
     'zh_CN': {
         'contextMenuSave': '保存网页为桌面版 PDF',
+        'commandSavePdf': '将当前网页保存为桌面版 PDF',
         'toastGenerating': '正在生成桌面版 PDF (1920px)…',
         'toastSaved': 'PDF 保存成功 ✓',
         'toastError': 'PDF 保存失败: $1'
     },
     'zh_TW': {
         'contextMenuSave': '儲存網頁為桌面版 PDF',
+        'commandSavePdf': '將目前網頁儲存為桌面版 PDF',
         'toastGenerating': '正在產生桌面版 PDF (1920px)…',
         'toastSaved': 'PDF 儲存成功 ✓',
         'toastError': 'PDF 儲存失敗: $1'
     },
     'es': {
         'contextMenuSave': 'Guardar página como PDF (escritorio)',
+        'commandSavePdf': 'Guardar página actual como PDF de escritorio',
         'toastGenerating': 'Generando PDF de escritorio (1920px)…',
         'toastSaved': 'PDF guardado con éxito ✓',
         'toastError': 'Error al guardar PDF: $1'
     },
     'es_419': {
         'contextMenuSave': 'Guardar página como PDF (escritorio)',
+        'commandSavePdf': 'Guardar página actual como PDF de escritorio',
         'toastGenerating': 'Generando PDF de escritorio (1920px)…',
         'toastSaved': 'PDF guardado con éxito ✓',
         'toastError': 'Error al guardar PDF: $1'
     },
     'de': {
         'contextMenuSave': 'Seite als PDF speichern (Desktop)',
+        'commandSavePdf': 'Aktuelle Seite als Desktop-PDF speichern',
         'toastGenerating': 'Erstelle Desktop-PDF (1920px)…',
         'toastSaved': 'PDF erfolgreich gespeichert ✓',
         'toastError': 'Fehler beim Speichern: $1'
     },
     'fr': {
         'contextMenuSave': 'Enregistrer la page en PDF (bureau)',
+        'commandSavePdf': 'Enregistrer la page actuelle en PDF bureau',
         'toastGenerating': 'Génération du PDF bureau (1920px)…',
         'toastSaved': 'PDF enregistré avec succès ✓',
         'toastError': 'Erreur lors de l’enregistrement: $1'
     },
     'ja': {
         'contextMenuSave': 'ページをデスクトップ版PDFとして保存',
+        'commandSavePdf': '現在のページをデスクトップ版PDFとして保存',
         'toastGenerating': 'デスクトップ版PDFを生成中 (1920px)…',
         'toastSaved': 'PDFの保存が完了しました ✓',
         'toastError': 'PDF保存エラー: $1'
     },
     'pt_BR': {
         'contextMenuSave': 'Salvar página como PDF (desktop)',
+        'commandSavePdf': 'Salvar página atual como PDF de desktop',
         'toastGenerating': 'Gerando PDF de desktop (1920px)…',
         'toastSaved': 'PDF salvo com sucesso ✓',
         'toastError': 'Erro ao salvar PDF: $1'
     },
     'pt_PT': {
         'contextMenuSave': 'Guardar página como PDF (desktop)',
+        'commandSavePdf': 'Guardar página atual como PDF de desktop',
         'toastGenerating': 'A gerar PDF de desktop (1920px)…',
         'toastSaved': 'PDF guardado com sucesso ✓',
         'toastError': 'Erro ao guardar PDF: $1'
     },
     'it': {
         'contextMenuSave': 'Salva pagina come PDF (desktop)',
+        'commandSavePdf': 'Salva pagina corrente come PDF desktop',
         'toastGenerating': 'Generazione PDF desktop (1920px)…',
         'toastSaved': 'PDF salvato con successo ✓',
         'toastError': 'Errore durante il salvataggio: $1'
     },
     'ko': {
         'contextMenuSave': '페이지를 데스크톱 PDF로 저장',
+        'commandSavePdf': '현재 페이지를 데스크톱 PDF로 저장',
         'toastGenerating': '데스크톱 PDF 생성 중 (1920px)…',
         'toastSaved': 'PDF 저장 완료 ✓',
         'toastError': 'PDF 저장 실패: $1'
     },
     'tr': {
         'contextMenuSave': 'Sayfayı PDF olarak kaydet (masaüstü)',
+        'commandSavePdf': 'Geçerli sayfayı masaüstü PDF olarak kaydet',
         'toastGenerating': 'Masaüstü PDF oluşturuluyor (1920px)…',
         'toastSaved': 'PDF başarıyla kaydedildi ✓',
         'toastError': 'PDF kaydedilemedi: $1'
     },
     'pl': {
         'contextMenuSave': 'Zapisz stronę jako PDF (komputer)',
+        'commandSavePdf': 'Zapisz bieżącą stronę jako pulpitowy PDF',
         'toastGenerating': 'Generowanie pulpitowego PDF (1920px)…',
         'toastSaved': 'PDF został pomyślnie zapisany ✓',
         'toastError': 'Błąd zapisu PDF: $1'
     },
     'nl': {
         'contextMenuSave': 'Pagina opslaan als PDF (desktop)',
+        'commandSavePdf': 'Huidige pagina opslaan als desktop PDF',
         'toastGenerating': 'Desktop PDF genereren (1920px)…',
         'toastSaved': 'PDF succesvol opgeslagen ✓',
         'toastError': 'Fout bij opslaan PDF: $1'
     },
     'ar': {
         'contextMenuSave': 'حفظ الصفحة كملف PDF (سطح المكتب)',
+        'commandSavePdf': 'حفظ الصفحة الحالية كملف PDF لسطح المكتب',
         'toastGenerating': 'جاري إنشاء ملف PDF لسطح المكتب (1920 بكسل)…',
         'toastSaved': 'تم حفظ ملف PDF بنجاح ✓',
         'toastError': 'فشل حفظ ملف PDF: $1'
     },
     'hi': {
         'contextMenuSave': 'पेज को PDF के रूप में सहेजें (डेस्कटॉप)',
+        'commandSavePdf': 'वर्तमान पेज को डेस्कटॉप PDF के रूप में सहेजें',
         'toastGenerating': 'डेस्कटॉप PDF बनाया जा रहा है (1920px)…',
         'toastSaved': 'PDF सफलतापूर्वक सहेजा गया ✓',
         'toastError': 'PDF सहेजने में विफल: $1'
     },
     'id': {
         'contextMenuSave': 'Simpan halaman sebagai PDF (desktop)',
+        'commandSavePdf': 'Simpan halaman saat ini sebagai PDF desktop',
         'toastGenerating': 'Membuat PDF desktop (1920px)…',
         'toastSaved': 'PDF berhasil disimpan ✓',
         'toastError': 'Gagal menyimpan PDF: $1'
     },
     'vi': {
         'contextMenuSave': 'Lưu trang thành PDF (máy tính)',
+        'commandSavePdf': 'Lưu trang hiện tại thành PDF máy tính',
         'toastGenerating': 'Đang tạo PDF máy tính (1920px)…',
         'toastSaved': 'Đã lưu PDF thành công ✓',
         'toastError': 'Lưu PDF thất bại: $1'
     },
     'uk': {
         'contextMenuSave': 'Зберегти сторінку в PDF (десктоп)',
+        'commandSavePdf': 'Зберегти поточну сторінку в десктопний PDF',
         'toastGenerating': 'Генерація десктопного PDF (1920px)…',
         'toastSaved': 'PDF успішно збережено ✓',
         'toastError': 'Помилка збереження PDF: $1'
     },
     'th': {
         'contextMenuSave': 'บันทึกหน้านี้เป็น PDF (เดสก์ท็อป)',
+        'commandSavePdf': 'บันทึกหน้าปัจจุบันเป็น PDF เดสก์ท็อป',
         'toastGenerating': 'กำลังสร้าง PDF เดสก์ท็อป (1920px)…',
         'toastSaved': 'บันทึก PDF เรียบร้อยแล้ว ✓',
         'toastError': 'ไม่สามารถบันทึก PDF: $1'
     },
     'bn': {
         'contextMenuSave': 'পৃষ্ঠাটি PDF হিসেবে সংরক্ষণ করুন (ডেস্কটপ)',
+        'commandSavePdf': 'বর্তমান পৃষ্ঠাটি ডেস্কটপ PDF হিসেবে সংরক্ষণ করুন',
         'toastGenerating': 'ডেস্কটপ PDF তৈরি হচ্ছে (1920px)…',
         'toastSaved': 'PDF সফলভাবে সংরক্ষিত হয়েছে ✓',
         'toastError': 'PDF সংরক্ষণ ব্যর্থ হয়েছে: $1'
     },
     'fa': {
         'contextMenuSave': 'ذخیره صفحه به عنوان PDF (دسکتاپ)',
+        'commandSavePdf': 'ذخیره صفحه فعلی به عنوان PDF دسکتاپ',
         'toastGenerating': 'در حال ایجاد PDF دسکتاپ (۱۹۲۰ پیکسل)…',
         'toastSaved': 'فایل PDF با موفقیت ذخیره شد ✓',
         'toastError': 'خطا در ذخیره PDF: $1'
@@ -1390,6 +1415,8 @@ for lang, vals in TOP_CUSTOM.items():
 for code, msgs in LOCALES.items():
     if 'contextMenuSave' not in msgs:
         msgs['contextMenuSave'] = msgs.get('actionTitle', 'Save page as PDF (desktop)')
+    if 'commandSavePdf' not in msgs:
+        msgs['commandSavePdf'] = 'Save current page as Desktop PDF'
     if 'toastGenerating' not in msgs:
         msgs['toastGenerating'] = 'Generating desktop PDF (1920px)…'
     if 'toastSaved' not in msgs:

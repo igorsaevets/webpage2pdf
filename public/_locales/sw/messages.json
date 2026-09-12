@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "⚡ Hifadhi kama PDF (kompyuta)"
   },
+  "commandSavePdf": {
+    "message": "Hifadhi kama PDF (kompyuta)"
+  },
   "toastGenerating": {
     "message": "Generating desktop PDF (1920px)…"
   },

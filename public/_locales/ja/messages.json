@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "ページをデスクトップ版PDFとして保存"
   },
+  "commandSavePdf": {
+    "message": "現在のページをデスクトップ版PDFとして保存"
+  },
   "toastGenerating": {
     "message": "デスクトップ版PDFを生成中 (1920px)…"
   },

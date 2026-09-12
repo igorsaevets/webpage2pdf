@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "Sayfayı PDF olarak kaydet (masaüstü)"
   },
+  "commandSavePdf": {
+    "message": "Geçerli sayfayı masaüstü PDF olarak kaydet"
+  },
   "toastGenerating": {
     "message": "Masaüstü PDF oluşturuluyor (1920px)…"
   },

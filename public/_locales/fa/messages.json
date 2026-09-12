@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "ذخیره صفحه به عنوان PDF (دسکتاپ)"
   },
+  "commandSavePdf": {
+    "message": "ذخیره صفحه فعلی به عنوان PDF دسکتاپ"
+  },
   "toastGenerating": {
     "message": "در حال ایجاد PDF دسکتاپ (۱۹۲۰ پیکسل)…"
   },

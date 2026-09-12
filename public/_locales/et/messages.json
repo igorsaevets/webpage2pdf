@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "⚡ Salvesta PDF-ina (töölaud)"
   },
+  "commandSavePdf": {
+    "message": "Salvesta PDF-ina (töölaud)"
+  },
   "toastGenerating": {
     "message": "Generating desktop PDF (1920px)…"
   },

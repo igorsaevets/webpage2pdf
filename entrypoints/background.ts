@@ -138,6 +138,15 @@ export default defineBackground(() => {
     }
   });
 
+  chrome.commands.onCommand.addListener(async (command) => {
+    if (command === 'save-page-pdf') {
+      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+      if (tab?.id) {
+        await handleContextMenuSave(tab.id, tab.url ?? '');
+      }
+    }
+  });
+
   chrome.action.onClicked.addListener(async (tab) => {
     if (!tab.id) return;
     try { await handleContextMenuSave(tab.id, tab.url ?? ''); } catch (e) { console.error('[webpage2pdf] action click failed', e); }

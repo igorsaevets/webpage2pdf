@@ -128,6 +128,9 @@
   "contextMenuSave": {
     "message": "儲存網頁為桌面版 PDF"
   },
+  "commandSavePdf": {
+    "message": "將目前網頁儲存為桌面版 PDF"
+  },
   "toastGenerating": {
     "message": "正在產生桌面版 PDF (1920px)…"
   },
