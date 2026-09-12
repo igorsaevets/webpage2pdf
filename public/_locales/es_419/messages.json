@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — PDF de Escritorio"
+  },
+  "extDesc": {
+    "message": "Guarda cualquier página web como un PDF real con texto seleccionable — diseño de escritorio, no móvil. Un clic A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Guardar como PDF (escritorio)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">escritorio</span>"
+  },
+  "popupSub": {
+    "message": "Guarda esta página como un PDF con diseño de escritorio y texto seleccionable."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Guardar como PDF (escritorio)"
+  },
+  "hintFullHD": {
+    "message": "✓ Emulación de vista 1920px Full HD"
+  },
+  "hintVector": {
+    "message": "✓ Capa de texto vectorial real (Buscable)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Configuración"
+  },
+  "downloadsLink": {
+    "message": "📁 Descargas"
+  },
+  "popupHint": {
+    "message": "La barra amarilla de “depurando este navegador” es normal — déjela hasta que el PDF termine."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Configuración"
+  },
+  "optSub": {
+    "message": "Papel y destino de guardado. Sincronizado mediante Chrome Sync."
+  },
+  "optPaper": {
+    "message": "Tamaño de papel"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (EE. UU.)"
+  },
+  "optScaleHint": {
+    "message": "Escala: ajusta 1920px exactamente al área de impresión."
+  },
+  "optSaveMode": {
+    "message": "Modo de guardado"
+  },
+  "optAsk": {
+    "message": "Preguntar dónde guardar (siempre)"
+  },
+  "optDownloads": {
+    "message": "Guardar en Descargas (Subcarpeta)"
+  },
+  "optFolderInput": {
+    "message": "Subcarpeta en Descargas (opcional)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf o Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Carpeta personalizada (requiere Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Ruta absoluta de carpeta"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host no instalado — guardando en Descargas."
+  },
+  "optFilename": {
+    "message": "Nombre de archivo"
+  },
+  "optFilenameHint": {
+    "message": "<dominio>-<fecha>.pdf — caracteres especiales limpiados."
+  },
+  "btnSave": {
+    "message": "Guardar"
+  },
+  "btnReset": {
+    "message": "Restablecer"
+  },
+  "optSaved": {
+    "message": "✓ Guardado"
+  },
+  "optReset": {
+    "message": "↺ Restablecido"
+  },
+  "statusGenerating": {
+    "message": "Generando…"
+  },
+  "statusSaved": {
+    "message": "¡Guardado! ✓"
+  },
+  "statusError": {
+    "message": "Error — reintentar"
+  },
+  "logAttaching": {
+    "message": "Adjuntando depurador, forzando escritorio de 1920px, renderizando PDF…"
+  },
+  "logActiveTab": {
+    "message": "Sin pestaña activa"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host no instalado — guardado en Descargas."
+  },
+  "hintPaper": {
+    "message": "Papel: $1"
+  },
+  "hintAsk": {
+    "message": "Preguntar dónde guardar"
+  },
+  "hintAuto": {
+    "message": "Auto: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Pers.: $1"
+  }
+}

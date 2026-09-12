@@ -5,8 +5,14 @@
   "extDesc": {
     "message": "किसी भी वेबपेज को वास्तविक PDF के रूप में सहेजें (टेक्स्ट चयन के साथ) - डेस्कटॉप लेआउट। एक क्लिक में A4/Letter।"
   },
+  "actionTitle": {
+    "message": "PDF के रूप में सहेजें (डेस्कटॉप)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">डेस्कटॉप</span>"
+  },
   "popupSub": {
-    "message": "इस पेज को टेक्स्ट चयन के साथ डेस्कटॉप-लेआउट PDF के रूप में सहेजें।"
+    "message": "इस पेज को टेक्स्ट चयन के साथ डेस्कटॉप लेआउट PDF के रूप में सहेजें।"
   },
   "btnSaveDesktop": {
     "message": "⚡ PDF के रूप में सहेजें (डेस्कटॉप)"
@@ -18,16 +24,19 @@
     "message": "✓ वास्तविक वेक्टर टेक्स्ट लेयर (खोजने योग्य)"
   },
   "optionsLink": {
-    "message": "⚙️ विकल्प (A4 / Letter)"
+    "message": "⚙️ सेटिंग्स"
   },
   "downloadsLink": {
     "message": "📁 डाउनलोड"
   },
   "popupHint": {
-    "message": "पीला 'इस ब्राउज़र को डीबग किया जा रहा है' बार सामान्य है — PDF पूरा होने तक इसे छोड़ दें।"
+    "message": "पीला \"इस ब्राउज़र को डीबग किया जा रहा है\" बार सामान्य है — PDF पूरा होने तक इसे छोड़ दें।"
   },
   "optTitle": {
     "message": "webpage2pdf — सेटिंग्स"
+  },
+  "optSub": {
+    "message": "कागज का आकार और सहेजने का स्थान। Chrome Sync के साथ सिंक किया गया।"
   },
   "optPaper": {
     "message": "कागज का आकार"
@@ -38,8 +47,11 @@
   "optLetter": {
     "message": "Letter (USA)"
   },
+  "optScaleHint": {
+    "message": "पैमाना: 1920px को प्रिंट करने योग्य क्षेत्र में फिट करता है।"
+  },
   "optSaveMode": {
-    "message": "मोड सहेजें"
+    "message": "सहेजने का मोड"
   },
   "optAsk": {
     "message": "हर बार पूछें कि कहाँ सहेजना है"
@@ -47,14 +59,41 @@
   "optDownloads": {
     "message": "डाउनलोड में स्वतः सहेजें (सबफ़ोल्डर)"
   },
+  "optFolderInput": {
+    "message": "डाउनलोड में सबफ़ोल्डर (वैकल्पिक)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf या Work/PDFs"
+  },
   "optCustom": {
     "message": "कस्टम फ़ोल्डर (मूल होस्ट आवश्यक)"
   },
-  "optFolderInput": {
-    "message": "सबफ़ोल्डर नाम (उदा. PDFs)"
-  },
   "optCustomInput": {
-    "message": "पूर्ण पथ (उदा. D:\\MyPdfs)"
+    "message": "फ़ोल्डर का पूर्ण पथ"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ नेटिव होस्ट स्थापित नहीं है — डाउनलोड में सहेजा गया।"
+  },
+  "optFilename": {
+    "message": "फ़ाइल का नाम"
+  },
+  "optFilenameHint": {
+    "message": "<डोमेन>-<तारीख>.pdf — वर्जित वर्ण साफ़ किए गए।"
+  },
+  "btnSave": {
+    "message": "सहेजें"
+  },
+  "btnReset": {
+    "message": "रीसेट"
+  },
+  "optSaved": {
+    "message": "✓ सहेजा गया"
+  },
+  "optReset": {
+    "message": "↺ रीसेट किया गया"
   },
   "statusGenerating": {
     "message": "उत्पन्न हो रहा है…"

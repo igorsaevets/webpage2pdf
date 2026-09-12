@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — PDF Desktop"
+  },
+  "extDesc": {
+    "message": "Simpan laman web sebagai PDF asli dengan teks yang dapat dipilih — tata letak desktop, bukan ponsel. Satu klik A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Simpan sebagai PDF (desktop)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">desktop</span>"
+  },
+  "popupSub": {
+    "message": "Simpan halaman ini sebagai PDF tata letak desktop dengan teks yang dapat dipilih."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Simpan sebagai PDF (desktop)"
+  },
+  "hintFullHD": {
+    "message": "✓ Emulasi Viewport 1920px Full HD"
+  },
+  "hintVector": {
+    "message": "✓ Lapisan Teks Vektor Asli (Bisa Dicari)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Pengaturan"
+  },
+  "downloadsLink": {
+    "message": "📁 Unduhan"
+  },
+  "popupHint": {
+    "message": "Bilah kuning “men-debug browser ini” adalah normal — biarkan hingga PDF selesai."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Pengaturan"
+  },
+  "optSub": {
+    "message": "Kertas dan tujuan penyimpanan. Disinkronkan melalui Chrome Sync."
+  },
+  "optPaper": {
+    "message": "Ukuran Kertas"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (AS)"
+  },
+  "optScaleHint": {
+    "message": "Skala: memuat 1920px persis ke dalam area cetak."
+  },
+  "optSaveMode": {
+    "message": "Mode Simpan"
+  },
+  "optAsk": {
+    "message": "Tanyakan lokasi penyimpanan setiap kali"
+  },
+  "optDownloads": {
+    "message": "Simpan otomatis ke Unduhan (Subfolder)"
+  },
+  "optFolderInput": {
+    "message": "Subfolder di Unduhan (opsional)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf atau Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Folder kustom (memerlukan Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Jalur folder absolut"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host belum terpasang — disimpan ke Unduhan."
+  },
+  "optFilename": {
+    "message": "Nama Berkas"
+  },
+  "optFilenameHint": {
+    "message": "<domain>-<tanggal>.pdf — karakter terlarang dibersihkan."
+  },
+  "btnSave": {
+    "message": "Simpan"
+  },
+  "btnReset": {
+    "message": "Atur Ulang"
+  },
+  "optSaved": {
+    "message": "✓ Tersimpan"
+  },
+  "optReset": {
+    "message": "↺ Diatur Ulang"
+  },
+  "statusGenerating": {
+    "message": "Membuat…"
+  },
+  "statusSaved": {
+    "message": "Tersimpan ✓"
+  },
+  "statusError": {
+    "message": "Kesalahan — coba lagi"
+  },
+  "logAttaching": {
+    "message": "Menghubungkan debugger, menerapkan 1920px, merender PDF…"
+  },
+  "logActiveTab": {
+    "message": "Tidak ada tab aktif"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host tidak terpasang — disimpan ke Unduhan."
+  },
+  "hintPaper": {
+    "message": "Kertas: $1"
+  },
+  "hintAsk": {
+    "message": "Tanya lokasi simpan"
+  },
+  "hintAuto": {
+    "message": "Otomatis: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Kustom: $1"
+  }
+}

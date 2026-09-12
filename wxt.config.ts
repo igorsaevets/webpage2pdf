@@ -11,7 +11,6 @@ export default defineConfig({
     optional_permissions: ['nativeMessaging'],
     host_permissions: ['<all_urls>'],
     action: {
-      default_title: 'Save as PDF (desktop)',
       default_popup: 'popup.html',
       default_icon: {
         16: 'icon-16.png',

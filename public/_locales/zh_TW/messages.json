@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — 桌面版 PDF"
+  },
+  "extDesc": {
+    "message": "將網頁儲存為帶可選文字的真實 PDF —— 桌面佈局而非行動版。一鍵匯出 A4/Letter。"
+  },
+  "actionTitle": {
+    "message": "儲存為桌面版 PDF"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">桌面版</span>"
+  },
+  "popupSub": {
+    "message": "將此網頁儲存為帶可選文字的桌面版 PDF。"
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ 存為 PDF (桌面版)"
+  },
+  "hintFullHD": {
+    "message": "✓ 1920px 全高畫質視口模擬"
+  },
+  "hintVector": {
+    "message": "✓ 真實向量文字層 (可搜尋複製)"
+  },
+  "optionsLink": {
+    "message": "⚙️ 設定"
+  },
+  "downloadsLink": {
+    "message": "📁 下載內容"
+  },
+  "popupHint": {
+    "message": "黃色的「正在偵錯此瀏覽器」提示列是正常的，完成前請勿關閉。"
+  },
+  "optTitle": {
+    "message": "webpage2pdf — 設定"
+  },
+  "optSub": {
+    "message": "紙張與儲存路徑設定。可透過 Chrome 同步。"
+  },
+  "optPaper": {
+    "message": "紙張大小"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (美國)"
+  },
+  "optScaleHint": {
+    "message": "縮放：將 1920px 完整適配至列印區域。"
+  },
+  "optSaveMode": {
+    "message": "儲存模式"
+  },
+  "optAsk": {
+    "message": "每次詢問儲存位置"
+  },
+  "optDownloads": {
+    "message": "自動儲存到下載目錄 (子資料夾)"
+  },
+  "optFolderInput": {
+    "message": "下載子資料夾 (可選)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf 或 Work/PDFs"
+  },
+  "optCustom": {
+    "message": "自訂路徑 (需 Native Host)"
+  },
+  "optCustomInput": {
+    "message": "資料夾絕對路徑"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ 未安裝 Native Host — 已自動降級儲存至下載。"
+  },
+  "optFilename": {
+    "message": "檔案名稱格式"
+  },
+  "optFilenameHint": {
+    "message": "<網域>-<日期>.pdf — 特殊字元自動清洗。"
+  },
+  "btnSave": {
+    "message": "儲存設定"
+  },
+  "btnReset": {
+    "message": "恢復預設"
+  },
+  "optSaved": {
+    "message": "✓ 已儲存"
+  },
+  "optReset": {
+    "message": "↺ 已重設"
+  },
+  "statusGenerating": {
+    "message": "產生中…"
+  },
+  "statusSaved": {
+    "message": "已儲存 ✓"
+  },
+  "statusError": {
+    "message": "錯誤 — 重試"
+  },
+  "logAttaching": {
+    "message": "連接偵錯器，強制 1920px 桌面佈局，算繪 PDF…"
+  },
+  "logActiveTab": {
+    "message": "無活動分頁"
+  },
+  "logSavedNative": {
+    "message": "⚠️ 未安裝 Native Host — 已儲存到下載資料夾。"
+  },
+  "hintPaper": {
+    "message": "紙張: $1"
+  },
+  "hintAsk": {
+    "message": "詢問儲存位置"
+  },
+  "hintAuto": {
+    "message": "自動: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "自訂: $1"
+  }
+}

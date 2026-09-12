@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — PDF Máy tính"
+  },
+  "extDesc": {
+    "message": "Lưu trang web thành PDF thật có thể chọn văn bản — giao diện máy tính, không bị thu nhỏ di động. Một cú nhấp A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Lưu dạng PDF (máy tính)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">máy tính</span>"
+  },
+  "popupSub": {
+    "message": "Lưu trang này thành PDF giao diện máy tính với văn bản có thể chọn."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Lưu thành PDF (máy tính)"
+  },
+  "hintFullHD": {
+    "message": "✓ Mô phỏng khung nhìn 1920px Full HD"
+  },
+  "hintVector": {
+    "message": "✓ Lớp văn bản vectơ thực (có thể tìm kiếm)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Cài đặt"
+  },
+  "downloadsLink": {
+    "message": "📁 Tệp tải xuống"
+  },
+  "popupHint": {
+    "message": "Thanh màu vàng “đang gỡ lỗi trình duyệt này” là bình thường — hãy giữ nguyên."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Cài đặt"
+  },
+  "optSub": {
+    "message": "Khổ giấy và nơi lưu trữ. Đồng bộ hóa qua Chrome Sync."
+  },
+  "optPaper": {
+    "message": "Khổ giấy"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (Mỹ)"
+  },
+  "optScaleHint": {
+    "message": "Tỷ lệ: điều chỉnh vừa khít 1920px vào vùng in."
+  },
+  "optSaveMode": {
+    "message": "Chế độ lưu"
+  },
+  "optAsk": {
+    "message": "Hỏi nơi lưu mỗi lần"
+  },
+  "optDownloads": {
+    "message": "Tự động lưu vào Tải xuống (Thư mục con)"
+  },
+  "optFolderInput": {
+    "message": "Thư mục con trong Tải xuống (tùy chọn)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf hoặc Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Thư mục tùy chỉnh (cần Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Đường dẫn thư mục tuyệt đối"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Chưa cài Native Host — chuyển sang lưu vào Tải xuống."
+  },
+  "optFilename": {
+    "message": "Tên tệp"
+  },
+  "optFilenameHint": {
+    "message": "<tên-miền>-<ngày>.pdf — ký tự cấm được xử lý sạch."
+  },
+  "btnSave": {
+    "message": "Lưu"
+  },
+  "btnReset": {
+    "message": "Đặt lại"
+  },
+  "optSaved": {
+    "message": "✓ Đã lưu"
+  },
+  "optReset": {
+    "message": "↺ Đã đặt lại"
+  },
+  "statusGenerating": {
+    "message": "Đang tạo…"
+  },
+  "statusSaved": {
+    "message": "Đã lưu ✓"
+  },
+  "statusError": {
+    "message": "Lỗi — thử lại"
+  },
+  "logAttaching": {
+    "message": "Gắn trình gỡ lỗi, áp dụng 1920px, đang kết xuất PDF…"
+  },
+  "logActiveTab": {
+    "message": "Không có thẻ nào đang hoạt động"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Chưa cài Native Host — đã lưu vào Tải xuống."
+  },
+  "hintPaper": {
+    "message": "Khổ giấy: $1"
+  },
+  "hintAsk": {
+    "message": "Hỏi nơi lưu"
+  },
+  "hintAuto": {
+    "message": "Tự động: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Tùy chỉnh: $1"
+  }
+}

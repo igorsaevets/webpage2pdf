@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — PDF สำหรับเดสก์ท็อป"
+  },
+  "extDesc": {
+    "message": "บันทึกเว็บเพจเป็น PDF พร้อมเลเยอร์ข้อความที่เลือกได้ เลย์เอาต์เดสก์ท็อปแท้ไม่ใช่แบบมือถือ คลิกเดียว A4/Letter"
+  },
+  "actionTitle": {
+    "message": "บันทึกเป็น PDF (เดสก์ท็อป)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">เดสก์ท็อป</span>"
+  },
+  "popupSub": {
+    "message": "บันทึกหน้านี้เป็น PDF เลย์เอาต์เดสก์ท็อปพร้อมข้อความที่เลือกได้"
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ บันทึกเป็น PDF (เดสก์ท็อป)"
+  },
+  "hintFullHD": {
+    "message": "✓ จำลองหน้าจอ Full HD 1920px"
+  },
+  "hintVector": {
+    "message": "✓ เลเยอร์ข้อความเวกเตอร์จริง (ค้นหาได้)"
+  },
+  "optionsLink": {
+    "message": "⚙️ การตั้งค่า"
+  },
+  "downloadsLink": {
+    "message": "📁 รายการดาวน์โหลด"
+  },
+  "popupHint": {
+    "message": "แถบสีเหลือง \"กำลังแก้ไขข้อบกพร่อง\" เป็นเรื่องปกติ กรุณารอจนกว่าจะเสร็จสิ้น"
+  },
+  "optTitle": {
+    "message": "webpage2pdf — การตั้งค่า"
+  },
+  "optSub": {
+    "message": "ขนาดกระดาษและปลายทางการบันทึก ซิงค์ผ่าน Chrome Sync"
+  },
+  "optPaper": {
+    "message": "ขนาดกระดาษ"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (สหรัฐฯ)"
+  },
+  "optScaleHint": {
+    "message": "อัตราส่วน: ปรับ 1920px ให้พอดีกับพื้นที่พิมพ์"
+  },
+  "optSaveMode": {
+    "message": "โหมดการบันทึก"
+  },
+  "optAsk": {
+    "message": "ถามตำแหน่งที่บันทึกทุกครั้ง"
+  },
+  "optDownloads": {
+    "message": "บันทึกลงในโฟลเดอร์ดาวน์โหลดอัตโนมัติ"
+  },
+  "optFolderInput": {
+    "message": "โฟลเดอร์ย่อยในดาวน์โหลด (ไม่บังคับ)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf หรือ Work/PDFs"
+  },
+  "optCustom": {
+    "message": "โฟลเดอร์ที่กำหนดเอง (ต้องใช้ Native Host)"
+  },
+  "optCustomInput": {
+    "message": "เส้นทางโฟลเดอร์แบบสัมบูรณ์"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ ไม่ได้ติดตั้ง Native Host — บันทึกลงในดาวน์โหลดแทน"
+  },
+  "optFilename": {
+    "message": "ชื่อไฟล์"
+  },
+  "optFilenameHint": {
+    "message": "<โดเมน>-<วันที่>.pdf — ล้างอักขระต้องห้ามโดยอัตโนมัติ"
+  },
+  "btnSave": {
+    "message": "บันทึก"
+  },
+  "btnReset": {
+    "message": "รีเซ็ต"
+  },
+  "optSaved": {
+    "message": "✓ บันทึกแล้ว"
+  },
+  "optReset": {
+    "message": "↺ รีเซ็ตแล้ว"
+  },
+  "statusGenerating": {
+    "message": "กำลังสร้าง…"
+  },
+  "statusSaved": {
+    "message": "บันทึกแล้ว ✓"
+  },
+  "statusError": {
+    "message": "ข้อผิดพลาด — ลองใหม่"
+  },
+  "logAttaching": {
+    "message": "กำลังเชื่อมต่อดีบักเกอร์ บังคับ 1920px กำลังเรนเดอร์ PDF…"
+  },
+  "logActiveTab": {
+    "message": "ไม่มีแท็บที่ใช้งานอยู่"
+  },
+  "logSavedNative": {
+    "message": "⚠️ ไม่ได้ติดตั้ง Native Host — บันทึกในดาวน์โหลดแล้ว"
+  },
+  "hintPaper": {
+    "message": "กระดาษ: $1"
+  },
+  "hintAsk": {
+    "message": "ถามตำแหน่งบันทึก"
+  },
+  "hintAuto": {
+    "message": "อัตโนมัติ: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "กำหนดเอง: $1"
+  }
+}

@@ -19,6 +19,13 @@ document.querySelectorAll('[data-i18n]').forEach(el => {
     if (msg) el.innerHTML = msg; 
   }
 });
+document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+  const key = el.getAttribute('data-i18n-placeholder');
+  if (key) {
+    const msg = chrome.i18n.getMessage(key);
+    if (msg) (el as HTMLInputElement).placeholder = msg;
+  }
+});
 
 function updateVisibility() {
   const mode = (Array.from(saveModeInputs).find(i=>i.checked)?.value) ?? 'ask';
@@ -60,7 +67,7 @@ async function save() {
   // migrate: ensure old key removed
   await chrome.storage.sync.set(c);
   statusEl.classList.add('show');
-  statusEl.textContent = chrome.i18n.getMessage('optSaved') || '✓ Сохранено';
+  statusEl.textContent = chrome.i18n.getMessage('optSaved') || '✓ Saved';
   setTimeout(()=> statusEl.classList.remove('show'), 1800);
 }
 
@@ -69,7 +76,7 @@ resetBtn.addEventListener('click', async () => {
   await chrome.storage.sync.set({ ...DEFAULTS });
   await load();
   statusEl.classList.add('show');
-  statusEl.textContent = '↺ ' + (chrome.i18n.getMessage('btnReset') || 'Сброшено');
+  statusEl.textContent = chrome.i18n.getMessage('optReset') || '↺ Reset';
   setTimeout(()=> statusEl.classList.remove('show'), 1800);
 });
 

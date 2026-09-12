@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — Asztali PDF"
+  },
+  "extDesc": {
+    "message": "Mentse a weboldalakat valódi PDF-ként kijelölhető szöveggel — asztali elrendezés, nem mobil. A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Mentés PDF-ként (asztali)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">desktop</span>"
+  },
+  "popupSub": {
+    "message": "Save this page as a desktop-layout PDF with selectable text."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Mentés PDF-ként (asztali)"
+  },
+  "hintFullHD": {
+    "message": "✓ 1920px Full HD Viewport Emulation"
+  },
+  "hintVector": {
+    "message": "✓ Real Vector Text Layer (Searchable)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Beállítások"
+  },
+  "downloadsLink": {
+    "message": "📁 Letöltések"
+  },
+  "popupHint": {
+    "message": "The yellow “debugging this browser” bar is normal — leave it until the PDF finishes."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Beállítások"
+  },
+  "optSub": {
+    "message": "Paper and save destination. Synced via Chrome Sync if enabled."
+  },
+  "optPaper": {
+    "message": "Paper Size"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (USA)"
+  },
+  "optScaleHint": {
+    "message": "Scale: (paperWidth-0.8)*96/1920 to fit 1920px exactly."
+  },
+  "optSaveMode": {
+    "message": "Save Mode"
+  },
+  "optAsk": {
+    "message": "Ask where to save (every time)"
+  },
+  "optDownloads": {
+    "message": "Auto-save to Downloads (Subfolder)"
+  },
+  "optFolderInput": {
+    "message": "Subfolder in Downloads (optional)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf or Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Custom folder (requires Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Absolute folder path"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host missing — fallback to Downloads."
+  },
+  "optFilename": {
+    "message": "Filename"
+  },
+  "optFilenameHint": {
+    "message": "<domain>-<date>.pdf — forbidden characters sanitized."
+  },
+  "btnSave": {
+    "message": "Save"
+  },
+  "btnReset": {
+    "message": "Reset"
+  },
+  "optSaved": {
+    "message": "✓ Saved"
+  },
+  "optReset": {
+    "message": "↺ Reset"
+  },
+  "statusGenerating": {
+    "message": "Generating…"
+  },
+  "statusSaved": {
+    "message": "Saved ✓"
+  },
+  "statusError": {
+    "message": "Error — retry"
+  },
+  "logAttaching": {
+    "message": "Attaching debugger, forcing desktop 1920px, rendering PDF…"
+  },
+  "logActiveTab": {
+    "message": "No active tab"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host not installed — saved to Downloads."
+  },
+  "hintPaper": {
+    "message": "Paper: $1"
+  },
+  "hintAsk": {
+    "message": "Ask where to save"
+  },
+  "hintAuto": {
+    "message": "Auto: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Custom: $1"
+  }
+}

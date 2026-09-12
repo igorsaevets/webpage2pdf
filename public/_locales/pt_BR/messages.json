@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — PDF de Desktop"
+  },
+  "extDesc": {
+    "message": "Salve páginas em PDF com texto selecionável — layout de desktop, não mobile. Em um clique A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Salvar como PDF (desktop)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">desktop</span>"
+  },
+  "popupSub": {
+    "message": "Salve esta página como PDF em layout de desktop com texto selecionável."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Salvar como PDF (desktop)"
+  },
+  "hintFullHD": {
+    "message": "✓ Emulação de tela 1920px Full HD"
+  },
+  "hintVector": {
+    "message": "✓ Texto vetorial real (pesquisável)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Configurações"
+  },
+  "downloadsLink": {
+    "message": "📁 Downloads"
+  },
+  "popupHint": {
+    "message": "A barra amarela “depurando este navegador” é normal — aguarde concluir."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Configurações"
+  },
+  "optSub": {
+    "message": "Papel e pasta de salvamento. Sincronizado via Chrome Sync."
+  },
+  "optPaper": {
+    "message": "Tamanho do Papel"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (EUA)"
+  },
+  "optScaleHint": {
+    "message": "Escala: ajusta 1920px exatamente à área de impressão."
+  },
+  "optSaveMode": {
+    "message": "Modo de Salvamento"
+  },
+  "optAsk": {
+    "message": "Perguntar onde salvar sempre"
+  },
+  "optDownloads": {
+    "message": "Salvar em Downloads (Subpasta)"
+  },
+  "optFolderInput": {
+    "message": "Subpasta em Downloads (opcional)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf ou Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Pasta personalizada (requer Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Caminho absoluto da pasta"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host ausente — salvando em Downloads."
+  },
+  "optFilename": {
+    "message": "Nome do Arquivo"
+  },
+  "optFilenameHint": {
+    "message": "<domínio>-<data>.pdf — caracteres inválidos limpos."
+  },
+  "btnSave": {
+    "message": "Salvar"
+  },
+  "btnReset": {
+    "message": "Redefinir"
+  },
+  "optSaved": {
+    "message": "✓ Salvo"
+  },
+  "optReset": {
+    "message": "↺ Redefinido"
+  },
+  "statusGenerating": {
+    "message": "Gerando…"
+  },
+  "statusSaved": {
+    "message": "Salvo ✓"
+  },
+  "statusError": {
+    "message": "Erro — tentar de novo"
+  },
+  "logAttaching": {
+    "message": "Depurador ativo, forçando 1920px, renderizando PDF…"
+  },
+  "logActiveTab": {
+    "message": "Nenhuma guia ativa"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host ausente — salvo em Downloads."
+  },
+  "hintPaper": {
+    "message": "Papel: $1"
+  },
+  "hintAsk": {
+    "message": "Perguntar onde salvar"
+  },
+  "hintAuto": {
+    "message": "Auto: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Personalizado: $1"
+  }
+}

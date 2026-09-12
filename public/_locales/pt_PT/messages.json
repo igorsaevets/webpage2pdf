@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — PDF de Desktop"
+  },
+  "extDesc": {
+    "message": "Guarde páginas em PDF com texto selecionável — esquema de computador, não móvel. Com um clique A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Guardar como PDF (desktop)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">desktop</span>"
+  },
+  "popupSub": {
+    "message": "Guarde esta página como PDF em esquema de computador com texto selecionável."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Guardar como PDF (desktop)"
+  },
+  "hintFullHD": {
+    "message": "✓ Emulação de ecrã 1920px Full HD"
+  },
+  "hintVector": {
+    "message": "✓ Camada de texto vetorial (pesquisável)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Definições"
+  },
+  "downloadsLink": {
+    "message": "📁 Transferências"
+  },
+  "popupHint": {
+    "message": "A barra amarela «a depurar este navegador» é normal — aguarde a conclusão."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Definições"
+  },
+  "optSub": {
+    "message": "Papel e pasta de destino. Sincronizado através do Chrome Sync."
+  },
+  "optPaper": {
+    "message": "Tamanho do Papel"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (EUA)"
+  },
+  "optScaleHint": {
+    "message": "Escala: ajusta 1920px exatamente à área de impressão."
+  },
+  "optSaveMode": {
+    "message": "Modo de Gravação"
+  },
+  "optAsk": {
+    "message": "Perguntar onde guardar sempre"
+  },
+  "optDownloads": {
+    "message": "Guardar em Transferências (Subpasta)"
+  },
+  "optFolderInput": {
+    "message": "Subpasta em Transferências (opcional)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf ou Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Pasta personalizada (requer Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Caminho absoluto da pasta"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host ausente — a guardar em Transferências."
+  },
+  "optFilename": {
+    "message": "Nome do Ficheiro"
+  },
+  "optFilenameHint": {
+    "message": "<domínio>-<data>.pdf — caracteres inválidos limpos."
+  },
+  "btnSave": {
+    "message": "Guardar"
+  },
+  "btnReset": {
+    "message": "Repor"
+  },
+  "optSaved": {
+    "message": "✓ Guardado"
+  },
+  "optReset": {
+    "message": "↺ Reposto"
+  },
+  "statusGenerating": {
+    "message": "A gerar…"
+  },
+  "statusSaved": {
+    "message": "Guardado ✓"
+  },
+  "statusError": {
+    "message": "Erro — tentar de novo"
+  },
+  "logAttaching": {
+    "message": "Depurador ativo, a forçar 1920px, a gerar PDF…"
+  },
+  "logActiveTab": {
+    "message": "Nenhum separador ativo"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host ausente — guardado em Transferências."
+  },
+  "hintPaper": {
+    "message": "Papel: $1"
+  },
+  "hintAsk": {
+    "message": "Perguntar onde guardar"
+  },
+  "hintAuto": {
+    "message": "Auto: Transferências/$1"
+  },
+  "hintCustom": {
+    "message": "Personalizado: $1"
+  }
+}

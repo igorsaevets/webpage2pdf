@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — デスクトップ版 PDF"
+  },
+  "extDesc": {
+    "message": "Webページを文字選択可能な高画質PDFとして保存。スマホ表示に崩さずデスクトップ表示のままA4/Letter保存。"
+  },
+  "actionTitle": {
+    "message": "デスクトップ版PDFとして保存"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">デスクトップ</span>"
+  },
+  "popupSub": {
+    "message": "このページを文字選択可能なデスクトップ表示PDFとして保存します。"
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ PDFとして保存 (デスクトップ)"
+  },
+  "hintFullHD": {
+    "message": "✓ 1920px フルHDビューポート再現"
+  },
+  "hintVector": {
+    "message": "✓ 検索可能なベクターテキスト層"
+  },
+  "optionsLink": {
+    "message": "⚙️ 設定"
+  },
+  "downloadsLink": {
+    "message": "📁 ダウンロード"
+  },
+  "popupHint": {
+    "message": "「デバッグ中」の黄色い通知バーは正常な動作です。完了まで閉じないでください。"
+  },
+  "optTitle": {
+    "message": "webpage2pdf — 設定"
+  },
+  "optSub": {
+    "message": "用紙サイズと保存先の設定。Chrome Syncで同期されます。"
+  },
+  "optPaper": {
+    "message": "用紙サイズ"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (米国)"
+  },
+  "optScaleHint": {
+    "message": "縮尺：1920pxを用紙幅にぴったり収めます。"
+  },
+  "optSaveMode": {
+    "message": "保存モード"
+  },
+  "optAsk": {
+    "message": "保存先を毎回確認する"
+  },
+  "optDownloads": {
+    "message": "ダウンロードフォルダに自動保存 (サブフォルダ)"
+  },
+  "optFolderInput": {
+    "message": "ダウンロード内のサブフォルダ (任意)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf または Work/PDFs"
+  },
+  "optCustom": {
+    "message": "任意のフォルダ (Native Hostが必要)"
+  },
+  "optCustomInput": {
+    "message": "絶対パス"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host未導入 — ダウンロードに保存されます。"
+  },
+  "optFilename": {
+    "message": "ファイル名"
+  },
+  "optFilenameHint": {
+    "message": "<ドメイン>-<日付>.pdf — 禁止文字は自動置換されます。"
+  },
+  "btnSave": {
+    "message": "保存"
+  },
+  "btnReset": {
+    "message": "初期化"
+  },
+  "optSaved": {
+    "message": "✓ 保存完了"
+  },
+  "optReset": {
+    "message": "↺ 初期化完了"
+  },
+  "statusGenerating": {
+    "message": "生成中…"
+  },
+  "statusSaved": {
+    "message": "保存完了 ✓"
+  },
+  "statusError": {
+    "message": "エラー — 再試行"
+  },
+  "logAttaching": {
+    "message": "デバッガ接続、1920px適用、PDF生成中…"
+  },
+  "logActiveTab": {
+    "message": "アクティブなタブが見つかりません"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host未検出 — ダウンロードに保存しました。"
+  },
+  "hintPaper": {
+    "message": "用紙: $1"
+  },
+  "hintAsk": {
+    "message": "保存先を確認"
+  },
+  "hintAuto": {
+    "message": "自動: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "任意: $1"
+  }
+}

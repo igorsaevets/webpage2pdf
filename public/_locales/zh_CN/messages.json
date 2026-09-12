@@ -3,10 +3,16 @@
     "message": "webpage2pdf — 桌面版 PDF"
   },
   "extDesc": {
-    "message": "将网页保存为带可选文本的真实 PDF —— 桌面布局而非移动端。一键 A4/Letter。"
+    "message": "将网页保存为带可选文本的真实 PDF —— 桌面布局而非移动端。一键导出 A4/Letter。"
+  },
+  "actionTitle": {
+    "message": "保存为桌面版 PDF"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">桌面版</span>"
   },
   "popupSub": {
-    "message": "将此页面保存为带可选文本的桌面布局 PDF。"
+    "message": "将此网页保存为带可选文本的桌面版 PDF。"
   },
   "btnSaveDesktop": {
     "message": "⚡ 存为 PDF (桌面版)"
@@ -15,28 +21,34 @@
     "message": "✓ 1920px 全高清视口模拟"
   },
   "hintVector": {
-    "message": "✓ 真实的矢量文本层 (可搜索)"
+    "message": "✓ 真实的矢量文本层 (可搜索复制)"
   },
   "optionsLink": {
-    "message": "⚙️ 选项 (A4 / Letter)"
+    "message": "⚙️ 设置"
   },
   "downloadsLink": {
     "message": "📁 下载内容"
   },
   "popupHint": {
-    "message": "黄色的“正在调试此浏览器”提示条是正常的——请在 PDF 完成前保留它。"
+    "message": "黄色的“正在调试此浏览器”提示条是正常的，生成完成前请勿关闭。"
   },
   "optTitle": {
     "message": "webpage2pdf — 设置"
   },
+  "optSub": {
+    "message": "纸张与保存路径设置。可通过 Chrome 同步。"
+  },
   "optPaper": {
-    "message": "纸张大小"
+    "message": "纸张格式"
   },
   "optA4": {
     "message": "A4 (ISO)"
   },
   "optLetter": {
-    "message": "Letter (USA)"
+    "message": "Letter (美国)"
+  },
+  "optScaleHint": {
+    "message": "缩放：将 1920px 完整适配至打印区域。"
   },
   "optSaveMode": {
     "message": "保存模式"
@@ -45,16 +57,43 @@
     "message": "每次询问保存位置"
   },
   "optDownloads": {
-    "message": "自动保存到下载 (子文件夹)"
-  },
-  "optCustom": {
-    "message": "自定义文件夹 (需要原生主机)"
+    "message": "自动保存到下载目录 (子文件夹)"
   },
   "optFolderInput": {
-    "message": "子文件夹名称 (例: PDFs)"
+    "message": "下载子文件夹 (可选)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf 或 Work/PDFs"
+  },
+  "optCustom": {
+    "message": "自定义路径 (需 Native Host)"
   },
   "optCustomInput": {
-    "message": "绝对路径 (例: D:\\MyPdfs)"
+    "message": "文件夹绝对路径"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ 未安装 Native Host — 已自动降级保存至下载。"
+  },
+  "optFilename": {
+    "message": "文件名格式"
+  },
+  "optFilenameHint": {
+    "message": "<域名>-<日期>.pdf — 特殊字符自动清洗。"
+  },
+  "btnSave": {
+    "message": "保存设置"
+  },
+  "btnReset": {
+    "message": "恢复默认"
+  },
+  "optSaved": {
+    "message": "✓ 已保存"
+  },
+  "optReset": {
+    "message": "↺ 已重置"
   },
   "statusGenerating": {
     "message": "生成中…"
@@ -66,7 +105,7 @@
     "message": "错误 — 重试"
   },
   "logAttaching": {
-    "message": "连接调试器，强制 1920px 桌面，渲染 PDF…"
+    "message": "附加调试器，强制 1920px 桌面布局，渲染 PDF…"
   },
   "logActiveTab": {
     "message": "无活动标签页"

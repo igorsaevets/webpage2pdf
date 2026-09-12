@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — Desktop PDF"
+  },
+  "extDesc": {
+    "message": "Sla elke webpagina op als echte PDF met selecteerbare tekst — desktopindeling, niet mobiel. Één klik A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Opslaan als PDF (desktop)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">desktop</span>"
+  },
+  "popupSub": {
+    "message": "Sla deze pagina op als PDF in desktopweergave met selecteerbare tekst."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Opslaan als PDF (desktop)"
+  },
+  "hintFullHD": {
+    "message": "✓ 1920px Full HD Viewport Emulatie"
+  },
+  "hintVector": {
+    "message": "✓ Echte vector tekstlaag (doorzoekbaar)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Instellingen"
+  },
+  "downloadsLink": {
+    "message": "📁 Downloads"
+  },
+  "popupHint": {
+    "message": "De gele balk “bezig met foutopsporing” is normaal — wacht tot het PDF klaar is."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Instellingen"
+  },
+  "optSub": {
+    "message": "Papierformaat en opslaglocatie. Gesynchroniseerd via Chrome Sync."
+  },
+  "optPaper": {
+    "message": "Papierformaat"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (VS)"
+  },
+  "optScaleHint": {
+    "message": "Schaal: past 1920px exact in het afdrukgebied."
+  },
+  "optSaveMode": {
+    "message": "Opslagmodus"
+  },
+  "optAsk": {
+    "message": "Elke keer vragen waar op te slaan"
+  },
+  "optDownloads": {
+    "message": "Automatisch opslaan in Downloads"
+  },
+  "optFolderInput": {
+    "message": "Submap in Downloads (optioneel)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf of Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Aangepaste map (vereist Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Absoluut mappad"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host ontbreekt — opgeslagen in Downloads."
+  },
+  "optFilename": {
+    "message": "Bestandsnaam"
+  },
+  "optFilenameHint": {
+    "message": "<domein>-<datum>.pdf — ongeldige tekens opgeschoond."
+  },
+  "btnSave": {
+    "message": "Opslaan"
+  },
+  "btnReset": {
+    "message": "Herstellen"
+  },
+  "optSaved": {
+    "message": "✓ Opgeslagen"
+  },
+  "optReset": {
+    "message": "↺ Hersteld"
+  },
+  "statusGenerating": {
+    "message": "Genereren…"
+  },
+  "statusSaved": {
+    "message": "Opgeslagen ✓"
+  },
+  "statusError": {
+    "message": "Fout — opnieuw proberen"
+  },
+  "logAttaching": {
+    "message": "Debugger gekoppeld, 1920px afgedwongen, PDF renderen…"
+  },
+  "logActiveTab": {
+    "message": "Geen actief tabblad"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host ontbreekt — opgeslagen in Downloads."
+  },
+  "hintPaper": {
+    "message": "Papier: $1"
+  },
+  "hintAsk": {
+    "message": "Vragen waar opslaan"
+  },
+  "hintAuto": {
+    "message": "Auto: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Aangepast: $1"
+  }
+}

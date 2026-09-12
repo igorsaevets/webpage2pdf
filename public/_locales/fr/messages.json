@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — PDF Bureau"
+  },
+  "extDesc": {
+    "message": "Enregistrez toute page en vrai PDF avec texte sélectionnable — mise en page bureau, non mobile. En un clic A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Enregistrer en PDF (bureau)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">bureau</span>"
+  },
+  "popupSub": {
+    "message": "Enregistrer cette page en PDF avec mise en page bureau et texte sélectionnable."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Enregistrer en PDF (bureau)"
+  },
+  "hintFullHD": {
+    "message": "✓ Émulation affichage 1920px Full HD"
+  },
+  "hintVector": {
+    "message": "✓ Texte vectoriel réel (recherchable)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Paramètres"
+  },
+  "downloadsLink": {
+    "message": "📁 Téléchargements"
+  },
+  "popupHint": {
+    "message": "Le bandeau jaune « débogage » est normal — laissez-le jusqu’à la fin."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Paramètres"
+  },
+  "optSub": {
+    "message": "Format papier et dossier de sauvegarde. Synchronisé via Chrome."
+  },
+  "optPaper": {
+    "message": "Format de papier"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (USA)"
+  },
+  "optScaleHint": {
+    "message": "Échelle : adapte 1920px exactement à la zone d’impression."
+  },
+  "optSaveMode": {
+    "message": "Mode d’enregistrement"
+  },
+  "optAsk": {
+    "message": "Demander où enregistrer à chaque fois"
+  },
+  "optDownloads": {
+    "message": "Enregistrement auto dans Téléchargements"
+  },
+  "optFolderInput": {
+    "message": "Sous-dossier de Téléchargements (facultatif)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf ou Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Dossier personnalisé (nécessite Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Chemin absolu du dossier"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host manquant — sauvegardé dans Téléchargements."
+  },
+  "optFilename": {
+    "message": "Nom de fichier"
+  },
+  "optFilenameHint": {
+    "message": "<domaine>-<date>.pdf — caractères interdits nettoyés."
+  },
+  "btnSave": {
+    "message": "Enregistrer"
+  },
+  "btnReset": {
+    "message": "Réinitialiser"
+  },
+  "optSaved": {
+    "message": "✓ Enregistré"
+  },
+  "optReset": {
+    "message": "↺ Réinitialisé"
+  },
+  "statusGenerating": {
+    "message": "Génération…"
+  },
+  "statusSaved": {
+    "message": "Enregistré ✓"
+  },
+  "statusError": {
+    "message": "Erreur — réessayer"
+  },
+  "logAttaching": {
+    "message": "Débogueur actif, 1920px forcé, création du PDF…"
+  },
+  "logActiveTab": {
+    "message": "Aucun onglet actif"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host absent — enregistré dans Téléchargements."
+  },
+  "hintPaper": {
+    "message": "Papier : $1"
+  },
+  "hintAsk": {
+    "message": "Demander l’emplacement"
+  },
+  "hintAuto": {
+    "message": "Auto : Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Perso : $1"
+  }
+}

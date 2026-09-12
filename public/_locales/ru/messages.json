@@ -3,10 +3,16 @@
     "message": "webpage2pdf — Десктопный PDF"
   },
   "extDesc": {
-    "message": "Сохраняйте веб-страницы в PDF с текстовым слоем — десктопная верстка, не мобильная. В один клик A4/Letter."
+    "message": "Сохраняйте страницы в PDF с текстовым слоем — десктопная верстка, не мобильная. В один клик A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Сохранить в PDF (десктоп)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">desktop</span>"
   },
   "popupSub": {
-    "message": "Сохранить эту страницу как десктопный PDF с текстом."
+    "message": "Сохранить страницу как десктопный PDF с текстом."
   },
   "btnSaveDesktop": {
     "message": "⚡ Сохранить в PDF (desktop)"
@@ -18,7 +24,7 @@
     "message": "✓ Векторный текст (поиск, копирование)"
   },
   "optionsLink": {
-    "message": "⚙️ Настройки (A4 / Letter)"
+    "message": "⚙️ Настройки"
   },
   "downloadsLink": {
     "message": "📁 Загрузки"
@@ -29,8 +35,11 @@
   "optTitle": {
     "message": "webpage2pdf — Настройки"
   },
+  "optSub": {
+    "message": "Бумага и куда сохранять PDF. Синхронизируется через Chrome Sync."
+  },
   "optPaper": {
-    "message": "Размер бумаги"
+    "message": "Формат бумаги"
   },
   "optA4": {
     "message": "A4 (ISO)"
@@ -38,23 +47,53 @@
   "optLetter": {
     "message": "Letter (США)"
   },
+  "optScaleHint": {
+    "message": "Масштаб: подгоняет 1920px под область печати."
+  },
   "optSaveMode": {
     "message": "Режим сохранения"
   },
   "optAsk": {
-    "message": "Спрашивать куда сохранять"
+    "message": "Спрашивать каждый раз"
   },
   "optDownloads": {
-    "message": "Авто-сохранение в Загрузки (Подпапка)"
-  },
-  "optCustom": {
-    "message": "Кастомный путь (нужен Native Host)"
+    "message": "Авто в Загрузки (Подпапка)"
   },
   "optFolderInput": {
-    "message": "Подпапка (например, PDFs)"
+    "message": "Подпапка в Загрузках (необязательно)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf или Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Кастомный путь (требует Native Host)"
   },
   "optCustomInput": {
-    "message": "Абсолютный путь (например, D:\\MyPdfs)"
+    "message": "Абсолютный путь к папке"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host не установлен — сохранено в Загрузки."
+  },
+  "optFilename": {
+    "message": "Имя файла"
+  },
+  "optFilenameHint": {
+    "message": "<домен>-<дата>.pdf — запрещенные символы экранируются."
+  },
+  "btnSave": {
+    "message": "Сохранить"
+  },
+  "btnReset": {
+    "message": "Сброс"
+  },
+  "optSaved": {
+    "message": "✓ Сохранено"
+  },
+  "optReset": {
+    "message": "↺ Сброшено"
   },
   "statusGenerating": {
     "message": "Генерация…"

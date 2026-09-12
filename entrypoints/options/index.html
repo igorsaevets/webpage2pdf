@@ -37,7 +37,7 @@
     <h2 data-i18n="optPaper">Формат бумаги</h2>
     <label><input type="radio" name="paper" value="a4" /> <span><b data-i18n="optA4">A4 (ISO)</b> — 210×297 mm</span></label>
     <label><input type="radio" name="paper" value="letter" /> <span><b data-i18n="optLetter">Letter (USA)</b> — 8.5×11″</span></label>
-    <p class="hint">Scale: (paperWidth-0.8)*96/1920 to fit exactly.</p>
+    <p class="hint" data-i18n="optScaleHint">Scale: (paperWidth-0.8)*96/1920 to fit 1920px exactly.</p>
   </div>
 
   <div class="card">
@@ -47,7 +47,7 @@
     <div class="field" id="downloadsField">
       <label>
         <span data-i18n="optFolderInput">Подпапка в Загрузках (необязательно)</span>
-        <input id="customDir" type="text" placeholder="webpage2pdf" />
+        <input id="customDir" type="text" data-i18n-placeholder="optFolderPlaceholder" placeholder="webpage2pdf" />
       </label>
     </div>
 
@@ -55,15 +55,15 @@
     <div class="field" id="customField">
       <label>
         <span data-i18n="optCustomInput">Абсолютный путь к папке</span>
-        <input id="customPath" type="text" placeholder="D:\MyPdfs" />
+        <input id="customPath" type="text" data-i18n-placeholder="optCustomPlaceholder" placeholder="D:\MyPdfs" />
       </label>
-      <div id="hostWarn" class="warn">⚠️ Native Host missing / save fallback to Downloads.</div>
+      <div id="hostWarn" class="warn" data-i18n="optHostWarn">⚠️ Native Host missing — fallback to Downloads.</div>
     </div>
   </div>
 
   <div class="card">
     <h2 data-i18n="optFilename">Имя файла</h2>
-    <p class="hint">domain-yyyy-mm-dd.pdf</p>
+    <p class="hint" data-i18n="optFilenameHint">&lt;domain&gt;-&lt;date&gt;.pdf</p>
   </div>
 
   <div class="row">

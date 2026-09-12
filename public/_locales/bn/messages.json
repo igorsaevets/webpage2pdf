@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — ডেস্কটপ PDF"
+  },
+  "extDesc": {
+    "message": "যেকোনো ওয়েবপৃষ্ঠা আসল PDF হিসেবে সংরক্ষণ করুন টেক্সট লেয়ার সহ — ডেস্কটপ লেআউট। এক ক্লিকে A4/Letter।"
+  },
+  "actionTitle": {
+    "message": "PDF হিসেবে সংরক্ষণ করুন (ডেস্কটপ)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">ডেস্কটপ</span>"
+  },
+  "popupSub": {
+    "message": "এই পৃষ্ঠাটি নির্বাচনযোগ্য টেক্সট সহ ডেস্কটপ লেআউট PDF হিসেবে সংরক্ষণ করুন।"
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ PDF হিসেবে সংরক্ষণ (ডেস্কটপ)"
+  },
+  "hintFullHD": {
+    "message": "✓ ১৯২০ পিক্সেল ফুল এইচডি ভিউপোর্ট ইমুলেশন"
+  },
+  "hintVector": {
+    "message": "✓ আসল ভেক্টর টেক্সট লেয়ার (অনুসন্ধানযোগ্য)"
+  },
+  "optionsLink": {
+    "message": "⚙️ সেটিংস"
+  },
+  "downloadsLink": {
+    "message": "📁 ডাউনলোড"
+  },
+  "popupHint": {
+    "message": "হলুদ রঙের \"ডিবাগিং\" বারটি স্বাভাবিক — PDF শেষ হওয়া পর্যন্ত অপেক্ষা করুন।"
+  },
+  "optTitle": {
+    "message": "webpage2pdf — সেটিংস"
+  },
+  "optSub": {
+    "message": "কাগজের আকার এবং সংরক্ষণের স্থান। Chrome Sync এর মাধ্যমে সিঙ্ক করা হয়।"
+  },
+  "optPaper": {
+    "message": "কাগজের আকার"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (USA)"
+  },
+  "optScaleHint": {
+    "message": "স্কেল: ১৯২০ পিক্সেল প্রিন্ট এলাকায় পুরোপুরি ফিট করে।"
+  },
+  "optSaveMode": {
+    "message": "সংরক্ষণের ধরন"
+  },
+  "optAsk": {
+    "message": "প্রতিবার সংরক্ষণের স্থান জিজ্ঞাসা করুন"
+  },
+  "optDownloads": {
+    "message": "ডাউনলোডে স্বয়ংক্রিয় সংরক্ষণ (সাবফোল্ডার)"
+  },
+  "optFolderInput": {
+    "message": "ডাউনলোড সাবফোল্ডার (ঐচ্ছিক)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf অথবা Work/PDFs"
+  },
+  "optCustom": {
+    "message": "কাস্টম ফোল্ডার (Native Host প্রয়োজন)"
+  },
+  "optCustomInput": {
+    "message": "ফোল্ডারের সম্পূর্ণ পথ"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host নেই — ডাউনলোডে সংরক্ষণ করা হচ্ছে।"
+  },
+  "optFilename": {
+    "message": "ফাইলের নাম"
+  },
+  "optFilenameHint": {
+    "message": "<ডোমেন>-<তারিখ>.pdf — অবৈধ অক্ষর সরানো হয়েছে।"
+  },
+  "btnSave": {
+    "message": "সংরক্ষণ করুন"
+  },
+  "btnReset": {
+    "message": "রিসেট"
+  },
+  "optSaved": {
+    "message": "✓ সংরক্ষিত"
+  },
+  "optReset": {
+    "message": "↺ রিসেট করা হয়েছে"
+  },
+  "statusGenerating": {
+    "message": "তৈরি হচ্ছে…"
+  },
+  "statusSaved": {
+    "message": "সংরক্ষিত ✓"
+  },
+  "statusError": {
+    "message": "ত্রুটি — আবার চেষ্টা করুন"
+  },
+  "logAttaching": {
+    "message": "ডিবাগার সংযুক্ত হচ্ছে, ১৯২০ পিক্সেল প্রয়োগ হচ্ছে, PDF রেন্ডার হচ্ছে…"
+  },
+  "logActiveTab": {
+    "message": "কোন সক্রিয় ট্যাব নেই"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host নেই — ডাউনলোডে সংরক্ষিত হয়েছে।"
+  },
+  "hintPaper": {
+    "message": "কাগজ: $1"
+  },
+  "hintAsk": {
+    "message": "স্থান জিজ্ঞাসা করুন"
+  },
+  "hintAuto": {
+    "message": "স্বয়ংক্রিয়: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "কাস্টম: $1"
+  }
+}

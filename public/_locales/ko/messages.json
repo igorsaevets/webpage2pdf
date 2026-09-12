@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — 데스크톱 PDF"
+  },
+  "extDesc": {
+    "message": "웹페이지를 텍스트 선택이 가능한 고품질 PDF로 저장. 모바일로 축소되지 않는 데스크톱 레이아웃 A4/Letter 원클릭 저장."
+  },
+  "actionTitle": {
+    "message": "데스크톱 PDF로 저장"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">데스크톱</span>"
+  },
+  "popupSub": {
+    "message": "이 페이지를 텍스트 선택이 가능한 데스크톱 레이아웃 PDF로 저장합니다."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ PDF로 저장 (데스크톱)"
+  },
+  "hintFullHD": {
+    "message": "✓ 1920px Full HD 뷰포트 에뮬레이션"
+  },
+  "hintVector": {
+    "message": "✓ 실제 벡터 텍스트 레이어 (검색/복사 가능)"
+  },
+  "optionsLink": {
+    "message": "⚙️ 설정"
+  },
+  "downloadsLink": {
+    "message": "📁 다운로드"
+  },
+  "popupHint": {
+    "message": "노란색 \"브라우저 디버깅\" 알림줄은 정상 작동입니다. 완료될 때까지 닫지 마세요."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — 설정"
+  },
+  "optSub": {
+    "message": "용지 크기 및 저장 위치 설정. Chrome Sync로 동기화됩니다."
+  },
+  "optPaper": {
+    "message": "용지 크기"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (미국)"
+  },
+  "optScaleHint": {
+    "message": "비율: 1920px 화면을 인쇄 영역에 정확히 맞춥니다."
+  },
+  "optSaveMode": {
+    "message": "저장 방식"
+  },
+  "optAsk": {
+    "message": "저장 위치 매번 묻기"
+  },
+  "optDownloads": {
+    "message": "다운로드 폴더에 자동 저장 (하위 폴더)"
+  },
+  "optFolderInput": {
+    "message": "다운로드 내 하위 폴더 (선택 사항)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf 또는 Work/PDFs"
+  },
+  "optCustom": {
+    "message": "사용자 지정 폴더 (Native Host 필요)"
+  },
+  "optCustomInput": {
+    "message": "폴더 절대 경로"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host 미설치 — 다운로드 폴더에 저장됩니다."
+  },
+  "optFilename": {
+    "message": "파일명 형식"
+  },
+  "optFilenameHint": {
+    "message": "<도메인>-<날짜>.pdf — 특수문자는 자동 정제됩니다."
+  },
+  "btnSave": {
+    "message": "저장"
+  },
+  "btnReset": {
+    "message": "초기화"
+  },
+  "optSaved": {
+    "message": "✓ 저장 완료"
+  },
+  "optReset": {
+    "message": "↺ 초기화 완료"
+  },
+  "statusGenerating": {
+    "message": "생성 중…"
+  },
+  "statusSaved": {
+    "message": "저장 완료 ✓"
+  },
+  "statusError": {
+    "message": "오류 — 다시 시도"
+  },
+  "logAttaching": {
+    "message": "디버거 연결, 1920px 데스크톱 강제 적용, PDF 렌더링…"
+  },
+  "logActiveTab": {
+    "message": "활성화된 탭이 없습니다"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host 미설치 — 다운로드 폴더에 저장되었습니다."
+  },
+  "hintPaper": {
+    "message": "용지: $1"
+  },
+  "hintAsk": {
+    "message": "저장 위치 묻기"
+  },
+  "hintAuto": {
+    "message": "자동: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "사용자 지정: $1"
+  }
+}

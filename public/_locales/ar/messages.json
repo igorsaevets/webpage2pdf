@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — ملف PDF لسطح المكتب"
+  },
+  "extDesc": {
+    "message": "احفظ أي صفحة ويب كملف PDF حقيقي مع نص قابل للتحديد — بتنسيق سطح المكتب وليس الجوال. بنقرة واحدة A4/Letter."
+  },
+  "actionTitle": {
+    "message": "حفظ كملف PDF (سطح المكتب)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">سطح المكتب</span>"
+  },
+  "popupSub": {
+    "message": "احفظ هذه الصفحة كملف PDF بتنسيق سطح المكتب مع نص قابل للنسخ."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ حفظ كملف PDF (سطح المكتب)"
+  },
+  "hintFullHD": {
+    "message": "✓ محاكاة شاشة 1920 بكسل فائقة الدقة"
+  },
+  "hintVector": {
+    "message": "✓ طبقة نص متجه حقيقية (قابلة للبحث)"
+  },
+  "optionsLink": {
+    "message": "⚙️ الإعدادات"
+  },
+  "downloadsLink": {
+    "message": "📁 التنزيلات"
+  },
+  "popupHint": {
+    "message": "الشريط الأصفر \"تصحيح أخطاء هذا المتصفح\" طبيعي — اتركه حتى ينتهي."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — الإعدادات"
+  },
+  "optSub": {
+    "message": "إعدادات الورق ومكان الحفظ. متزامنة عبر Chrome Sync."
+  },
+  "optPaper": {
+    "message": "حجم الورق"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (أمريكا)"
+  },
+  "optScaleHint": {
+    "message": "المقياس: يلائم 1920 بكسل في منطقة الطباعة بدقة."
+  },
+  "optSaveMode": {
+    "message": "وضع الحفظ"
+  },
+  "optAsk": {
+    "message": "السؤال عن مكان الحفظ في كل مرة"
+  },
+  "optDownloads": {
+    "message": "حفظ تلقائي في التنزيلات (مجلد فرعي)"
+  },
+  "optFolderInput": {
+    "message": "مجلد فرعي في التنزيلات (اختياري)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf أو Work/PDFs"
+  },
+  "optCustom": {
+    "message": "مجلد مخصص (يتطلب Native Host)"
+  },
+  "optCustomInput": {
+    "message": "المسار الكامل للمجلد"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host غير مثبت — تم الحفظ في التنزيلات."
+  },
+  "optFilename": {
+    "message": "اسم الملف"
+  },
+  "optFilenameHint": {
+    "message": "<النطاق>-<التاريخ>.pdf — يتم تنظيف الرموز المحظورة."
+  },
+  "btnSave": {
+    "message": "حفظ"
+  },
+  "btnReset": {
+    "message": "إعادة تعيين"
+  },
+  "optSaved": {
+    "message": "✓ تم الحفظ"
+  },
+  "optReset": {
+    "message": "↺ تم التعيين"
+  },
+  "statusGenerating": {
+    "message": "جاري الإنشاء…"
+  },
+  "statusSaved": {
+    "message": "تم الحفظ ✓"
+  },
+  "statusError": {
+    "message": "خطأ — أعد المحاولة"
+  },
+  "logAttaching": {
+    "message": "ربط المصحح، فرض دقة 1920 بكسل، تصيير PDF…"
+  },
+  "logActiveTab": {
+    "message": "لا توجد علامة تبويب نشطة"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host غير مثبت — تم الحفظ في التنزيلات."
+  },
+  "hintPaper": {
+    "message": "الورق: $1"
+  },
+  "hintAsk": {
+    "message": "السؤال عن مكان الحفظ"
+  },
+  "hintAuto": {
+    "message": "تلقائي: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "مخصص: $1"
+  }
+}

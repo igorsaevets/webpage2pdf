@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — Masaüstü PDF"
+  },
+  "extDesc": {
+    "message": "Web sayfalarını seçilebilir metinli gerçek PDF olarak kaydedin — mobil değil masaüstü düzeni. Tek tıkla A4/Letter."
+  },
+  "actionTitle": {
+    "message": "PDF Olarak Kaydet (Masaüstü)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">masaüstü</span>"
+  },
+  "popupSub": {
+    "message": "Bu sayfayı seçilebilir metinli masaüstü düzeninde PDF olarak kaydedin."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ PDF Olarak Kaydet (Masaüstü)"
+  },
+  "hintFullHD": {
+    "message": "✓ 1920px Full HD Görünüm Alanı Emülasyonu"
+  },
+  "hintVector": {
+    "message": "✓ Gerçek Vektör Metin Katmanı (Aranabilir)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Ayarlar"
+  },
+  "downloadsLink": {
+    "message": "📁 İndirilenler"
+  },
+  "popupHint": {
+    "message": "Sarı “bu tarayıcıda hata ayıklanıyor” çubuğu normaldir — işlem bitene kadar kapatmayın."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Ayarlar"
+  },
+  "optSub": {
+    "message": "Kağıt ve kayıt konumu. Chrome Sync ile senkronize edilir."
+  },
+  "optPaper": {
+    "message": "Kağıt Boyutu"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (ABD)"
+  },
+  "optScaleHint": {
+    "message": "Ölçek: 1920px genişliğini yazdırılabilir alana sığdırır."
+  },
+  "optSaveMode": {
+    "message": "Kayıt Modu"
+  },
+  "optAsk": {
+    "message": "Her seferinde nereye kaydedileceğini sor"
+  },
+  "optDownloads": {
+    "message": "İndirilenlere otomatik kaydet (Alt klasör)"
+  },
+  "optFolderInput": {
+    "message": "İndirilenler alt klasörü (isteğe bağlı)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf veya Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Özel klasör (Native Host gerektirir)"
+  },
+  "optCustomInput": {
+    "message": "Klasörün mutlak yolu"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host yüklü değil — İndirilenlere kaydediliyor."
+  },
+  "optFilename": {
+    "message": "Dosya Adı"
+  },
+  "optFilenameHint": {
+    "message": "<alan-adi>-<tarih>.pdf — geçersiz karakterler temizlenir."
+  },
+  "btnSave": {
+    "message": "Kaydet"
+  },
+  "btnReset": {
+    "message": "Sıfırla"
+  },
+  "optSaved": {
+    "message": "✓ Kaydedildi"
+  },
+  "optReset": {
+    "message": "↺ Sıfırlandı"
+  },
+  "statusGenerating": {
+    "message": "Oluşturuluyor…"
+  },
+  "statusSaved": {
+    "message": "Kaydedildi ✓"
+  },
+  "statusError": {
+    "message": "Hata — tekrar dene"
+  },
+  "logAttaching": {
+    "message": "Hata ayıklayıcı bağlandı, 1920px zorlandı, PDF oluşturuluyor…"
+  },
+  "logActiveTab": {
+    "message": "Etkin sekme yok"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host yok — İndirilenlere kaydedildi."
+  },
+  "hintPaper": {
+    "message": "Kağıt: $1"
+  },
+  "hintAsk": {
+    "message": "Nereye kaydedileceğini sor"
+  },
+  "hintAuto": {
+    "message": "Oto: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Özel: $1"
+  }
+}

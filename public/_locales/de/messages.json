@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — Desktop PDF"
+  },
+  "extDesc": {
+    "message": "Webseiten als echtes PDF mit auswählbarem Text speichern — Desktop-Layout statt mobil. Ein Klick A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Als PDF speichern (Desktop)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">Desktop</span>"
+  },
+  "popupSub": {
+    "message": "Seite im Desktop-Layout mit auswählbarem Text als PDF speichern."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Als PDF speichern (Desktop)"
+  },
+  "hintFullHD": {
+    "message": "✓ 1920px Full HD Viewport-Emulation"
+  },
+  "hintVector": {
+    "message": "✓ Echte Vektortextebene (Durchsuchbar)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Einstellungen"
+  },
+  "downloadsLink": {
+    "message": "📁 Downloads"
+  },
+  "popupHint": {
+    "message": "Die gelbe Leiste „Browser wird debuggt“ ist normal — bitte nicht schließen."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Einstellungen"
+  },
+  "optSub": {
+    "message": "Papier und Speicherort. Wird über Chrome Sync synchronisiert."
+  },
+  "optPaper": {
+    "message": "Papierformat"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (USA)"
+  },
+  "optScaleHint": {
+    "message": "Skalierung: Passt 1920px exakt in den Druckbereich ein."
+  },
+  "optSaveMode": {
+    "message": "Speichermodus"
+  },
+  "optAsk": {
+    "message": "Jedes Mal nach Speicherort fragen"
+  },
+  "optDownloads": {
+    "message": "Automatisch in Downloads (Unterordner)"
+  },
+  "optFolderInput": {
+    "message": "Unterordner in Downloads (optional)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf oder Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Benutzerdefinierter Ordner (Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Absoluter Ordnerpfad"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host fehlt — Speichern in Downloads."
+  },
+  "optFilename": {
+    "message": "Dateiname"
+  },
+  "optFilenameHint": {
+    "message": "<domain>-<datum>.pdf — Sonderzeichen bereinigt."
+  },
+  "btnSave": {
+    "message": "Speichern"
+  },
+  "btnReset": {
+    "message": "Zurücksetzen"
+  },
+  "optSaved": {
+    "message": "✓ Gespeichert"
+  },
+  "optReset": {
+    "message": "↺ Zurückgesetzt"
+  },
+  "statusGenerating": {
+    "message": "Generiere…"
+  },
+  "statusSaved": {
+    "message": "Gespeichert ✓"
+  },
+  "statusError": {
+    "message": "Fehler — Wiederholen"
+  },
+  "logAttaching": {
+    "message": "Debugger aktiv, erzwinge 1920px Desktop, erstelle PDF…"
+  },
+  "logActiveTab": {
+    "message": "Kein aktiver Tab"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host fehlt — in Downloads gespeichert."
+  },
+  "hintPaper": {
+    "message": "Papier: $1"
+  },
+  "hintAsk": {
+    "message": "Nach Ort fragen"
+  },
+  "hintAuto": {
+    "message": "Auto: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Eigener: $1"
+  }
+}

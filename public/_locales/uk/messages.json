@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — Десктопний PDF"
+  },
+  "extDesc": {
+    "message": "Зберігайте веб-сторінки у PDF з текстовим шаром — десктопна верстка, не мобільна. В один клік A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Зберегти як PDF (десктоп)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">десктоп</span>"
+  },
+  "popupSub": {
+    "message": "Зберегти цю сторінку як десктопний PDF з текстом."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Зберегти в PDF (десктоп)"
+  },
+  "hintFullHD": {
+    "message": "✓ Емуляція 1920px (Desktop Full HD)"
+  },
+  "hintVector": {
+    "message": "✓ Векторний текст (пошук, копіювання)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Налаштування"
+  },
+  "downloadsLink": {
+    "message": "📁 Завантаження"
+  },
+  "popupHint": {
+    "message": "Жовта плашка «йде налагодження» — це нормально. Не закривайте її під час генерації."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Налаштування"
+  },
+  "optSub": {
+    "message": "Папір і місце збереження. Синхронізується через Chrome Sync."
+  },
+  "optPaper": {
+    "message": "Формат паперу"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (США)"
+  },
+  "optScaleHint": {
+    "message": "Масштаб: підганяє 1920px точно під область друку."
+  },
+  "optSaveMode": {
+    "message": "Режим збереження"
+  },
+  "optAsk": {
+    "message": "Запитувати щоразу, куди зберігати"
+  },
+  "optDownloads": {
+    "message": "Автоматично в Завантаження (Підпапка)"
+  },
+  "optFolderInput": {
+    "message": "Підпапка в Завантаженнях (необов’язково)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf або Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Власна папка (потребує Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Абсолютний шлях до папки"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host не встановлено — збережено в Завантаження."
+  },
+  "optFilename": {
+    "message": "Ім’я файлу"
+  },
+  "optFilenameHint": {
+    "message": "<домен>-<дата>.pdf — заборонені символи очищуються."
+  },
+  "btnSave": {
+    "message": "Зберегти"
+  },
+  "btnReset": {
+    "message": "Скинути"
+  },
+  "optSaved": {
+    "message": "✓ Збережено"
+  },
+  "optReset": {
+    "message": "↺ Скинуто"
+  },
+  "statusGenerating": {
+    "message": "Генерація…"
+  },
+  "statusSaved": {
+    "message": "Збережено ✓"
+  },
+  "statusError": {
+    "message": "Помилка — повторити"
+  },
+  "logAttaching": {
+    "message": "Підключення дебагера, емуляція 1920px, рендер PDF…"
+  },
+  "logActiveTab": {
+    "message": "Немає активної вкладки"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host не встановлено — збережено в Завантаження."
+  },
+  "hintPaper": {
+    "message": "Папір: $1"
+  },
+  "hintAsk": {
+    "message": "Запитувати куди зберігати"
+  },
+  "hintAuto": {
+    "message": "Авто: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Власна: $1"
+  }
+}

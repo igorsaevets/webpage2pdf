@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — Pulpitowy PDF"
+  },
+  "extDesc": {
+    "message": "Zapisuj strony jako prawdziwy PDF z zaznaczalnym tekstem — układ komputerowy, nie mobilny. Jednym kliknięciem A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Zapisz jako PDF (komputer)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">pulpit</span>"
+  },
+  "popupSub": {
+    "message": "Zapisz tę stronę jako PDF w układzie komputerowym z możliwością zaznaczania tekstu."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Zapisz jako PDF (komputer)"
+  },
+  "hintFullHD": {
+    "message": "✓ Emulacja widoku 1920px Full HD"
+  },
+  "hintVector": {
+    "message": "✓ Prawdziwa wektorowa warstwa tekstu (wyszukiwalna)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Ustawienia"
+  },
+  "downloadsLink": {
+    "message": "📁 Pobrane"
+  },
+  "popupHint": {
+    "message": "Żółty pasek „debugowanie tej przeglądarki” jest normalny — poczekaj na ukończenie."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Ustawienia"
+  },
+  "optSub": {
+    "message": "Format papieru i miejsce zapisu. Synchronizowane przez Chrome Sync."
+  },
+  "optPaper": {
+    "message": "Format papieru"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (USA)"
+  },
+  "optScaleHint": {
+    "message": "Skala: dopasowuje 1920px dokładnie do obszaru druku."
+  },
+  "optSaveMode": {
+    "message": "Tryb zapisu"
+  },
+  "optAsk": {
+    "message": "Pytaj o miejsce zapisu za każdym razem"
+  },
+  "optDownloads": {
+    "message": "Automatycznie do Pobranych (Podfolder)"
+  },
+  "optFolderInput": {
+    "message": "Podfolder w Pobranych (opcjonalnie)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf lub Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Folder niestandardowy (wymaga Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Ścieżka bezwzględna do folderu"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Brak Native Host — zapisano w Pobranych."
+  },
+  "optFilename": {
+    "message": "Nazwa pliku"
+  },
+  "optFilenameHint": {
+    "message": "<domena>-<data>.pdf — niedozwolone znaki oczyszczone."
+  },
+  "btnSave": {
+    "message": "Zapisz"
+  },
+  "btnReset": {
+    "message": "Resetuj"
+  },
+  "optSaved": {
+    "message": "✓ Zapisano"
+  },
+  "optReset": {
+    "message": "↺ Zresetowano"
+  },
+  "statusGenerating": {
+    "message": "Generowanie…"
+  },
+  "statusSaved": {
+    "message": "Zapisano ✓"
+  },
+  "statusError": {
+    "message": "Błąd — ponów"
+  },
+  "logAttaching": {
+    "message": "Podłączanie debugera, wymuszanie 1920px, renderowanie PDF…"
+  },
+  "logActiveTab": {
+    "message": "Brak aktywnej karty"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Brak Native Host — zapisano w folderze Pobrane."
+  },
+  "hintPaper": {
+    "message": "Papier: $1"
+  },
+  "hintAsk": {
+    "message": "Pytaj o miejsce"
+  },
+  "hintAuto": {
+    "message": "Auto: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Własny: $1"
+  }
+}

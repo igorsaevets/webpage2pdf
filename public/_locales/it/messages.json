@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "webpage2pdf — PDF Desktop"
+  },
+  "extDesc": {
+    "message": "Salva qualsiasi pagina in vero PDF con testo selezionabile — layout desktop, non mobile. In un clic A4/Letter."
+  },
+  "actionTitle": {
+    "message": "Salva come PDF (desktop)"
+  },
+  "popupTitle": {
+    "message": "webpage2pdf <span class=\"badge\">desktop</span>"
+  },
+  "popupSub": {
+    "message": "Salva questa pagina come PDF con layout desktop e testo selezionabile."
+  },
+  "btnSaveDesktop": {
+    "message": "⚡ Salva come PDF (desktop)"
+  },
+  "hintFullHD": {
+    "message": "✓ Emulazione viewport 1920px Full HD"
+  },
+  "hintVector": {
+    "message": "✓ Livello di testo vettoriale reale (cercabile)"
+  },
+  "optionsLink": {
+    "message": "⚙️ Impostazioni"
+  },
+  "downloadsLink": {
+    "message": "📁 Download"
+  },
+  "popupHint": {
+    "message": "La barra gialla \"debug di questo browser\" è normale — attendi il termine."
+  },
+  "optTitle": {
+    "message": "webpage2pdf — Impostazioni"
+  },
+  "optSub": {
+    "message": "Formato carta e cartella di salvataggio. Sincronizzato con Chrome Sync."
+  },
+  "optPaper": {
+    "message": "Formato carta"
+  },
+  "optA4": {
+    "message": "A4 (ISO)"
+  },
+  "optLetter": {
+    "message": "Letter (USA)"
+  },
+  "optScaleHint": {
+    "message": "Scala: adatta 1920px all’area di stampa."
+  },
+  "optSaveMode": {
+    "message": "Modalità di salvataggio"
+  },
+  "optAsk": {
+    "message": "Chiedi sempre dove salvare"
+  },
+  "optDownloads": {
+    "message": "Salva automaticamente in Download"
+  },
+  "optFolderInput": {
+    "message": "Sottocartella in Download (opzionale)"
+  },
+  "optFolderPlaceholder": {
+    "message": "webpage2pdf o Work/PDFs"
+  },
+  "optCustom": {
+    "message": "Cartella personalizzata (richiede Native Host)"
+  },
+  "optCustomInput": {
+    "message": "Percorso assoluto cartella"
+  },
+  "optCustomPlaceholder": {
+    "message": "D:\\MyPdfs"
+  },
+  "optHostWarn": {
+    "message": "⚠️ Native Host mancante — salvataggio in Download."
+  },
+  "optFilename": {
+    "message": "Nome file"
+  },
+  "optFilenameHint": {
+    "message": "<dominio>-<data>.pdf — caratteri non validi rimossi."
+  },
+  "btnSave": {
+    "message": "Salva"
+  },
+  "btnReset": {
+    "message": "Reimposta"
+  },
+  "optSaved": {
+    "message": "✓ Salvato"
+  },
+  "optReset": {
+    "message": "↺ Reimpostato"
+  },
+  "statusGenerating": {
+    "message": "Generazione…"
+  },
+  "statusSaved": {
+    "message": "Salvato ✓"
+  },
+  "statusError": {
+    "message": "Errore — riprova"
+  },
+  "logAttaching": {
+    "message": "Debugger attivo, forzatura 1920px, creazione PDF…"
+  },
+  "logActiveTab": {
+    "message": "Nessuna scheda attiva"
+  },
+  "logSavedNative": {
+    "message": "⚠️ Native Host non installato — salvato in Download."
+  },
+  "hintPaper": {
+    "message": "Carta: $1"
+  },
+  "hintAsk": {
+    "message": "Chiedi dove salvare"
+  },
+  "hintAuto": {
+    "message": "Auto: Downloads/$1"
+  },
+  "hintCustom": {
+    "message": "Pers.: $1"
+  }
+}
