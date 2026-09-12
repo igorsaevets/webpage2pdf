@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — PDF Desktop"
+    "message": "webpage2pdf - PDF Desktop"
   },
   "extDesc": {
-    "message": "Salva qualsiasi pagina in vero PDF con testo selezionabile — layout desktop, non mobile. In un clic A4/Letter."
+    "message": "Salva qualsiasi pagina in vero PDF con testo selezionabile - layout desktop, non mobile. In un clic A4/Letter."
   },
   "actionTitle": {
     "message": "Salva come PDF (desktop)"
@@ -30,10 +30,10 @@
     "message": "📁 Download"
   },
   "popupHint": {
-    "message": "La barra gialla \"debug di questo browser\" è normale — attendi il termine."
+    "message": "La barra gialla \"debug di questo browser\" è normale - attendi il termine."
   },
   "optTitle": {
-    "message": "webpage2pdf — Impostazioni"
+    "message": "webpage2pdf - Impostazioni"
   },
   "optSub": {
     "message": "Formato carta e cartella di salvataggio. Sincronizzato con Chrome Sync."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host mancante — salvataggio in Download."
+    "message": "⚠️ Native Host mancante - salvataggio in Download."
   },
   "optFilename": {
     "message": "Nome file"
   },
   "optFilenameHint": {
-    "message": "<dominio>-<data>.pdf — caratteri non validi rimossi."
+    "message": "<dominio>-<data>.pdf - caratteri non validi rimossi."
   },
   "btnSave": {
     "message": "Salva"
@@ -102,7 +102,7 @@
     "message": "Salvato ✓"
   },
   "statusError": {
-    "message": "Errore — riprova"
+    "message": "Errore - riprova"
   },
   "logAttaching": {
     "message": "Debugger attivo, forzatura 1920px, creazione PDF…"
@@ -111,7 +111,7 @@
     "message": "Nessuna scheda attiva"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host non installato — salvato in Download."
+    "message": "⚠️ Native Host non installato - salvato in Download."
   },
   "hintPaper": {
     "message": "Carta: $1"

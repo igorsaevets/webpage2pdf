@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "webpage2pdf — デスクトップ版 PDF"
+    "message": "webpage2pdf - デスクトップ版 PDF"
   },
   "extDesc": {
     "message": "Webページを文字選択可能な高画質PDFとして保存。スマホ表示に崩さずデスクトップ表示のままA4/Letter保存。"
@@ -33,7 +33,7 @@
     "message": "「デバッグ中」の黄色い通知バーは正常な動作です。完了まで閉じないでください。"
   },
   "optTitle": {
-    "message": "webpage2pdf — 設定"
+    "message": "webpage2pdf - 設定"
   },
   "optSub": {
     "message": "用紙サイズと保存先の設定。Chrome Syncで同期されます。"
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host未導入 — ダウンロードに保存されます。"
+    "message": "⚠️ Native Host未導入 - ダウンロードに保存されます。"
   },
   "optFilename": {
     "message": "ファイル名"
   },
   "optFilenameHint": {
-    "message": "<ドメイン>-<日付>.pdf — 禁止文字は自動置換されます。"
+    "message": "<ドメイン>-<日付>.pdf - 禁止文字は自動置換されます。"
   },
   "btnSave": {
     "message": "保存"
@@ -102,7 +102,7 @@
     "message": "保存完了 ✓"
   },
   "statusError": {
-    "message": "エラー — 再試行"
+    "message": "エラー - 再試行"
   },
   "logAttaching": {
     "message": "デバッガ接続、1920px適用、PDF生成中…"
@@ -111,7 +111,7 @@
     "message": "アクティブなタブが見つかりません"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host未検出 — ダウンロードに保存しました。"
+    "message": "⚠️ Native Host未検出 - ダウンロードに保存しました。"
   },
   "hintPaper": {
     "message": "用紙: $1"

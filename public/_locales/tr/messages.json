@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — Masaüstü PDF"
+    "message": "webpage2pdf - Masaüstü PDF"
   },
   "extDesc": {
-    "message": "Web sayfalarını seçilebilir metinli gerçek PDF olarak kaydedin — mobil değil masaüstü düzeni. Tek tıkla A4/Letter."
+    "message": "Web sayfalarını seçilebilir metinli gerçek PDF olarak kaydedin - mobil değil masaüstü düzeni. Tek tıkla A4/Letter."
   },
   "actionTitle": {
     "message": "PDF Olarak Kaydet (Masaüstü)"
@@ -30,10 +30,10 @@
     "message": "📁 İndirilenler"
   },
   "popupHint": {
-    "message": "Sarı “bu tarayıcıda hata ayıklanıyor” çubuğu normaldir — işlem bitene kadar kapatmayın."
+    "message": "Sarı “bu tarayıcıda hata ayıklanıyor” çubuğu normaldir - işlem bitene kadar kapatmayın."
   },
   "optTitle": {
-    "message": "webpage2pdf — Ayarlar"
+    "message": "webpage2pdf - Ayarlar"
   },
   "optSub": {
     "message": "Kağıt ve kayıt konumu. Chrome Sync ile senkronize edilir."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host yüklü değil — İndirilenlere kaydediliyor."
+    "message": "⚠️ Native Host yüklü değil - İndirilenlere kaydediliyor."
   },
   "optFilename": {
     "message": "Dosya Adı"
   },
   "optFilenameHint": {
-    "message": "<alan-adi>-<tarih>.pdf — geçersiz karakterler temizlenir."
+    "message": "<alan-adi>-<tarih>.pdf - geçersiz karakterler temizlenir."
   },
   "btnSave": {
     "message": "Kaydet"
@@ -102,7 +102,7 @@
     "message": "Kaydedildi ✓"
   },
   "statusError": {
-    "message": "Hata — tekrar dene"
+    "message": "Hata - tekrar dene"
   },
   "logAttaching": {
     "message": "Hata ayıklayıcı bağlandı, 1920px zorlandı, PDF oluşturuluyor…"
@@ -111,7 +111,7 @@
     "message": "Etkin sekme yok"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host yok — İndirilenlere kaydedildi."
+    "message": "⚠️ Native Host yok - İndirilenlere kaydedildi."
   },
   "hintPaper": {
     "message": "Kağıt: $1"

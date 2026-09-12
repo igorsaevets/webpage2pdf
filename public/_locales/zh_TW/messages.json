@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — 桌面版 PDF"
+    "message": "webpage2pdf - 桌面版 PDF"
   },
   "extDesc": {
-    "message": "將網頁儲存為帶可選文字的真實 PDF —— 桌面佈局而非行動版。一鍵匯出 A4/Letter。"
+    "message": "將網頁儲存為帶可選文字的真實 PDF -- 桌面佈局而非行動版。一鍵匯出 A4/Letter。"
   },
   "actionTitle": {
     "message": "儲存為桌面版 PDF"
@@ -33,7 +33,7 @@
     "message": "黃色的「正在偵錯此瀏覽器」提示列是正常的，完成前請勿關閉。"
   },
   "optTitle": {
-    "message": "webpage2pdf — 設定"
+    "message": "webpage2pdf - 設定"
   },
   "optSub": {
     "message": "紙張與儲存路徑設定。可透過 Chrome 同步。"
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ 未安裝 Native Host — 已自動降級儲存至下載。"
+    "message": "⚠️ 未安裝 Native Host - 已自動降級儲存至下載。"
   },
   "optFilename": {
     "message": "檔案名稱格式"
   },
   "optFilenameHint": {
-    "message": "<網域>-<日期>.pdf — 特殊字元自動清洗。"
+    "message": "<網域>-<日期>.pdf - 特殊字元自動清洗。"
   },
   "btnSave": {
     "message": "儲存設定"
@@ -102,7 +102,7 @@
     "message": "已儲存 ✓"
   },
   "statusError": {
-    "message": "錯誤 — 重試"
+    "message": "錯誤 - 重試"
   },
   "logAttaching": {
     "message": "連接偵錯器，強制 1920px 桌面佈局，算繪 PDF…"
@@ -111,7 +111,7 @@
     "message": "無活動分頁"
   },
   "logSavedNative": {
-    "message": "⚠️ 未安裝 Native Host — 已儲存到下載資料夾。"
+    "message": "⚠️ 未安裝 Native Host - 已儲存到下載資料夾。"
   },
   "hintPaper": {
     "message": "紙張: $1"

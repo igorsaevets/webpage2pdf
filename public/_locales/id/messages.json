@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — PDF Desktop"
+    "message": "webpage2pdf - PDF Desktop"
   },
   "extDesc": {
-    "message": "Simpan laman web sebagai PDF asli dengan teks yang dapat dipilih — tata letak desktop, bukan ponsel. Satu klik A4/Letter."
+    "message": "Simpan laman web sebagai PDF asli dengan teks yang dapat dipilih - tata letak desktop, bukan ponsel. Satu klik A4/Letter."
   },
   "actionTitle": {
     "message": "Simpan sebagai PDF (desktop)"
@@ -30,10 +30,10 @@
     "message": "📁 Unduhan"
   },
   "popupHint": {
-    "message": "Bilah kuning “men-debug browser ini” adalah normal — biarkan hingga PDF selesai."
+    "message": "Bilah kuning “men-debug browser ini” adalah normal - biarkan hingga PDF selesai."
   },
   "optTitle": {
-    "message": "webpage2pdf — Pengaturan"
+    "message": "webpage2pdf - Pengaturan"
   },
   "optSub": {
     "message": "Kertas dan tujuan penyimpanan. Disinkronkan melalui Chrome Sync."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host belum terpasang — disimpan ke Unduhan."
+    "message": "⚠️ Native Host belum terpasang - disimpan ke Unduhan."
   },
   "optFilename": {
     "message": "Nama Berkas"
   },
   "optFilenameHint": {
-    "message": "<domain>-<tanggal>.pdf — karakter terlarang dibersihkan."
+    "message": "<domain>-<tanggal>.pdf - karakter terlarang dibersihkan."
   },
   "btnSave": {
     "message": "Simpan"
@@ -102,7 +102,7 @@
     "message": "Tersimpan ✓"
   },
   "statusError": {
-    "message": "Kesalahan — coba lagi"
+    "message": "Kesalahan - coba lagi"
   },
   "logAttaching": {
     "message": "Menghubungkan debugger, menerapkan 1920px, merender PDF…"
@@ -111,7 +111,7 @@
     "message": "Tidak ada tab aktif"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host tidak terpasang — disimpan ke Unduhan."
+    "message": "⚠️ Native Host tidak terpasang - disimpan ke Unduhan."
   },
   "hintPaper": {
     "message": "Kertas: $1"

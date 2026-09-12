@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — Stalinis PDF"
+    "message": "webpage2pdf - Stalinis PDF"
   },
   "extDesc": {
-    "message": "Išsaugokite tinklalapius kaip tikrą PDF su pasirenkamu tekstu — darbalaukio maketas, ne mobilus. A4/Letter."
+    "message": "Išsaugokite tinklalapius kaip tikrą PDF su pasirenkamu tekstu - darbalaukio maketas, ne mobilus. A4/Letter."
   },
   "actionTitle": {
     "message": "Išsaugoti kaip PDF (darbalaukis)"
@@ -30,10 +30,10 @@
     "message": "📁 Atsisiuntimai"
   },
   "popupHint": {
-    "message": "The yellow “debugging this browser” bar is normal — leave it until the PDF finishes."
+    "message": "The yellow “debugging this browser” bar is normal - leave it until the PDF finishes."
   },
   "optTitle": {
-    "message": "webpage2pdf — Nustatymai"
+    "message": "webpage2pdf - Nustatymai"
   },
   "optSub": {
     "message": "Paper and save destination. Synced via Chrome Sync if enabled."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host missing — fallback to Downloads."
+    "message": "⚠️ Native Host missing - fallback to Downloads."
   },
   "optFilename": {
     "message": "Filename"
   },
   "optFilenameHint": {
-    "message": "<domain>-<date>.pdf — forbidden characters sanitized."
+    "message": "<domain>-<date>.pdf - forbidden characters sanitized."
   },
   "btnSave": {
     "message": "Save"
@@ -102,7 +102,7 @@
     "message": "Saved ✓"
   },
   "statusError": {
-    "message": "Error — retry"
+    "message": "Error - retry"
   },
   "logAttaching": {
     "message": "Attaching debugger, forcing desktop 1920px, rendering PDF…"
@@ -111,7 +111,7 @@
     "message": "No active tab"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host not installed — saved to Downloads."
+    "message": "⚠️ Native Host not installed - saved to Downloads."
   },
   "hintPaper": {
     "message": "Paper: $1"

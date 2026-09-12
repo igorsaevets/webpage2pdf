@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — 桌面版 PDF"
+    "message": "webpage2pdf - 桌面版 PDF"
   },
   "extDesc": {
-    "message": "将网页保存为带可选文本的真实 PDF —— 桌面布局而非移动端。一键导出 A4/Letter。"
+    "message": "将网页保存为带可选文本的真实 PDF -- 桌面布局而非移动端。一键导出 A4/Letter。"
   },
   "actionTitle": {
     "message": "保存为桌面版 PDF"
@@ -33,7 +33,7 @@
     "message": "黄色的“正在调试此浏览器”提示条是正常的，生成完成前请勿关闭。"
   },
   "optTitle": {
-    "message": "webpage2pdf — 设置"
+    "message": "webpage2pdf - 设置"
   },
   "optSub": {
     "message": "纸张与保存路径设置。可通过 Chrome 同步。"
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ 未安装 Native Host — 已自动降级保存至下载。"
+    "message": "⚠️ 未安装 Native Host - 已自动降级保存至下载。"
   },
   "optFilename": {
     "message": "文件名格式"
   },
   "optFilenameHint": {
-    "message": "<域名>-<日期>.pdf — 特殊字符自动清洗。"
+    "message": "<域名>-<日期>.pdf - 特殊字符自动清洗。"
   },
   "btnSave": {
     "message": "保存设置"
@@ -102,7 +102,7 @@
     "message": "已保存 ✓"
   },
   "statusError": {
-    "message": "错误 — 重试"
+    "message": "错误 - 重试"
   },
   "logAttaching": {
     "message": "附加调试器，强制 1920px 桌面布局，渲染 PDF…"
@@ -111,7 +111,7 @@
     "message": "无活动标签页"
   },
   "logSavedNative": {
-    "message": "⚠️ 未安装 Native Host — 已保存到下载文件夹。"
+    "message": "⚠️ 未安装 Native Host - 已保存到下载文件夹。"
   },
   "hintPaper": {
     "message": "纸张: $1"

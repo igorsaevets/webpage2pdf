@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "webpage2pdf — PDF สำหรับเดสก์ท็อป"
+    "message": "webpage2pdf - PDF สำหรับเดสก์ท็อป"
   },
   "extDesc": {
     "message": "บันทึกเว็บเพจเป็น PDF พร้อมเลเยอร์ข้อความที่เลือกได้ เลย์เอาต์เดสก์ท็อปแท้ไม่ใช่แบบมือถือ คลิกเดียว A4/Letter"
@@ -33,7 +33,7 @@
     "message": "แถบสีเหลือง \"กำลังแก้ไขข้อบกพร่อง\" เป็นเรื่องปกติ กรุณารอจนกว่าจะเสร็จสิ้น"
   },
   "optTitle": {
-    "message": "webpage2pdf — การตั้งค่า"
+    "message": "webpage2pdf - การตั้งค่า"
   },
   "optSub": {
     "message": "ขนาดกระดาษและปลายทางการบันทึก ซิงค์ผ่าน Chrome Sync"
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ ไม่ได้ติดตั้ง Native Host — บันทึกลงในดาวน์โหลดแทน"
+    "message": "⚠️ ไม่ได้ติดตั้ง Native Host - บันทึกลงในดาวน์โหลดแทน"
   },
   "optFilename": {
     "message": "ชื่อไฟล์"
   },
   "optFilenameHint": {
-    "message": "<โดเมน>-<วันที่>.pdf — ล้างอักขระต้องห้ามโดยอัตโนมัติ"
+    "message": "<โดเมน>-<วันที่>.pdf - ล้างอักขระต้องห้ามโดยอัตโนมัติ"
   },
   "btnSave": {
     "message": "บันทึก"
@@ -102,7 +102,7 @@
     "message": "บันทึกแล้ว ✓"
   },
   "statusError": {
-    "message": "ข้อผิดพลาด — ลองใหม่"
+    "message": "ข้อผิดพลาด - ลองใหม่"
   },
   "logAttaching": {
     "message": "กำลังเชื่อมต่อดีบักเกอร์ บังคับ 1920px กำลังเรนเดอร์ PDF…"
@@ -111,7 +111,7 @@
     "message": "ไม่มีแท็บที่ใช้งานอยู่"
   },
   "logSavedNative": {
-    "message": "⚠️ ไม่ได้ติดตั้ง Native Host — บันทึกในดาวน์โหลดแล้ว"
+    "message": "⚠️ ไม่ได้ติดตั้ง Native Host - บันทึกในดาวน์โหลดแล้ว"
   },
   "hintPaper": {
     "message": "กระดาษ: $1"

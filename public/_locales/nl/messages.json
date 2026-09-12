@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — Desktop PDF"
+    "message": "webpage2pdf - Desktop PDF"
   },
   "extDesc": {
-    "message": "Sla elke webpagina op als echte PDF met selecteerbare tekst — desktopindeling, niet mobiel. Één klik A4/Letter."
+    "message": "Sla elke webpagina op als echte PDF met selecteerbare tekst - desktopindeling, niet mobiel. Één klik A4/Letter."
   },
   "actionTitle": {
     "message": "Opslaan als PDF (desktop)"
@@ -30,10 +30,10 @@
     "message": "📁 Downloads"
   },
   "popupHint": {
-    "message": "De gele balk “bezig met foutopsporing” is normaal — wacht tot het PDF klaar is."
+    "message": "De gele balk “bezig met foutopsporing” is normaal - wacht tot het PDF klaar is."
   },
   "optTitle": {
-    "message": "webpage2pdf — Instellingen"
+    "message": "webpage2pdf - Instellingen"
   },
   "optSub": {
     "message": "Papierformaat en opslaglocatie. Gesynchroniseerd via Chrome Sync."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host ontbreekt — opgeslagen in Downloads."
+    "message": "⚠️ Native Host ontbreekt - opgeslagen in Downloads."
   },
   "optFilename": {
     "message": "Bestandsnaam"
   },
   "optFilenameHint": {
-    "message": "<domein>-<datum>.pdf — ongeldige tekens opgeschoond."
+    "message": "<domein>-<datum>.pdf - ongeldige tekens opgeschoond."
   },
   "btnSave": {
     "message": "Opslaan"
@@ -102,7 +102,7 @@
     "message": "Opgeslagen ✓"
   },
   "statusError": {
-    "message": "Fout — opnieuw proberen"
+    "message": "Fout - opnieuw proberen"
   },
   "logAttaching": {
     "message": "Debugger gekoppeld, 1920px afgedwongen, PDF renderen…"
@@ -111,7 +111,7 @@
     "message": "Geen actief tabblad"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host ontbreekt — opgeslagen in Downloads."
+    "message": "⚠️ Native Host ontbreekt - opgeslagen in Downloads."
   },
   "hintPaper": {
     "message": "Papier: $1"

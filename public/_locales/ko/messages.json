@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "webpage2pdf — 데스크톱 PDF"
+    "message": "webpage2pdf - 데스크톱 PDF"
   },
   "extDesc": {
     "message": "웹페이지를 텍스트 선택이 가능한 고품질 PDF로 저장. 모바일로 축소되지 않는 데스크톱 레이아웃 A4/Letter 원클릭 저장."
@@ -33,7 +33,7 @@
     "message": "노란색 \"브라우저 디버깅\" 알림줄은 정상 작동입니다. 완료될 때까지 닫지 마세요."
   },
   "optTitle": {
-    "message": "webpage2pdf — 설정"
+    "message": "webpage2pdf - 설정"
   },
   "optSub": {
     "message": "용지 크기 및 저장 위치 설정. Chrome Sync로 동기화됩니다."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host 미설치 — 다운로드 폴더에 저장됩니다."
+    "message": "⚠️ Native Host 미설치 - 다운로드 폴더에 저장됩니다."
   },
   "optFilename": {
     "message": "파일명 형식"
   },
   "optFilenameHint": {
-    "message": "<도메인>-<날짜>.pdf — 특수문자는 자동 정제됩니다."
+    "message": "<도메인>-<날짜>.pdf - 특수문자는 자동 정제됩니다."
   },
   "btnSave": {
     "message": "저장"
@@ -102,7 +102,7 @@
     "message": "저장 완료 ✓"
   },
   "statusError": {
-    "message": "오류 — 다시 시도"
+    "message": "오류 - 다시 시도"
   },
   "logAttaching": {
     "message": "디버거 연결, 1920px 데스크톱 강제 적용, PDF 렌더링…"
@@ -111,7 +111,7 @@
     "message": "활성화된 탭이 없습니다"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host 미설치 — 다운로드 폴더에 저장되었습니다."
+    "message": "⚠️ Native Host 미설치 - 다운로드 폴더에 저장되었습니다."
   },
   "hintPaper": {
     "message": "용지: $1"

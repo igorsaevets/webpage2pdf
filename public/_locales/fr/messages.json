@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — PDF Bureau"
+    "message": "webpage2pdf - PDF Bureau"
   },
   "extDesc": {
-    "message": "Enregistrez toute page en vrai PDF avec texte sélectionnable — mise en page bureau, non mobile. En un clic A4/Letter."
+    "message": "Enregistrez toute page en vrai PDF avec texte sélectionnable - mise en page bureau, non mobile. En un clic A4/Letter."
   },
   "actionTitle": {
     "message": "Enregistrer en PDF (bureau)"
@@ -30,10 +30,10 @@
     "message": "📁 Téléchargements"
   },
   "popupHint": {
-    "message": "Le bandeau jaune « débogage » est normal — laissez-le jusqu’à la fin."
+    "message": "Le bandeau jaune « débogage » est normal - laissez-le jusqu’à la fin."
   },
   "optTitle": {
-    "message": "webpage2pdf — Paramètres"
+    "message": "webpage2pdf - Paramètres"
   },
   "optSub": {
     "message": "Format papier et dossier de sauvegarde. Synchronisé via Chrome."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host manquant — sauvegardé dans Téléchargements."
+    "message": "⚠️ Native Host manquant - sauvegardé dans Téléchargements."
   },
   "optFilename": {
     "message": "Nom de fichier"
   },
   "optFilenameHint": {
-    "message": "<domaine>-<date>.pdf — caractères interdits nettoyés."
+    "message": "<domaine>-<date>.pdf - caractères interdits nettoyés."
   },
   "btnSave": {
     "message": "Enregistrer"
@@ -102,7 +102,7 @@
     "message": "Enregistré ✓"
   },
   "statusError": {
-    "message": "Erreur — réessayer"
+    "message": "Erreur - réessayer"
   },
   "logAttaching": {
     "message": "Débogueur actif, 1920px forcé, création du PDF…"
@@ -111,7 +111,7 @@
     "message": "Aucun onglet actif"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host absent — enregistré dans Téléchargements."
+    "message": "⚠️ Native Host absent - enregistré dans Téléchargements."
   },
   "hintPaper": {
     "message": "Papier : $1"

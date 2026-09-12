@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — Десктопный PDF"
+    "message": "webpage2pdf - Десктопный PDF"
   },
   "extDesc": {
-    "message": "Сохраняйте страницы в PDF с текстовым слоем — десктопная верстка, не мобильная. В один клик A4/Letter."
+    "message": "Сохраняйте страницы в PDF с текстовым слоем - десктопная верстка, не мобильная. В один клик A4/Letter."
   },
   "actionTitle": {
     "message": "Сохранить в PDF (десктоп)"
@@ -30,10 +30,10 @@
     "message": "📁 Загрузки"
   },
   "popupHint": {
-    "message": "Желтая плашка «идет отладка» — это нормально. Не закрывайте её, пока генерируется PDF."
+    "message": "Желтая плашка «идет отладка» - это нормально. Не закрывайте её, пока генерируется PDF."
   },
   "optTitle": {
-    "message": "webpage2pdf — Настройки"
+    "message": "webpage2pdf - Настройки"
   },
   "optSub": {
     "message": "Бумага и куда сохранять PDF. Синхронизируется через Chrome Sync."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host не установлен — сохранено в Загрузки."
+    "message": "⚠️ Native Host не установлен - сохранено в Загрузки."
   },
   "optFilename": {
     "message": "Имя файла"
   },
   "optFilenameHint": {
-    "message": "<домен>-<дата>.pdf — запрещенные символы экранируются."
+    "message": "<домен>-<дата>.pdf - запрещенные символы экранируются."
   },
   "btnSave": {
     "message": "Сохранить"
@@ -102,7 +102,7 @@
     "message": "Сохранено ✓"
   },
   "statusError": {
-    "message": "Ошибка — повторить"
+    "message": "Ошибка - повторить"
   },
   "logAttaching": {
     "message": "Подключение дебаггера, эмуляция 1920px, рендер PDF…"
@@ -111,7 +111,7 @@
     "message": "Нет активной вкладки"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host не установлен — сохранено в Загрузки."
+    "message": "⚠️ Native Host не установлен - сохранено в Загрузки."
   },
   "hintPaper": {
     "message": "Бумага: $1"

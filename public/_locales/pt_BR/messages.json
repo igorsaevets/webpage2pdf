@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — PDF de Desktop"
+    "message": "webpage2pdf - PDF de Desktop"
   },
   "extDesc": {
-    "message": "Salve páginas em PDF com texto selecionável — layout de desktop, não mobile. Em um clique A4/Letter."
+    "message": "Salve páginas em PDF com texto selecionável - layout de desktop, não mobile. Em um clique A4/Letter."
   },
   "actionTitle": {
     "message": "Salvar como PDF (desktop)"
@@ -30,10 +30,10 @@
     "message": "📁 Downloads"
   },
   "popupHint": {
-    "message": "A barra amarela “depurando este navegador” é normal — aguarde concluir."
+    "message": "A barra amarela “depurando este navegador” é normal - aguarde concluir."
   },
   "optTitle": {
-    "message": "webpage2pdf — Configurações"
+    "message": "webpage2pdf - Configurações"
   },
   "optSub": {
     "message": "Papel e pasta de salvamento. Sincronizado via Chrome Sync."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host ausente — salvando em Downloads."
+    "message": "⚠️ Native Host ausente - salvando em Downloads."
   },
   "optFilename": {
     "message": "Nome do Arquivo"
   },
   "optFilenameHint": {
-    "message": "<domínio>-<data>.pdf — caracteres inválidos limpos."
+    "message": "<domínio>-<data>.pdf - caracteres inválidos limpos."
   },
   "btnSave": {
     "message": "Salvar"
@@ -102,7 +102,7 @@
     "message": "Salvo ✓"
   },
   "statusError": {
-    "message": "Erro — tentar de novo"
+    "message": "Erro - tentar de novo"
   },
   "logAttaching": {
     "message": "Depurador ativo, forçando 1920px, renderizando PDF…"
@@ -111,7 +111,7 @@
     "message": "Nenhuma guia ativa"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host ausente — salvo em Downloads."
+    "message": "⚠️ Native Host ausente - salvo em Downloads."
   },
   "hintPaper": {
     "message": "Papel: $1"

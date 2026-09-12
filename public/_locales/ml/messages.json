@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — ഡെസ്ക്ടോപ്പ് PDF"
+    "message": "webpage2pdf - ഡെസ്ക്ടോപ്പ് PDF"
   },
   "extDesc": {
-    "message": "തിരഞ്ഞെടുക്കാവുന്ന വാചകമുള്ള യഥാർത്ഥ PDF ആയി വെബ് പേജുകൾ സംരക്ഷിക്കുക — ഡെസ്ക്ടോപ്പ് ലേഔട്ട്. A4/Letter."
+    "message": "തിരഞ്ഞെടുക്കാവുന്ന വാചകമുള്ള യഥാർത്ഥ PDF ആയി വെബ് പേജുകൾ സംരക്ഷിക്കുക - ഡെസ്ക്ടോപ്പ് ലേഔട്ട്. A4/Letter."
   },
   "actionTitle": {
     "message": "PDF ആയി സംരക്ഷിക്കുക (ഡെസ്ക്ടോപ്പ്)"
@@ -30,10 +30,10 @@
     "message": "📁 ഡൗൺലോഡുകൾ"
   },
   "popupHint": {
-    "message": "The yellow “debugging this browser” bar is normal — leave it until the PDF finishes."
+    "message": "The yellow “debugging this browser” bar is normal - leave it until the PDF finishes."
   },
   "optTitle": {
-    "message": "webpage2pdf — ക്രമീകരണങ്ങൾ"
+    "message": "webpage2pdf - ക്രമീകരണങ്ങൾ"
   },
   "optSub": {
     "message": "Paper and save destination. Synced via Chrome Sync if enabled."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host missing — fallback to Downloads."
+    "message": "⚠️ Native Host missing - fallback to Downloads."
   },
   "optFilename": {
     "message": "Filename"
   },
   "optFilenameHint": {
-    "message": "<domain>-<date>.pdf — forbidden characters sanitized."
+    "message": "<domain>-<date>.pdf - forbidden characters sanitized."
   },
   "btnSave": {
     "message": "Save"
@@ -102,7 +102,7 @@
     "message": "Saved ✓"
   },
   "statusError": {
-    "message": "Error — retry"
+    "message": "Error - retry"
   },
   "logAttaching": {
     "message": "Attaching debugger, forcing desktop 1920px, rendering PDF…"
@@ -111,7 +111,7 @@
     "message": "No active tab"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host not installed — saved to Downloads."
+    "message": "⚠️ Native Host not installed - saved to Downloads."
   },
   "hintPaper": {
     "message": "Paper: $1"

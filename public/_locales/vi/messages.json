@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — PDF Máy tính"
+    "message": "webpage2pdf - PDF Máy tính"
   },
   "extDesc": {
-    "message": "Lưu trang web thành PDF thật có thể chọn văn bản — giao diện máy tính, không bị thu nhỏ di động. Một cú nhấp A4/Letter."
+    "message": "Lưu trang web thành PDF thật có thể chọn văn bản - giao diện máy tính, không bị thu nhỏ di động. Một cú nhấp A4/Letter."
   },
   "actionTitle": {
     "message": "Lưu dạng PDF (máy tính)"
@@ -30,10 +30,10 @@
     "message": "📁 Tệp tải xuống"
   },
   "popupHint": {
-    "message": "Thanh màu vàng “đang gỡ lỗi trình duyệt này” là bình thường — hãy giữ nguyên."
+    "message": "Thanh màu vàng “đang gỡ lỗi trình duyệt này” là bình thường - hãy giữ nguyên."
   },
   "optTitle": {
-    "message": "webpage2pdf — Cài đặt"
+    "message": "webpage2pdf - Cài đặt"
   },
   "optSub": {
     "message": "Khổ giấy và nơi lưu trữ. Đồng bộ hóa qua Chrome Sync."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Chưa cài Native Host — chuyển sang lưu vào Tải xuống."
+    "message": "⚠️ Chưa cài Native Host - chuyển sang lưu vào Tải xuống."
   },
   "optFilename": {
     "message": "Tên tệp"
   },
   "optFilenameHint": {
-    "message": "<tên-miền>-<ngày>.pdf — ký tự cấm được xử lý sạch."
+    "message": "<tên-miền>-<ngày>.pdf - ký tự cấm được xử lý sạch."
   },
   "btnSave": {
     "message": "Lưu"
@@ -102,7 +102,7 @@
     "message": "Đã lưu ✓"
   },
   "statusError": {
-    "message": "Lỗi — thử lại"
+    "message": "Lỗi - thử lại"
   },
   "logAttaching": {
     "message": "Gắn trình gỡ lỗi, áp dụng 1920px, đang kết xuất PDF…"
@@ -111,7 +111,7 @@
     "message": "Không có thẻ nào đang hoạt động"
   },
   "logSavedNative": {
-    "message": "⚠️ Chưa cài Native Host — đã lưu vào Tải xuống."
+    "message": "⚠️ Chưa cài Native Host - đã lưu vào Tải xuống."
   },
   "hintPaper": {
     "message": "Khổ giấy: $1"

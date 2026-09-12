@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — ডেস্কটপ PDF"
+    "message": "webpage2pdf - ডেস্কটপ PDF"
   },
   "extDesc": {
-    "message": "যেকোনো ওয়েবপৃষ্ঠা আসল PDF হিসেবে সংরক্ষণ করুন টেক্সট লেয়ার সহ — ডেস্কটপ লেআউট। এক ক্লিকে A4/Letter।"
+    "message": "যেকোনো ওয়েবপৃষ্ঠা আসল PDF হিসেবে সংরক্ষণ করুন টেক্সট লেয়ার সহ - ডেস্কটপ লেআউট। এক ক্লিকে A4/Letter।"
   },
   "actionTitle": {
     "message": "PDF হিসেবে সংরক্ষণ করুন (ডেস্কটপ)"
@@ -30,10 +30,10 @@
     "message": "📁 ডাউনলোড"
   },
   "popupHint": {
-    "message": "হলুদ রঙের \"ডিবাগিং\" বারটি স্বাভাবিক — PDF শেষ হওয়া পর্যন্ত অপেক্ষা করুন।"
+    "message": "হলুদ রঙের \"ডিবাগিং\" বারটি স্বাভাবিক - PDF শেষ হওয়া পর্যন্ত অপেক্ষা করুন।"
   },
   "optTitle": {
-    "message": "webpage2pdf — সেটিংস"
+    "message": "webpage2pdf - সেটিংস"
   },
   "optSub": {
     "message": "কাগজের আকার এবং সংরক্ষণের স্থান। Chrome Sync এর মাধ্যমে সিঙ্ক করা হয়।"
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host নেই — ডাউনলোডে সংরক্ষণ করা হচ্ছে।"
+    "message": "⚠️ Native Host নেই - ডাউনলোডে সংরক্ষণ করা হচ্ছে।"
   },
   "optFilename": {
     "message": "ফাইলের নাম"
   },
   "optFilenameHint": {
-    "message": "<ডোমেন>-<তারিখ>.pdf — অবৈধ অক্ষর সরানো হয়েছে।"
+    "message": "<ডোমেন>-<তারিখ>.pdf - অবৈধ অক্ষর সরানো হয়েছে।"
   },
   "btnSave": {
     "message": "সংরক্ষণ করুন"
@@ -102,7 +102,7 @@
     "message": "সংরক্ষিত ✓"
   },
   "statusError": {
-    "message": "ত্রুটি — আবার চেষ্টা করুন"
+    "message": "ত্রুটি - আবার চেষ্টা করুন"
   },
   "logAttaching": {
     "message": "ডিবাগার সংযুক্ত হচ্ছে, ১৯২০ পিক্সেল প্রয়োগ হচ্ছে, PDF রেন্ডার হচ্ছে…"
@@ -111,7 +111,7 @@
     "message": "কোন সক্রিয় ট্যাব নেই"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host নেই — ডাউনলোডে সংরক্ষিত হয়েছে।"
+    "message": "⚠️ Native Host নেই - ডাউনলোডে সংরক্ষিত হয়েছে।"
   },
   "hintPaper": {
     "message": "কাগজ: $1"

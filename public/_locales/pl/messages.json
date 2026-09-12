@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — Pulpitowy PDF"
+    "message": "webpage2pdf - Pulpitowy PDF"
   },
   "extDesc": {
-    "message": "Zapisuj strony jako prawdziwy PDF z zaznaczalnym tekstem — układ komputerowy, nie mobilny. Jednym kliknięciem A4/Letter."
+    "message": "Zapisuj strony jako prawdziwy PDF z zaznaczalnym tekstem - układ komputerowy, nie mobilny. Jednym kliknięciem A4/Letter."
   },
   "actionTitle": {
     "message": "Zapisz jako PDF (komputer)"
@@ -30,10 +30,10 @@
     "message": "📁 Pobrane"
   },
   "popupHint": {
-    "message": "Żółty pasek „debugowanie tej przeglądarki” jest normalny — poczekaj na ukończenie."
+    "message": "Żółty pasek „debugowanie tej przeglądarki” jest normalny - poczekaj na ukończenie."
   },
   "optTitle": {
-    "message": "webpage2pdf — Ustawienia"
+    "message": "webpage2pdf - Ustawienia"
   },
   "optSub": {
     "message": "Format papieru i miejsce zapisu. Synchronizowane przez Chrome Sync."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Brak Native Host — zapisano w Pobranych."
+    "message": "⚠️ Brak Native Host - zapisano w Pobranych."
   },
   "optFilename": {
     "message": "Nazwa pliku"
   },
   "optFilenameHint": {
-    "message": "<domena>-<data>.pdf — niedozwolone znaki oczyszczone."
+    "message": "<domena>-<data>.pdf - niedozwolone znaki oczyszczone."
   },
   "btnSave": {
     "message": "Zapisz"
@@ -102,7 +102,7 @@
     "message": "Zapisano ✓"
   },
   "statusError": {
-    "message": "Błąd — ponów"
+    "message": "Błąd - ponów"
   },
   "logAttaching": {
     "message": "Podłączanie debugera, wymuszanie 1920px, renderowanie PDF…"
@@ -111,7 +111,7 @@
     "message": "Brak aktywnej karty"
   },
   "logSavedNative": {
-    "message": "⚠️ Brak Native Host — zapisano w folderze Pobrane."
+    "message": "⚠️ Brak Native Host - zapisano w folderze Pobrane."
   },
   "hintPaper": {
     "message": "Papier: $1"

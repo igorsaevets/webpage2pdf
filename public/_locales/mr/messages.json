@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — डेस्कटॉप PDF"
+    "message": "webpage2pdf - डेस्कटॉप PDF"
   },
   "extDesc": {
-    "message": "निवडण्यायोग्य मजकुरासह वेबपृष्ठे मूळ PDF म्हणून जतन करा — डेस्कटॉप मांडणी, मोबाइल नाही. A4/Letter."
+    "message": "निवडण्यायोग्य मजकुरासह वेबपृष्ठे मूळ PDF म्हणून जतन करा - डेस्कटॉप मांडणी, मोबाइल नाही. A4/Letter."
   },
   "actionTitle": {
     "message": "PDF म्हणून जतन करा (डेस्कटॉप)"
@@ -30,10 +30,10 @@
     "message": "📁 डाउनलोड"
   },
   "popupHint": {
-    "message": "The yellow “debugging this browser” bar is normal — leave it until the PDF finishes."
+    "message": "The yellow “debugging this browser” bar is normal - leave it until the PDF finishes."
   },
   "optTitle": {
-    "message": "webpage2pdf — सेटिंग्ज"
+    "message": "webpage2pdf - सेटिंग्ज"
   },
   "optSub": {
     "message": "Paper and save destination. Synced via Chrome Sync if enabled."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host missing — fallback to Downloads."
+    "message": "⚠️ Native Host missing - fallback to Downloads."
   },
   "optFilename": {
     "message": "Filename"
   },
   "optFilenameHint": {
-    "message": "<domain>-<date>.pdf — forbidden characters sanitized."
+    "message": "<domain>-<date>.pdf - forbidden characters sanitized."
   },
   "btnSave": {
     "message": "Save"
@@ -102,7 +102,7 @@
     "message": "Saved ✓"
   },
   "statusError": {
-    "message": "Error — retry"
+    "message": "Error - retry"
   },
   "logAttaching": {
     "message": "Attaching debugger, forcing desktop 1920px, rendering PDF…"
@@ -111,7 +111,7 @@
     "message": "No active tab"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host not installed — saved to Downloads."
+    "message": "⚠️ Native Host not installed - saved to Downloads."
   },
   "hintPaper": {
     "message": "Paper: $1"

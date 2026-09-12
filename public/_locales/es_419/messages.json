@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — PDF de Escritorio"
+    "message": "webpage2pdf - PDF de Escritorio"
   },
   "extDesc": {
-    "message": "Guarda cualquier página web como un PDF real con texto seleccionable — diseño de escritorio, no móvil. Un clic A4/Letter."
+    "message": "Guarda cualquier página web como un PDF real con texto seleccionable - diseño de escritorio, no móvil. Un clic A4/Letter."
   },
   "actionTitle": {
     "message": "Guardar como PDF (escritorio)"
@@ -30,10 +30,10 @@
     "message": "📁 Descargas"
   },
   "popupHint": {
-    "message": "La barra amarilla de “depurando este navegador” es normal — déjela hasta que el PDF termine."
+    "message": "La barra amarilla de “depurando este navegador” es normal - déjela hasta que el PDF termine."
   },
   "optTitle": {
-    "message": "webpage2pdf — Configuración"
+    "message": "webpage2pdf - Configuración"
   },
   "optSub": {
     "message": "Papel y destino de guardado. Sincronizado mediante Chrome Sync."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host no instalado — guardando en Descargas."
+    "message": "⚠️ Native Host no instalado - guardando en Descargas."
   },
   "optFilename": {
     "message": "Nombre de archivo"
   },
   "optFilenameHint": {
-    "message": "<dominio>-<fecha>.pdf — caracteres especiales limpiados."
+    "message": "<dominio>-<fecha>.pdf - caracteres especiales limpiados."
   },
   "btnSave": {
     "message": "Guardar"
@@ -102,7 +102,7 @@
     "message": "¡Guardado! ✓"
   },
   "statusError": {
-    "message": "Error — reintentar"
+    "message": "Error - reintentar"
   },
   "logAttaching": {
     "message": "Adjuntando depurador, forzando escritorio de 1920px, renderizando PDF…"
@@ -111,7 +111,7 @@
     "message": "Sin pestaña activa"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host no instalado — guardado en Descargas."
+    "message": "⚠️ Native Host no instalado - guardado en Descargas."
   },
   "hintPaper": {
     "message": "Papel: $1"

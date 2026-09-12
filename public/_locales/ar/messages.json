@@ -1,9 +1,9 @@
 {
   "extName": {
-    "message": "webpage2pdf — ملف PDF لسطح المكتب"
+    "message": "webpage2pdf - ملف PDF لسطح المكتب"
   },
   "extDesc": {
-    "message": "احفظ أي صفحة ويب كملف PDF حقيقي مع نص قابل للتحديد — بتنسيق سطح المكتب وليس الجوال. بنقرة واحدة A4/Letter."
+    "message": "احفظ أي صفحة ويب كملف PDF حقيقي مع نص قابل للتحديد - بتنسيق سطح المكتب وليس الجوال. بنقرة واحدة A4/Letter."
   },
   "actionTitle": {
     "message": "حفظ كملف PDF (سطح المكتب)"
@@ -30,10 +30,10 @@
     "message": "📁 التنزيلات"
   },
   "popupHint": {
-    "message": "الشريط الأصفر \"تصحيح أخطاء هذا المتصفح\" طبيعي — اتركه حتى ينتهي."
+    "message": "الشريط الأصفر \"تصحيح أخطاء هذا المتصفح\" طبيعي - اتركه حتى ينتهي."
   },
   "optTitle": {
-    "message": "webpage2pdf — الإعدادات"
+    "message": "webpage2pdf - الإعدادات"
   },
   "optSub": {
     "message": "إعدادات الورق ومكان الحفظ. متزامنة عبر Chrome Sync."
@@ -75,13 +75,13 @@
     "message": "D:\\MyPdfs"
   },
   "optHostWarn": {
-    "message": "⚠️ Native Host غير مثبت — تم الحفظ في التنزيلات."
+    "message": "⚠️ Native Host غير مثبت - تم الحفظ في التنزيلات."
   },
   "optFilename": {
     "message": "اسم الملف"
   },
   "optFilenameHint": {
-    "message": "<النطاق>-<التاريخ>.pdf — يتم تنظيف الرموز المحظورة."
+    "message": "<النطاق>-<التاريخ>.pdf - يتم تنظيف الرموز المحظورة."
   },
   "btnSave": {
     "message": "حفظ"
@@ -102,7 +102,7 @@
     "message": "تم الحفظ ✓"
   },
   "statusError": {
-    "message": "خطأ — أعد المحاولة"
+    "message": "خطأ - أعد المحاولة"
   },
   "logAttaching": {
     "message": "ربط المصحح، فرض دقة 1920 بكسل، تصيير PDF…"
@@ -111,7 +111,7 @@
     "message": "لا توجد علامة تبويب نشطة"
   },
   "logSavedNative": {
-    "message": "⚠️ Native Host غير مثبت — تم الحفظ في التنزيلات."
+    "message": "⚠️ Native Host غير مثبت - تم الحفظ في التنزيلات."
   },
   "hintPaper": {
     "message": "الورق: $1"
