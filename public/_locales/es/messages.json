@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Pers.: $1"
+  },
+  "contextMenuSave": {
+    "message": "Guardar página como PDF (escritorio)"
+  },
+  "toastGenerating": {
+    "message": "Generando PDF de escritorio (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF guardado con éxito ✓"
+  },
+  "toastError": {
+    "message": "Error al guardar PDF: $1"
   }
 }

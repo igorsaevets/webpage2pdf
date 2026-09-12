@@ -7,7 +7,7 @@ export default defineConfig({
     default_locale: 'en',
     version: '0.4.1',
     // Minimum-permission: nativeMessaging only if user chose custom folder
-    permissions: ['debugger', 'activeTab', 'downloads', 'scripting', 'storage'],
+    permissions: ['debugger', 'activeTab', 'downloads', 'scripting', 'storage', 'contextMenus'],
     optional_permissions: ['nativeMessaging'],
     host_permissions: ['<all_urls>'],
     action: {

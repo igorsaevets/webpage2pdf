@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "自訂: $1"
+  },
+  "contextMenuSave": {
+    "message": "儲存網頁為桌面版 PDF"
+  },
+  "toastGenerating": {
+    "message": "正在產生桌面版 PDF (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF 儲存成功 ✓"
+  },
+  "toastError": {
+    "message": "PDF 儲存失敗: $1"
   }
 }

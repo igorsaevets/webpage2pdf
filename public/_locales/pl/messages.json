@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Własny: $1"
+  },
+  "contextMenuSave": {
+    "message": "Zapisz stronę jako PDF (komputer)"
+  },
+  "toastGenerating": {
+    "message": "Generowanie pulpitowego PDF (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF został pomyślnie zapisany ✓"
+  },
+  "toastError": {
+    "message": "Błąd zapisu PDF: $1"
   }
 }

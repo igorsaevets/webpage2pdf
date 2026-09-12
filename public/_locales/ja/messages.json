@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "任意: $1"
+  },
+  "contextMenuSave": {
+    "message": "ページをデスクトップ版PDFとして保存"
+  },
+  "toastGenerating": {
+    "message": "デスクトップ版PDFを生成中 (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDFの保存が完了しました ✓"
+  },
+  "toastError": {
+    "message": "PDF保存エラー: $1"
   }
 }

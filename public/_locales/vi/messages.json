@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Tùy chỉnh: $1"
+  },
+  "contextMenuSave": {
+    "message": "Lưu trang thành PDF (máy tính)"
+  },
+  "toastGenerating": {
+    "message": "Đang tạo PDF máy tính (1920px)…"
+  },
+  "toastSaved": {
+    "message": "Đã lưu PDF thành công ✓"
+  },
+  "toastError": {
+    "message": "Lưu PDF thất bại: $1"
   }
 }

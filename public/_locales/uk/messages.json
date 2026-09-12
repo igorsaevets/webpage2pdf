@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Власна: $1"
+  },
+  "contextMenuSave": {
+    "message": "Зберегти сторінку в PDF (десктоп)"
+  },
+  "toastGenerating": {
+    "message": "Генерація десктопного PDF (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF успішно збережено ✓"
+  },
+  "toastError": {
+    "message": "Помилка збереження PDF: $1"
   }
 }

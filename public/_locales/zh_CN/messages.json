@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "自定义: $1"
+  },
+  "contextMenuSave": {
+    "message": "保存网页为桌面版 PDF"
+  },
+  "toastGenerating": {
+    "message": "正在生成桌面版 PDF (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF 保存成功 ✓"
+  },
+  "toastError": {
+    "message": "PDF 保存失败: $1"
   }
 }

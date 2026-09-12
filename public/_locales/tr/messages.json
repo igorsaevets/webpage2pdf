@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Özel: $1"
+  },
+  "contextMenuSave": {
+    "message": "Sayfayı PDF olarak kaydet (masaüstü)"
+  },
+  "toastGenerating": {
+    "message": "Masaüstü PDF oluşturuluyor (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF başarıyla kaydedildi ✓"
+  },
+  "toastError": {
+    "message": "PDF kaydedilemedi: $1"
   }
 }

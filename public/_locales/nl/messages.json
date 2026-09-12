@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Aangepast: $1"
+  },
+  "contextMenuSave": {
+    "message": "Pagina opslaan als PDF (desktop)"
+  },
+  "toastGenerating": {
+    "message": "Desktop PDF genereren (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF succesvol opgeslagen ✓"
+  },
+  "toastError": {
+    "message": "Fout bij opslaan PDF: $1"
   }
 }

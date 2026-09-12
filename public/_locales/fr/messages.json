@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Perso : $1"
+  },
+  "contextMenuSave": {
+    "message": "Enregistrer la page en PDF (bureau)"
+  },
+  "toastGenerating": {
+    "message": "Génération du PDF bureau (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF enregistré avec succès ✓"
+  },
+  "toastError": {
+    "message": "Erreur lors de l’enregistrement: $1"
   }
 }

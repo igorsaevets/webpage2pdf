@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Custom: $1"
+  },
+  "contextMenuSave": {
+    "message": "⚡ Spremi kao PDF (desktop)"
+  },
+  "toastGenerating": {
+    "message": "Generating desktop PDF (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF saved successfully ✓"
+  },
+  "toastError": {
+    "message": "Failed to save PDF: $1"
   }
 }

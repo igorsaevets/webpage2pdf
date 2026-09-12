@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "কাস্টম: $1"
+  },
+  "contextMenuSave": {
+    "message": "পৃষ্ঠাটি PDF হিসেবে সংরক্ষণ করুন (ডেস্কটপ)"
+  },
+  "toastGenerating": {
+    "message": "ডেস্কটপ PDF তৈরি হচ্ছে (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF সফলভাবে সংরক্ষিত হয়েছে ✓"
+  },
+  "toastError": {
+    "message": "PDF সংরক্ষণ ব্যর্থ হয়েছে: $1"
   }
 }

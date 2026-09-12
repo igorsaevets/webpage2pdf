@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "سفارشی: $1"
+  },
+  "contextMenuSave": {
+    "message": "ذخیره صفحه به عنوان PDF (دسکتاپ)"
+  },
+  "toastGenerating": {
+    "message": "در حال ایجاد PDF دسکتاپ (۱۹۲۰ پیکسل)…"
+  },
+  "toastSaved": {
+    "message": "فایل PDF با موفقیت ذخیره شد ✓"
+  },
+  "toastError": {
+    "message": "خطا در ذخیره PDF: $1"
   }
 }

@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Kustom: $1"
+  },
+  "contextMenuSave": {
+    "message": "Simpan halaman sebagai PDF (desktop)"
+  },
+  "toastGenerating": {
+    "message": "Membuat PDF desktop (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF berhasil disimpan ✓"
+  },
+  "toastError": {
+    "message": "Gagal menyimpan PDF: $1"
   }
 }

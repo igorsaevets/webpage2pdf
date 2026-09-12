@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Eigener: $1"
+  },
+  "contextMenuSave": {
+    "message": "Seite als PDF speichern (Desktop)"
+  },
+  "toastGenerating": {
+    "message": "Erstelle Desktop-PDF (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF erfolgreich gespeichert ✓"
+  },
+  "toastError": {
+    "message": "Fehler beim Speichern: $1"
   }
 }

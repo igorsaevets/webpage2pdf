@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Кастом: $1"
+  },
+  "contextMenuSave": {
+    "message": "Сохранить страницу в PDF (desktop)"
+  },
+  "toastGenerating": {
+    "message": "Генерация десктопного PDF (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF успешно сохранен ✓"
+  },
+  "toastError": {
+    "message": "Ошибка сохранения PDF: $1"
   }
 }

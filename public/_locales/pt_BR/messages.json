@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Personalizado: $1"
+  },
+  "contextMenuSave": {
+    "message": "Salvar página como PDF (desktop)"
+  },
+  "toastGenerating": {
+    "message": "Gerando PDF de desktop (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF salvo com sucesso ✓"
+  },
+  "toastError": {
+    "message": "Erro ao salvar PDF: $1"
   }
 }

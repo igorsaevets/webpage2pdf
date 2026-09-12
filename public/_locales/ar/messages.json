@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "مخصص: $1"
+  },
+  "contextMenuSave": {
+    "message": "حفظ الصفحة كملف PDF (سطح المكتب)"
+  },
+  "toastGenerating": {
+    "message": "جاري إنشاء ملف PDF لسطح المكتب (1920 بكسل)…"
+  },
+  "toastSaved": {
+    "message": "تم حفظ ملف PDF بنجاح ✓"
+  },
+  "toastError": {
+    "message": "فشل حفظ ملف PDF: $1"
   }
 }

@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "Custom: $1"
+  },
+  "contextMenuSave": {
+    "message": "⚡ PDF ആയി സംരക്ഷിക്കുക (ഡെസ്ക്ടോപ്പ്)"
+  },
+  "toastGenerating": {
+    "message": "Generating desktop PDF (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF saved successfully ✓"
+  },
+  "toastError": {
+    "message": "Failed to save PDF: $1"
   }
 }

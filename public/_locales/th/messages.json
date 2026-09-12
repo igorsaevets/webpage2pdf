@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "กำหนดเอง: $1"
+  },
+  "contextMenuSave": {
+    "message": "บันทึกหน้านี้เป็น PDF (เดสก์ท็อป)"
+  },
+  "toastGenerating": {
+    "message": "กำลังสร้าง PDF เดสก์ท็อป (1920px)…"
+  },
+  "toastSaved": {
+    "message": "บันทึก PDF เรียบร้อยแล้ว ✓"
+  },
+  "toastError": {
+    "message": "ไม่สามารถบันทึก PDF: $1"
   }
 }

@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "사용자 지정: $1"
+  },
+  "contextMenuSave": {
+    "message": "페이지를 데스크톱 PDF로 저장"
+  },
+  "toastGenerating": {
+    "message": "데스크톱 PDF 생성 중 (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF 저장 완료 ✓"
+  },
+  "toastError": {
+    "message": "PDF 저장 실패: $1"
   }
 }

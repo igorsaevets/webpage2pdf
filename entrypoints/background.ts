@@ -1,9 +1,146 @@
 export default defineBackground(() => {
-  console.log('[webpage2pdf] background loaded — v4');
+  console.log('[webpage2pdf] background loaded — v5 (contextMenus)');
+
+  const CONTEXT_MENU_ID = 'webpage2pdf-save-page';
+  const busyTabs = new Set<number>();
+
+  function setBadge(text: string, color: string, autoClearMs = 0) {
+    try {
+      chrome.action.setBadgeText({ text });
+      chrome.action.setBadgeBackgroundColor({ color });
+      if (autoClearMs > 0) {
+        setTimeout(() => {
+          chrome.action.setBadgeText({ text: '' });
+        }, autoClearMs);
+      }
+    } catch {}
+  }
+
+  async function showToast(tabId: number, message: string, type: 'info' | 'success' | 'error' = 'info') {
+    try {
+      await chrome.scripting.executeScript({
+        target: { tabId },
+        func: (msg: string, t: 'info' | 'success' | 'error') => {
+          const id = 'webpage2pdf-hud-toast';
+          let el = document.getElementById(id);
+          if (!el) {
+            el = document.createElement('div');
+            el.id = id;
+            el.style.cssText = `
+              position: fixed;
+              bottom: 24px;
+              right: 24px;
+              z-index: 2147483647;
+              padding: 12px 18px;
+              border-radius: 10px;
+              font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+              font-size: 13px;
+              font-weight: 600;
+              box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.1);
+              transition: opacity 0.25s ease, transform 0.25s ease;
+              pointer-events: none;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              line-height: 1.4;
+            `;
+            document.documentElement.appendChild(el);
+          }
+          if (t === 'error') {
+            el.style.background = '#7f1d1d';
+            el.style.color = '#fee2e2';
+            el.style.border = '1px solid #ef4444';
+          } else if (t === 'success') {
+            el.style.background = '#064e3b';
+            el.style.color = '#d1fae5';
+            el.style.border = '1px solid #10b981';
+          } else {
+            el.style.background = '#1e1b4b';
+            el.style.color = '#e0e7ff';
+            el.style.border = '1px solid #6366f1';
+          }
+          el.textContent = msg;
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0) scale(1)';
+
+          if (t !== 'info') {
+            setTimeout(() => {
+              if (el) {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(8px) scale(0.96)';
+                setTimeout(() => el?.remove(), 300);
+              }
+            }, 3500);
+          }
+        },
+        args: [message, type],
+      });
+    } catch {
+      // Ignored on restricted internal pages like chrome://
+    }
+  }
+
+  function setupContextMenu() {
+    try {
+      chrome.contextMenus.removeAll(() => {
+        chrome.contextMenus.create(
+          {
+            id: CONTEXT_MENU_ID,
+            title: chrome.i18n.getMessage('contextMenuSave') || 'Save page as PDF (desktop)',
+            contexts: ['page', 'selection', 'frame'],
+          },
+          () => {
+            if (chrome.runtime.lastError) {
+              console.warn('[webpage2pdf] contextMenu error:', chrome.runtime.lastError.message);
+            }
+          }
+        );
+      });
+    } catch (e) {
+      console.warn('[webpage2pdf] setupContextMenu exception:', e);
+    }
+  }
+
+  // Register on install/update and top-level startup
+  chrome.runtime.onInstalled.addListener(() => {
+    setupContextMenu();
+  });
+  setupContextMenu();
+
+  async function handleContextMenuSave(tabId: number, url: string) {
+    if (busyTabs.has(tabId)) {
+      await showToast(tabId, '⚠️ PDF generation already in progress…', 'info');
+      return;
+    }
+    busyTabs.add(tabId);
+    setBadge('...', '#7c5cf0');
+    const genMsg = chrome.i18n.getMessage('toastGenerating') || 'Generating desktop PDF (1920px)…';
+    await showToast(tabId, `📄 webpage2pdf: ${genMsg}`, 'info');
+
+    try {
+      const res = await generatePdf(tabId, url);
+      setBadge('✓', '#10b981', 3500);
+      const savedMsg = chrome.i18n.getMessage('toastSaved') || 'PDF saved successfully ✓';
+      const fileLabel = res?.filename ? ` (${res.filename})` : '';
+      await showToast(tabId, `✓ ${savedMsg}${fileLabel}`, 'success');
+    } catch (e: any) {
+      setBadge('ERR', '#ef4444', 4000);
+      const errText = String(e?.message ?? e);
+      await showToast(tabId, `✗ Error: ${errText}`, 'error');
+    } finally {
+      busyTabs.delete(tabId);
+    }
+  }
+
+  chrome.contextMenus.onClicked.addListener(async (info, tab) => {
+    if (info.menuItemId === CONTEXT_MENU_ID && tab?.id) {
+      await handleContextMenuSave(tab.id, tab.url ?? '');
+    }
+  });
 
   chrome.action.onClicked.addListener(async (tab) => {
     if (!tab.id) return;
-    try { await generatePdf(tab.id, tab.url ?? ''); } catch (e) { console.error('[webpage2pdf] generatePdf failed', e); }
+    try { await handleContextMenuSave(tab.id, tab.url ?? ''); } catch (e) { console.error('[webpage2pdf] action click failed', e); }
   });
 
   chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {

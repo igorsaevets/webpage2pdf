@@ -124,5 +124,17 @@
   },
   "hintCustom": {
     "message": "कस्टम: $1"
+  },
+  "contextMenuSave": {
+    "message": "पेज को PDF के रूप में सहेजें (डेस्कटॉप)"
+  },
+  "toastGenerating": {
+    "message": "डेस्कटॉप PDF बनाया जा रहा है (1920px)…"
+  },
+  "toastSaved": {
+    "message": "PDF सफलतापूर्वक सहेजा गया ✓"
+  },
+  "toastError": {
+    "message": "PDF सहेजने में विफल: $1"
   }
 }
