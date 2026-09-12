@@ -336,6 +336,35 @@ export default defineBackground(() => {
     check();
   })`;
 
+  const SCRIPT_UNSTICK_HEADERS = `(function(){
+    try {
+      var all = document.querySelectorAll('*');
+      var max = Math.min(all.length, 10000);
+      var count = 0;
+      for (var i = 0; i < max; i++) {
+        var el = all[i];
+        var style = window.getComputedStyle(el);
+        if (style.position === 'fixed' || style.position === 'sticky') {
+          el.setAttribute('data-w2p-position', style.position);
+          el.style.setProperty('position', style.position === 'fixed' ? 'absolute' : 'static', 'important');
+          count++;
+        }
+      }
+      console.log('[w2p] unstuck ' + count + ' elements');
+    } catch(e){}
+    return true;
+  })()`;
+
+  const SCRIPT_RESTORE_HEADERS = `(function(){
+    try {
+      document.querySelectorAll('[data-w2p-position]').forEach(function(el){
+        el.style.removeProperty('position');
+        el.removeAttribute('data-w2p-position');
+      });
+    } catch(e){}
+    return true;
+  })()`;
+
   // ── v4: PDF verification ─────────────────────────────────────────
   interface PdfVerification {
     ok: boolean;
@@ -462,6 +491,10 @@ export default defineBackground(() => {
       // ⑨ Restore scroll position before print
       await cdpEval(debuggee, 'window.scrollTo(0, window.__w2pScrollY || 0); delete window.__w2pScrollY');
 
+      // ⑩ Unstick headers so they don't repeat on every PDF page
+      await cdpEval(debuggee, SCRIPT_UNSTICK_HEADERS);
+      await sleep(100);
+
       // ── Print PDF ──
       const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
       const footerHtml = `<div style="width:100%; padding:0 0.4in; box-sizing:border-box; font-family:-apple-system,Arial,sans-serif;"><div style="font-size:7.5px; color:#6b7280; line-height:1.35; text-align:center; word-break:break-all; overflow-wrap:anywhere; white-space:normal; border-top:1px solid #e5e7eb; padding-top:6px;">${esc(sourceUrl || 'about:blank')}</div></div>`;
@@ -489,8 +522,9 @@ export default defineBackground(() => {
         throw new Error(`PDF verification failed: ${verification.reason}`);
       }
 
-      // ── Restore details/summary after print ──
+      // ── Restore DOM state after print ──
       await cdpEval(debuggee, SCRIPT_RESTORE_DETAILS);
+      await cdpEval(debuggee, SCRIPT_RESTORE_HEADERS);
 
       // ── Save ──
       const filenameOnly = buildFilename(sourceUrl, { ...settings, customDir: settings.saveMode === 'downloads' ? settings.customDir : '' });
@@ -522,6 +556,7 @@ export default defineBackground(() => {
       // Attempt to restore page state even on error
       try { await cdpEval(debuggee, SCRIPT_RESTORE_SLIDERS); } catch {}
       try { await cdpEval(debuggee, SCRIPT_RESTORE_DETAILS); } catch {}
+      try { await cdpEval(debuggee, SCRIPT_RESTORE_HEADERS); } catch {}
       try { await cdpEval(debuggee, 'window.scrollTo(0, window.__w2pScrollY || 0); delete window.__w2pScrollY'); } catch {}
       console.error('[webpage2pdf] generatePdf error', e);
       throw e;
