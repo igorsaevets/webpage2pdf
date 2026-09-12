@@ -6,7 +6,7 @@ async function generateScreenshots() {
   const TARGET_URL = 'https://ironmemo.com/';
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--autoplay-policy=no-user-gesture-required']
   });
 
   console.log(`Fetching real site screens for ${TARGET_URL}...`);
@@ -15,16 +15,23 @@ async function generateScreenshots() {
   // Capture Desktop (webpage2pdf)
   await fetchPage.setViewport({ width: 1920, height: 1080, deviceScaleFactor: 1 });
   await fetchPage.goto(TARGET_URL, { waitUntil: 'networkidle2' });
-  // Ensure lazy images load for a better screenshot
+  // Ensure lazy images load for a better screenshot, then scroll back to top
   await fetchPage.evaluate(() => window.scrollTo(0, 1000));
-  await new Promise(r => setTimeout(r, 500));
+  await new Promise(r => setTimeout(r, 600));
   await fetchPage.evaluate(() => window.scrollTo(0, 0));
+  await new Promise(r => setTimeout(r, 800)); // wait for smooth scroll to finish and top video to render
+  
   const desktopBuffer = await fetchPage.screenshot();
   const desktopB64 = desktopBuffer.toString('base64');
 
   // Capture Mobile (Native Chrome Print)
   await fetchPage.setViewport({ width: 740, height: 1080, deviceScaleFactor: 1 });
   await fetchPage.goto(TARGET_URL, { waitUntil: 'networkidle2' });
+  await fetchPage.evaluate(() => window.scrollTo(0, 1000));
+  await new Promise(r => setTimeout(r, 600));
+  await fetchPage.evaluate(() => window.scrollTo(0, 0));
+  await new Promise(r => setTimeout(r, 800));
+  
   const mobileBuffer = await fetchPage.screenshot();
   const mobileB64 = mobileBuffer.toString('base64');
   await fetchPage.close();
@@ -53,8 +60,8 @@ async function generateScreenshots() {
       .url-bar { background: #0b0f19; border: 1px solid #283548; border-radius: 6px; height: 26px; flex: 1; display: flex; align-items: center; padding: 0 12px; font-size: 12px; color: #9ca3af; }
       
       /* Webpage Content */
-      .page-content { height: 758px; background: #0f172a; overflow: hidden; }
-      .real-screenshot { width: 100%; height: 100%; object-fit: cover; object-position: top center; filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)); opacity: 0.9; }
+      .page-content { height: 758px; background: #0f172a; overflow: hidden; display: flex; align-items: flex-start; }
+      .real-screenshot { width: 100%; height: auto; object-fit: contain; object-position: top center; filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)); opacity: 0.95; }
       
       /* Extension Popup Mock */
       .popup-wrapper { position: absolute; top: 50px; right: 48px; width: 340px; background: #0f0f12; border: 1px solid #2a2a33; border-radius: 14px; padding: 18px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.85), 0 0 0 1px rgba(124, 92, 240, 0.4); z-index: 100; }
@@ -137,11 +144,11 @@ async function generateScreenshots() {
       .tag.bad { background: #450a0a; color: #f87171; border: 1px solid #991b1b; }
       .tag.good { background: #064e3b; color: #34d399; border: 1px solid #065f46; }
 
-      .screenshot-wrap { flex: 1; border-radius: 8px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); position: relative; display: flex; }
-      .screenshot-wrap img { width: 100%; object-fit: cover; object-position: top center; }
+      .screenshot-wrap { flex: 1; border-radius: 8px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); position: relative; display: flex; align-items: flex-start; background: #0b0f19; }
+      .screenshot-wrap img { width: 100%; height: auto; display: block; object-fit: contain; object-position: top center; }
       
-      .overlay-warning { position: absolute; bottom: 16px; left: 16px; right: 16px; background: rgba(153, 27, 27, 0.9); color: white; padding: 12px; border-radius: 8px; font-size: 12px; font-weight: 600; text-align: center; border: 1px solid #ef4444; }
-      .overlay-success { position: absolute; bottom: 16px; left: 16px; right: 16px; background: rgba(6, 78, 59, 0.9); color: white; padding: 12px; border-radius: 8px; font-size: 12px; font-weight: 600; text-align: center; border: 1px solid #10b981; }
+      .overlay-warning { position: absolute; bottom: 16px; left: 16px; right: 16px; background: rgba(153, 27, 27, 0.9); color: white; padding: 12px; border-radius: 8px; font-size: 12px; font-weight: 600; text-align: center; border: 1px solid #ef4444; backdrop-filter: blur(4px); }
+      .overlay-success { position: absolute; bottom: 16px; left: 16px; right: 16px; background: rgba(6, 78, 59, 0.9); color: white; padding: 12px; border-radius: 8px; font-size: 12px; font-weight: 600; text-align: center; border: 1px solid #10b981; backdrop-filter: blur(4px); }
     </style>
   </head>
   <body>
@@ -181,11 +188,13 @@ async function generateScreenshots() {
   console.log('Saved screenshot-2-before-after-1280x800.png');
 
   // ─────────────────────────────────────────────────────────────
-  // 3. Screenshot 3: Real Options & Settings UI
+  // 3. Screenshot 3: Real Options & Settings UI (Localized to English)
   // ─────────────────────────────────────────────────────────────
   console.log('Generating Screenshot 3: Options UI...');
   const optionsPath = path.resolve('entrypoints/options/index.html');
   const optionsHtml = fs.readFileSync(optionsPath, 'utf-8');
+  const enLocalesPath = path.resolve('public/_locales/en/messages.json');
+  const enLocales = JSON.parse(fs.readFileSync(enLocalesPath, 'utf-8'));
   
   const html3 = `
   <!DOCTYPE html>
@@ -193,7 +202,7 @@ async function generateScreenshots() {
   <head>
     <meta charset="utf-8">
     <style>
-      body { background: #0b0f19; margin: 0; padding: 40px; display: flex; align-items: center; justify-content: center; min-height: 800px; }
+      body { background: #0b0f19; margin: 0; padding: 40px; display: flex; align-items: center; justify-content: center; min-height: 800px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
       .wrapper { width: 720px; background: #0f0f12; border: 1px solid #2a2a33; border-radius: 16px; padding: 28px 36px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.8); }
     </style>
   </head>
@@ -201,10 +210,27 @@ async function generateScreenshots() {
     <div class="wrapper">
       ${optionsHtml.replace(/<script[^>]*>([\s\S]*?)<\/script>/gi, '')}
     </div>
+    <script>
+      const locales = ${JSON.stringify(enLocales)};
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (locales[key]) el.innerHTML = locales[key].message;
+      });
+    </script>
   </body>
   </html>
   `;
   await page.setContent(html3);
+  await page.evaluate(() => {
+    // Extra style fixes since CSS root vars might be missing if they were in a separate file
+    document.body.style.setProperty('--bg', '#0f0f12');
+    document.body.style.setProperty('--card', '#1a1a1f');
+    document.body.style.setProperty('--fg', '#e8e8ec');
+    document.body.style.setProperty('--muted', '#9aa0a6');
+    document.body.style.setProperty('--accent', '#7c5cf0');
+    document.body.style.setProperty('--border', '#2a2a33');
+    document.body.style.setProperty('--input', '#23232a');
+  });
   await page.screenshot({ path: 'store-assets/screenshot-3-options-1280x800.png' });
   console.log('Saved screenshot-3-options-1280x800.png');
 

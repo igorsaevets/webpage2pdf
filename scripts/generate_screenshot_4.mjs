@@ -6,13 +6,17 @@ async function generateScreenshots() {
   const TARGET_URL = 'https://ironmemo.com/';
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--autoplay-policy=no-user-gesture-required']
   });
 
   // Fetch real site for the background of the PDF proof
   const fetchPage = await browser.newPage();
   await fetchPage.setViewport({ width: 1920, height: 1080, deviceScaleFactor: 1 });
   await fetchPage.goto(TARGET_URL, { waitUntil: 'networkidle2' });
+  await fetchPage.evaluate(() => window.scrollTo(0, 1000));
+  await new Promise(r => setTimeout(r, 600));
+  await fetchPage.evaluate(() => window.scrollTo(0, 0));
+  await new Promise(r => setTimeout(r, 800));
   const desktopBuffer = await fetchPage.screenshot();
   const desktopB64 = desktopBuffer.toString('base64');
   await fetchPage.close();
