@@ -1,7 +1,7 @@
 {
   "name": "webpage2pdf",
-  "version": "0.4.1",
-  "description": "Save any webpage as a real PDF with selectable text — desktop layout, not mobile. Fixes Chrome's 740px print collapse.",
+  "version": "0.5.0",
+  "description": "Save any webpage as a real PDF with selectable text \u2014 desktop layout, not mobile. Fixes Chrome's 740px print collapse.",
   "type": "module",
   "scripts": {
     "dev": "wxt",
